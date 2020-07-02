@@ -7,20 +7,18 @@
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
     <link rel="stylesheet" type="text/css" href="css/examples.css">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="js/typer.js"></script>
     <script>
-        window.onload = function() {
+        $(document).ready(function() {
             var el = document.querySelector('.main-text')
             var options = {
                 text: '지 금 이 ─ 아 니 면 \n 세 상 어 디 에 도 없 는 \n 주 도 적 인 ─ 퍼 블 리 셔 \n 김 수 연 입 니 다',
                 textSpeed: 95,
                 blinkSpeed: 0.06
             }
-
             var instance = new tinytyper(el, options);
-
-        }
-
+        })
     </script>
 
 </head>
@@ -73,7 +71,7 @@
                     <div class="img">
                         <img src="image/pc.gif" alt="">
                         <img src="image/pc.png" alt="">
-                        
+
                     </div>
                     <div class="text">
                         <span class="text_t">PC WEB</span>
@@ -102,7 +100,7 @@
                     <div class="img">
                         <img src="image/pc2.gif" alt="">
                         <img src="image/pc.png" alt="">
-                        
+
                     </div>
                     <div class="text">
                         <span class="text_t">PC WEB</span>
