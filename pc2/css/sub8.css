@@ -1,0 +1,75 @@
+.content{
+/*    background: url(../image/8/bg.jpg) center no-repeat;*/
+}
+.sub_visual {
+    width: auto;
+    min-width: 1200px;
+    padding: 200px 0 100px;
+    background: url(../image/6/main.jpg) center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.sub_nav li a.view {
+    border-bottom: 2px solid #333;
+    opacity: 1
+}
+.content{
+    padding: 100px 0;
+}
+.stories{
+    text-align: center;
+    overflow: hidden;
+    width: 331px;
+    margin: 0 auto 40px;
+}
+.stories h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 50px;
+    float: left;
+    display: block;
+    padding-right: 20px;
+    border-right: 1px solid #ccc
+}
+.stories span{
+    display: block;
+    float: left;
+    line-height: 50px;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #999;
+    font-weight: lighter
+}
+
+.story{
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto
+}
+.story li{
+    float: left;
+    width: 320px;
+    margin-right: 20px;
+    margin-bottom: 20px
+}
+.story li:nth-of-type(3n){
+    margin-right: 0
+}
+.story li dl{
+    border:1px solid #ddd;
+    width: auto;
+    padding: 20px;
+}
+.story li dt:after{
+    content: "";
+    border-bottom: 2px solid #333;
+    width: 20px;
+    display: block;
+    margin-top: 20px;
+}
+.story li dt{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,333 @@
+/*-------------------------------------------------------------------*/
+
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.main .img_wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, auto, auto, 0); 
+}
+.main .main_img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/sub4/9.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.main_text {
+    position: absolute;
+    left: 50%;
+    width: auto;
+    top: 50%;
+}
+
+.main_text img {
+    width: 800px;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, .6));
+    margin-left: -400px;
+}
+
+#content {
+    margin: 8% 0;
+}
+
+.title{
+    text-align: center;
+    max-width: 1600px;
+    position: relative;
+    margin: 0 8%;
+}
+.title p {
+    font-weight: bold;
+    font-size: 34px;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-top: 4%;
+    margin-bottom: 20px;
+}
+
+.title span {
+    padding-bottom: 4%;
+    display: block;
+    opacity: .5
+}
+.title:before{
+    position: absolute;
+    width: 180px;
+    height: 1px;
+    background:rgba(255,255,255,.5);
+    display: block;
+    content: "";
+    left: 50%;
+    margin-left: -90px;
+}
+
+.title:after{
+    position: absolute;
+    width: 180px;
+    height: 1px;
+    background:rgba(255,255,255,.5);
+    display: block;
+    content: "";
+    left: 50%;
+    margin-left: -90px;
+}
+
+
+.business{
+    text-align: center;
+    width: 1200px;
+    margin: 8% auto 0;
+}
+.business ul {
+    overflow: hidden;
+}
+.business li{
+    float: left;
+    width: 30%;
+    margin-right: 5%
+}
+.business li:nth-of-type(3){
+    margin-right:0
+}
+.business li img{
+    width: 100%;
+    margin-bottom: 20%;
+    border-radius: 50%
+}
+
+.business li dt {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.business li dd {
+   margin-top: 20px;
+}
+
+.cinema{
+    width: auto;
+    overflow: hidden;
+    margin: 15% 8%;
+}
+.cinema_title{
+    font-weight: bold;
+    font-size: 34px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    margin-bottom: 4%;
+}
+.cinema_li{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.cinema li{
+    float: left;
+    width: 48%;
+    margin-bottom: 4%;
+    margin-right: 4%
+}
+.cinema li:nth-of-type(2n){
+    margin-right: 0%
+}
+.cinema dl{
+    position: relative;
+}
+.cinema dl:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 26px;
+    background: #ee155b;
+    
+}
+.cinema dt{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 4%;  
+    margin-left: 10px;
+}
+
+.profile {
+    max-width: 1600px;
+    margin: 0 8%;
+}
+.profile li {
+    position: relative;
+}
+.profile li img{
+    width: 100%;
+}
+.profile li dl{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    color: #151515;
+    width: 30%;
+    
+}
+.profile li dt{
+    font-weight: bold;
+    font-size: 34px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 8%;
+    position: relative;
+}
+.profile li dt:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: #ee155b;
+    margin-top: 4%;
+}
+.profile li dd{
+    font-size: 22px;
+}
+
+.profile li dl.right{
+    text-align: right;
+    left: 65%;
+    top: 15%;
+}
+.profile li dl.right dt:after{
+    right: 0;
+}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    .title p ,.cinema_title {
+        font-size: 30px;
+    }
+    .business li dt, .cinema dt{
+        font-size: 22px;
+    }
+    .main_text img {
+        width: 600px;
+        margin-left: -300px;
+    }
+    #content {
+        margin: 8% 0;
+    }
+    
+ 
+    .business{
+        width: 1000px;
+    }
+    .business li img{
+        margin-bottom: 10%;
+    }
+    .cinema{
+        margin: 15% 3%;
+    }
+    .profile {
+        margin: 0 3%;
+    }
+    
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    .main{
+        height: 500px;
+    }
+    .main_text img {
+        width: 500px;
+        margin-left: -250px;
+    }
+    .cinema_title,.title p,.profile li dt {
+        font-size: 28px;
+    }
+    .business li dt, .cinema dt,.profile li dd{
+        font-size: 20px;
+    }
+    
+    #content {
+        margin: 12% 0;
+    }
+    .business{
+        width: auto;
+        margin: 12% 3% 0;
+    }
+    .cinema {
+        margin: 12% 3%;
+    }
+    
+
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    .main_text img {
+        width: 400px;
+        margin-left: -200px;
+    }
+    .title p,.cinema_title,.profile li dt{
+        font-size: 24px;
+    }
+    .profile li dd{
+        font-size: 16px
+    }
+    #content {
+        margin: 15% 0;
+    }
+    .business{
+        margin: 15% 3% 0
+    }
+    .business li{
+        width: 70%;
+        margin: 4% 15%;
+    }
+    .cinema {
+        margin: 15% 3%;
+    }
+    .cinema_title {
+        margin-bottom: 10%;
+    }
+    .cinema li{
+        float: none;
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 8%
+    }
+    .profile {
+        margin: 0;
+    }
+
+}
+/* 모바일 */
+@media screen and (max-width:640px){
+    
+    .main{
+        height: 400px;
+    }
+    .business li{
+        width: 80%;
+        margin: 4% 10%;
+    }
+    
+    .cinema li{
+        float:none;
+        width: auto;
+    }
+
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+    #wrap {
+        min-width: 320px;
+    }
+}

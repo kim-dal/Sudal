@@ -1,0 +1,26 @@
+
+.contlist{
+    display: block;
+}
+.tab_wrap .tab_nav{
+    margin: 0px auto;
+    width: 102px;
+}
+
+.lightning li.box3 > dl,
+.lightning li.box2 > dl{
+    color: #333;
+    text-shadow: none;
+}
+
+.lightning li.box3 dl dt:after,
+.lightning li.box2 dl dt:after{
+    border-bottom: 2px solid #333;
+}
+
+.lightning li.box3 a.more,
+.lightning li.box2 a.more{
+    color: #333;
+    border: 2px solid #333;
+}
+

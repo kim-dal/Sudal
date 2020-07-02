@@ -1,0 +1,70 @@
+/* 콘텐츠 영역 */
+
+        
+        #content {
+            width: 800px;
+            margin: 200px auto 100px;
+        }
+       
+        .title{
+            width: 800px;
+            height: 1000px;
+            text-align: center;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .title img {
+            width: 600px;
+            display: block;
+            margin-bottom: 40px;
+            margin-left: 100px;
+        }
+        .title h3 {
+            padding: 30px 0;
+            font-size: 24px;
+            border-top: 2px solid #151515
+        }
+        .title p {
+            font-size: 16px;
+            line-height: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .content_box{
+            overflow: hidden;
+            border-top: 1px solid #cdcdcd;
+            border-bottom: 1px solid #cdcdcd;
+            padding: 40px 0;
+            font-size: 14px;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .content_box ul {
+            float: left;
+            width: 660px;
+            height: 88px;
+            line-height: 22px;
+            font-weight: lighter;
+            text-align: left;
+            color: #666;
+        }
+        .content_box a {
+            float: right;
+            width: 140px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            background-color: #151515;
+            color: #fff;
+            margin: 14px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .content{
+            margin-top: 40px;
+            
+            
+        }
+        .content img {
+            width: 800px;
+            display: block;
+        }
+        

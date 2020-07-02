@@ -1,0 +1,134 @@
+<?
+	session_start();
+    @extract($_POST);
+    @extract($_GET);
+    @extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>sub_detail</title>
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="css/4_detail.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../../js/prefixfree.min.js"></script>
+    <script src="js/4_detail.js"></script>
+    <script src="https://kit.fontawesome.com/2618050b2a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">글로벌네비게이션바로가기</a>
+    </div>
+    <div id="wrapper">
+        <!--헤더 삽입-->
+        <? include "common/sub_header.html" ?>
+
+        <div id="content">
+            <h2 class="hidden">본문영역</h2>
+            <div class="title">
+                <h3 class="hidden">대표이미지</h3>
+                <div class="img_big">
+                    <img src="image/shop/cover.jpg" alt="2020년 1월호 표지이미지">
+                </div>
+                <div class="img_sm">
+                    <div class="img_tt">
+                        <img src="image/shop/cover.jpg" alt="2020년 1월호 표지이미지">
+                        <img src="image/shop/01.jpg" alt="2020년 1월호 내지이미지">
+                        <img src="image/shop/02.jpg" alt="2020년 1월호 내지이미지">
+                        <img src="image/shop/06.jpg" alt="2020년 1월호 내지이미지">
+                        <img src="image/shop/03.jpg" alt="2020년 1월호 내지이미지">
+                        <img src="image/shop/01.jpg" alt="2020년 1월호 내지이미지">
+                    </div>
+                </div>
+                <i class="fas fa-chevron-left" date="-1"></i>
+                <i class="fas fa-chevron-right" date="1"></i>
+            </div>
+
+            <div class="content">
+                <h3 class="hidden">상세 내용</h3>
+                <dl>
+                    <dt>2020.01</dt>
+                    <dd>BEAN</dd>
+                </dl>
+                <div class="detail">
+                    <ul class="detail_le">
+                        <li>Size : 170 x 240mm</li>
+                        <li>Pages : 84</li>
+                        <li>Publish Date : 2020.01.11</li>
+                    </ul>
+                    <ul class="detail_ri">
+                        <li>8,000원 (10% 할인) <span>7,200원</span></li>
+                    </ul>
+                </div>
+                <div class="clear">
+                    <a href="#none" class="btn ">장바구니</a>
+                    <a href="#none" class="btn buy">구매하기</a>
+                </div>
+
+            </div>
+            <div class="content1">
+                <h3 class="hidden">설명</h3>
+                인도네시아의 화산섬 발리는 세계 최대 무슬림 인구가 사는 본토와 달리 주민 대부분이 힌두를 신봉하는 독특한 지역 문화를 형성한 곳입니다. 발리인에게 힌두교는 신앙이자 춤과 회화, 건축은 물론 문화의 전반적 영역에 걸쳐 가장 큰 영향을 미친 사회·정신생활의 핵심입니다. 1970년대 응우라라이 국제공항이 개발·확장되면서 발리의 1세대 이방인이라 할 수 있는 호주인 서퍼를 시작으로 아름다운 자연, 1000년 가까이 보존해온 전통문화 그리고 발리인 특유의 균형적 감각에 매료된 세계 각국의 이방인이 발리를 찾았습니다. 더불어 최근에는 요가와 명상을 통해 내면을 돌보거나 지속 가능한 미래를 모색하려는 창의적 인재들이 속속 발리에 모여들면서 전통적 관광산업 이상의 가치를 지닌 대안적 삶의 메카로 떠오르고 있습니다.
+            </div>
+            <div class="clear">
+                <h3>MORE ISSUE</h3> 
+                <ul class="shop_con clear">
+                    <li>
+                        <a href="4_detail.html">
+                            <img src="image/shop/shop1.jpg" alt="표지이미지">
+                            <dl>
+                                <dt>[2020.01] BEAN</dt>
+                                <dd>대체육의 새로운 대안<br>BEAN
+                                    <span>28,500원</span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="4_detail.html">
+                            <img src="image/shop/shop2.jpg" alt="표지이미지">
+                            <dl>
+                                <dt>[2019.12] BERRY</dt>
+                                <dd>작고 둥글며 진하고 새콤한 과실<br>BERRY
+                                    <span>28,500원</span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="4_detail.html">
+                            <img src="image/shop/shop3.png" alt="표지이미지">
+                            <dl>
+                                <dt>[2019.11] HONEY</dt>
+                                <dd>인류가 오랫동안 애정한 감미료 <br>HONEY
+                                    <span>28,500원</span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="4_detail.html">
+                            <img src="image/shop/shop4.png" alt="표지이미지">
+                            <dl>
+                                <dt>[2019.10] CHOCOLATE</dt>
+                                <dd>귀족의 사치품 부터 대량생산까지<br>CHOCOLATE
+                                    <span>28,500원</span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--푸터 삽입-->
+        <? include "common/footer.html" ?>
+    </div>
+
+</body>
+
+</html>

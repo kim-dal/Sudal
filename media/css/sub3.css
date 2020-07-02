@@ -1,0 +1,359 @@
+/*-------------------------------------------------------------------*/
+
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.main .img_wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, auto, auto, 0); 
+}
+.main .main_img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/sub3/7.png) center no-repeat;
+    background-size: cover;
+}
+
+.main_text {
+    position: absolute;
+    left: 50%;
+    width: auto;
+    top: 50%;
+}
+
+.main_text img {
+    width: 800px;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, .6));
+    margin-left: -400px;
+}
+
+#content {
+    padding: 8% 0;
+}
+
+.title{
+    text-align: center;
+    max-width: 1600px;
+    position: relative;
+    margin: 0 8%;
+}
+.title p {
+    font-weight: bold;
+    font-size: 34px;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-top: 4%;
+    margin-bottom: 20px;
+}
+
+.title span {
+    padding-bottom: 4%;
+    display: block;
+    opacity: .5
+}
+/*
+.title:before{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background:rgba(255,255,255,.5);
+    display: block;
+    content: "";
+    left: 50%;
+    margin-left: -25px;
+    transform:rotate(-45deg)
+}
+*/
+
+.title:after{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background:rgba(255,255,255,.5);
+    display: block;
+    content: "";
+    left: 50%;
+    margin-left: -25px;
+    margin-top: 20px;
+    transform:rotate(-90deg)
+}
+
+
+.mobile{
+    margin:8%;
+}
+.mobile ul {
+    overflow: hidden;
+}
+.mobile li{
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+}
+.mobile li:nth-of-type(4){
+    margin-right:0
+}
+.mobile li img{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.mobile li dt {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.mobile li dd {
+   margin-top: 10px;
+    text-align: justify;
+    opacity: 0.8
+}
+
+
+.cinema{
+    width: auto;
+    overflow: hidden;
+    padding: 8%;
+    background: #fff;
+    color: #151515
+}
+.cinema_title{
+    max-width: 1600px;
+    font-weight: bold;
+    font-size: 34px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0 auto 4%;
+}
+
+.cinema_li{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.cinema li{
+    float: left;
+    width: 31.33%;
+    margin-bottom: 4%;
+    margin-right: 3%
+}
+.cinema li:nth-of-type(3n){
+    margin-right: 0%
+}
+.cinema dl{
+    position: relative;
+}
+.cinema dl:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 26px;
+    background: #ee155b
+}
+.cinema dt{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 4%; 
+    margin-left: 10px;
+}
+
+.tout {
+    max-width: 1600px;
+    margin: 8% 8% 0;
+    text-align: center;
+}
+
+.tout p {
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 8%
+}
+.tout span{
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    font-size: 34px;
+}
+.tout ul{
+    overflow: hidden;
+    margin: 0 20%;
+}
+
+.tout li{
+    width: 46%;
+    margin-right: 8%;
+    float: left;
+}
+
+.tout li:nth-of-type(2){
+    margin-right: 0
+}
+.tout li a{
+    display: block;
+}
+.tout li img{
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 8%;
+}
+.tout li dt{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 4%; 
+}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+    .main_text img {
+        width: 600px;
+        margin-left: -300px;
+    }
+    .title p,.cinema_title,.tout span{
+        font-size: 30px;
+    }
+    .mobile li dt,.cinema dt,.tout p{
+        font-size: 22px;
+    }
+    .title {
+    margin: 0 3%;
+    }
+    .mobile{
+        margin: 8% 3%;
+    }
+    .cinema{
+        padding: 8% 3%;
+    }
+    .tout ul {
+        margin: 0 10%;
+    }
+}
+
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    #content {
+        padding: 12% 0;
+    }
+    .title p,.cinema_title,.tout span{
+        font-size: 28px;
+    }
+    .mobile li dt,.cinema dt,.tout p{
+        font-size: 20px;
+    }
+    .main{
+        height: 500px;
+    }
+    .main_text img {
+        width: 500px;
+        margin-left: -250px;
+    }
+    .mobile{
+        margin: 12% 3%;
+    }
+    .mobile li{
+        float: left;
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 4%;
+    }
+    .mobile li:nth-of-type(2n){
+        margin-right:0
+    }
+    .cinema{
+        padding: 12% 3%;
+    }
+    .cinema li{
+        width: 48%;
+        margin-right: 4%;
+    }
+    .cinema li:nth-of-type(3n){
+        margin-right: 4%
+    }
+    .cinema li:nth-of-type(2n){
+        margin-right: 0%
+    }
+    .tout{
+        margin: 12% 3% 0;
+    }
+
+    .tout li {
+        width: 46%;
+        margin-right: 8%;
+        float: left;
+    }
+    
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    .title p,.cinema_title,.tout span{
+        font-size: 24px;
+    }
+    .tout p{
+        font-size: 18px;
+    }
+    .main_text img {
+        width: 400px;
+        margin-left: -200px;
+    }
+    .mobile{
+        margin: 15% 3%;
+    }
+    .cinema{
+        padding: 15% 3%;
+    }
+    .cinema li {
+        margin-bottom: 8%
+    }
+    .cinema_title{
+        margin-bottom: 10%;
+    }
+    
+}
+/* 모바일 */
+@media screen and (max-width:640px){
+    
+    .main{
+        height: 400px;
+    }
+    .mobile li {
+        float: none;
+        width: auto;
+        margin-bottom: 8%;
+        margin-right: 0;
+    }
+    .mobile li img {
+        margin-bottom: 4%;
+    }
+    .cinema li{
+        float:none;
+        width: auto;
+    }
+    .tout ul {
+        margin: 0 20%;
+    }
+    .tout li {
+        width: auto;
+        margin-right: 0;
+        float: none;
+        margin-bottom: 8%;
+    }
+    
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+    #wrap {
+        min-width: 320px;
+    }
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>BALMUDA</title>
+
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    <link rel="stylesheet" href="common/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" href="css/flexslider.css" >
+    
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/2618050b2a.js" crossorigin="anonymous"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="common/common.js"></script>
+    
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/idangerous.swiper-2.0.min.js"></script>
+    <script src="js/appstore.js"></script>
+    <script defer src="js/jquery.flexslider.js"></script>
+
+    <script>
+        $(function() {
+            SyntaxHighlighter.all();
+        });
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
+    <script> 
+        // <![CDATA[
+        try {
+            window.addEventListener('load', function() {
+                setTimeout(scrollTo, 0, 0, 1);
+            }, false);
+        } catch (e) {}
+        // ]]>
+
+    </script>
+    <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+    <div id="wrap">
+        
+        <!--헤더삽입-->
+        <? include "common/header.html" ?>
+        
+        <div class="visual">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li class="main1">
+                        <img src="images/visual_640.jpg" alt="GreenFan S">
+                        <p><span>자연의 바람을 재현한 선풍기</span>
+                        BALMUDA GreenFan S</p>
+    
+                    </li>
+                    <li class="main2">
+                        <img src="images/visual2_640.jpg" alt="Toaster">
+                        <p><span>감동의 토스터</span>
+                        BALMUDA The Toaster</p>
+                    </li>
+                    <li class="main3">
+                        <img src="images/visual3_640.jpg" alt="The Pot">
+                        <p><span>작고 아름다운 전기 주전자</span>
+                        BALMUDA The Pot</p>
+                    </li>
+                </ul>
+            </div>     
+        </div>
+        <section id="content">
+           <h2 class="hidden">본문영역</h2>
+            <article class="product">
+                <h3 class="hidden">신제품 안내</h3>
+                <img src="images/s1_640.jpg" alt="THE TOASTER">
+                <dl>
+                    <dt>BALMUDA THE TOASTER</dt>
+                    <dd>뉴 컬러 ‘쇼콜라’ 출시
+                        <span>모던한 인테리어에 밝은 색감을 더하는
+                        <br>발뮤다 더 토스터의 새로운 컬러.</span>
+                    </dd>
+                </dl>
+            </article>
+
+            <article class="news scroll_hide">
+                <h3>BALMUDA News</h3>
+                <div class="news_wrap">
+                    <img src="images/s2_1640.jpg" alt="이미지" class="change_select">
+                    <p class="text">
+                        <span>어디에나 있을 법한,<br>그러나 어디에도 없는</span>
+                        <a href=""><span class="hidden">더보기</span><i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </article>
+            <article class="how scroll_hide">
+                <h3 class="hidden">제품 사용 방법</h3>
+                <ul>
+                    <li class="how_list1"><a href="#none">
+                        <img src="images/s4_640.jpg" alt="제품 사용방법">
+                        <p>제품 사용방법</p>
+                    </a></li>
+                    <li  class="how_list2"><a href="#none">
+                        <img src="images/s3_640.jpg" alt="제품 사양">
+                        <p>제품 사양</p>
+                    </a></li>
+                </ul>
+            </article>
+            <article class="story scroll_hide">
+                <h3>BALMUDA Life</h3>
+
+                <div id="page">
+
+                    <div class="swiper-container thumbs-container border-gradient">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/s5_640.jpg" alt="리뷰 이미지">
+                                <dl>
+                                    <dt>LIFE DESIGNER ‘Huy Jin Yang’</dt>
+                                    <dd>BALMUDA GREENFAN S</dd>
+                                </dl>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/s5_2640.jpg" alt="리뷰 이미지">
+                                <dl>
+                                    <dt>LIFE DESIGNER ‘Moon Kyu Choi’</dt>
+                                    <dd>BALMUDA GREENFAN S</dd>
+                                </dl>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/s5_3640.jpg" alt="리뷰 이미지">
+                                <dl>
+                                    <dt>LIFE DESIGNER ‘Hwan Dong Lee’</dt>
+                                    <dd>BALMUDA THE TOASTER</dd>
+                                </dl>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/s5_4640.jpg" alt="리뷰 이미지">
+                                <dl>
+                                    <dt>LIFE DESIGNER ‘Sang Min Lee’</dt>
+                                    <dd>BALMUDA AirEngine</dd>
+                                </dl>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/s5_5640.jpg" alt="리뷰 이미지">
+                                <dl>
+                                    <dt>LIFE DESIGNER ‘Ki Duk Kwon’</dt>
+                                    <dd>BALMUDA THE POT</dd>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="support scroll_hide">
+                <h3 class="hidden">고객센터</h3>
+                <p>무엇을<span>도와드릴까요?</span></p>
+                <i class="fas fa-chevron-down"></i>
+                <div class="support_content">
+                    <dl>
+                        <dt>BALMUDA SERVICE</dt>
+                        <dd>발뮤다를 소유하는 그 이상의 가치를<br>
+                        발뮤다 서비스를 통해 누려 보세요.</dd>
+                    </dl>
+                    <ul>
+                        <li>
+                            <a href="3_1support.html">
+                                <i class="fas fa-headset"></i>
+                                <span>고객센터</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="3_1support.html">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <span>온라인 상담</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="3_2resist.html">
+                                <i class="far fa-list-alt"></i>
+                                <span>제품 등록</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="about scroll_hide">
+                <div class="text">
+                    <h3>BALMUDA Brand story</h3>
+                    <p>현대를 살아가는 사람들은 살면서 사용하는
+                        '도구'에<br>있어 감동과 때로는 놀라움을 느끼기를 원합니다.<br>
+                        발뮤다는 가전제품이라는 '도구'를 통해 저희가 느낀<br>
+                        깊은 감동과 놀라움을 여러분과 나누고 싶습니다.
+                    </p>
+                </div>
+            </article>
+        </section>
+        
+        <!-- 푸터 삽입-->
+        <? include "common/footer.html" ?>
+        </div>
+    </body>
+
+</html>

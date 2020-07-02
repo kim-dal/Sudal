@@ -1,0 +1,354 @@
+@keyframes scrollsign {
+    0%{
+        margin-left: 10px;
+        opacity: 0;
+    }
+    50%{
+        margin-left: 15px;
+        opacity: 1;
+    }
+    100%{
+        margin-left: 10px;
+        opacity: 0;
+    }
+}
+@keyframes scrollsign2 {
+    0%{
+        right: -15px;
+        opacity: 1;
+    }
+    50%{
+        right: -10px;
+        opacity: 0;
+    }
+    100%{
+        right: -15px;
+        opacity: 1;
+    }
+}
+
+/* CSS Document */
+.visual{
+clear: both
+} 
+.slides li {
+    position: relative;
+}
+.slides li p {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+} 
+.slides li span{
+    display: block;
+    font-size: 16px;
+    font-weight: lighter
+}
+.slides li.main2 p{
+    bottom:43%;
+    left: 15%
+} 
+
+
+/* 신제품 섹션 */
+.product{
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+.product img{
+     width: 100%;
+}
+.product {
+    width: 100%
+}
+.product dl{
+    position: relative;
+    top: -40px;
+    left: 0px;
+    margin: 0 15px;
+    background-color: #fff;
+    padding: 20px 20px;
+    box-shadow: 0 3px 7px 1px rgba(0, 0, 0,0.1);
+}
+.product dt{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.product dd {
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.product dd span {
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+    opacity: .5;
+}
+
+/* 뉴스 섹션 */
+.news{
+    margin-bottom: 80px;
+}
+.news h3{
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.news_wrap{
+    position: relative;
+}
+.news_wrap img{
+    display: block;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+}
+.news_wrap img.img_none{
+    display: none
+}
+.news_wrap .text{
+    width: 220px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -110px;
+    color: #fff;
+}
+.news .text span {
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 1.3em;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+.news .text a {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation: scrollsign 2s infinite;
+    margin-top: 4px;
+}
+
+.news .text a i {
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+/* 사용방법 섹션 */
+.how{
+    width: 100%;
+    margin-bottom: 80px;
+}
+.how ul{}
+.how ul li a{
+    display: block;
+    position: relative;
+}
+.how ul li img{
+    width: 100%;
+}
+.how ul li p {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold; 
+    font-family: 'Nanum Gothic', sans-serif;
+    right: 11%;
+    bottom:10%;
+}
+
+.how ul li p:after{
+ content:"";
+ display: block;
+ width:10px;
+ height:10px;
+ border-top:2px solid #333;
+ border-right:2px solid #333;
+ transform: rotate(45deg);
+ position: absolute;
+ right: -15px;
+ bottom: 5px;
+ animation: scrollsign2 2.5s infinite 
+
+}
+.how ul li.how_list1 p{
+    color: #202020;
+}
+
+.how ul li.how_list2 p:after{
+ border-top:2px solid #fff;
+ border-right:2px solid #fff;
+}
+.how ul li.how_list2 p{
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+
+
+
+/* 스토리 섹션 */
+.story{
+    text-align: center;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.story h3{
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 20px;
+}
+.story img{
+    width: 300px;
+    height: 240px;
+    margin: 0 auto;}
+
+.story dl{
+    position: absolute;
+    width: 260px;
+    bottom: 0;
+    left: 50%;
+    margin-left:-125px; 
+    background-color: #fff;
+}
+.story dt{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.story dd{
+    font-size: 12px;
+    opacity: .5;
+    margin-bottom: 5px
+}
+
+/*고객지원*/
+.support{
+    text-align: center;
+    cursor: pointer
+}
+.support p {
+    font-size: 24px;
+    line-height: 1.2em;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 10px;
+}
+.support p span {
+    display: block;
+    font-weight: bolder;
+}
+.support i{
+    font-size: 30px;
+    color:  #333;
+    margin-bottom: 10px;
+}
+
+.support_content {
+    width: 100%;
+    background: #eee;
+    text-align: center;
+    color: rgba(0,0,0,.4);
+    display: none;
+}
+.support_content dl{
+    width: 250px;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+.support_content dt{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 100;
+    color: rgba(0,0,0,.8);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.support_content dt{
+    line-height: 1.3em;
+    font-weight: 100;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.support_content ul {
+    width:290px; 
+    text-align: center;
+    margin:0 auto;
+    padding-bottom: 40px;
+     overflow: hidden;
+}
+.support_content li {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 20px; 
+}
+
+.support_content li:nth-of-type(3) {
+    margin-right:0px 
+}
+.support_content li a{ 
+     color: rgba(0,0,0,.4);
+    display: block;
+}
+
+.support_content li a i {
+    line-height: 80px;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0,0.05);
+     color: rgba(0,0,0,.6);
+    display: block;
+}
+.support_content li a>span{
+    font-weight: bolder;
+    font-size: 12px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+}
+/*브랜드 스토리*/
+.about{
+    width: 100%;
+}
+
+.about .text{
+    padding: 60px 20px;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    text-align: center;
+     background:url(../images/s6_640.jpg);
+    background-size: cover;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .about .text{background: url("../images/s6_640.jpg");}
+}
+.about h3{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #fff;
+    display: block;
+    margin-bottom: 20px;
+}
+.about p{
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5em
+}

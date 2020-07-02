@@ -1,0 +1,237 @@
+/* 공통 영역 */
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+
+address{font-style: normal;}
+a{color: #333;text-decoration: none}
+img{border: 0; vertical-align: top;}
+
+.hidden{display: block;position: absolute;left: -1000%;width: 1px;height: 1px;overflow: hidden;color: #fff;}
+
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 14px; color: #333;}
+
+/* 스킵메뉴 영역 */
+#skipNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 200;
+}
+
+#skipNav a {
+    display: block;
+    height: 1px;
+    margin-bottom: -1px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+#skipNav a:hover,
+#skipNav a:focus,
+#skipNav a:active {
+    display: block;
+    height: auto;
+    padding: 5px 0;
+    background: #f00;
+}
+
+
+/* 헤더 영역 */
+
+header {
+    background: #202020;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+.header_sub_wrap{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1160px;
+    padding: 20px 0 10px;
+}
+.header_sub_left{
+    float: left;
+}
+.header_sub_right{
+    float: right;
+}
+.header_sub_left ul, .header_sub_right ul{
+    overflow: hidden;
+}
+.header_sub_left li{
+    float: left;
+    padding-right: 20px;
+}
+.header_sub_right li{
+    float: right;
+    padding-left: 20px;
+}
+.header_sub_wrap a{
+    color: #fff;
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: lighter
+}
+
+
+.headerInner {
+    width: 1160px;
+    margin: 0 auto;
+    
+}
+.headerInner:after{
+    clear: both;
+    content: "";
+    display: block
+}
+header h1 {}
+
+header h1 a {
+    float: left;
+    margin: 0 auto;
+    display: block;
+    width:144px;
+    height: 20px;
+    text-indent: -1000%;
+    background: url(../../image/logo.png)no-repeat;
+    background-size: auto 20px;
+    margin: 10px 20px 20px 0px;;
+}
+
+.gnb {
+    width: 996px; 
+    float: right;
+    
+}
+.gnb .downmenu {
+    clear:both;
+    text-align: right;
+}
+
+.gnb .downmenu .menu {
+    float: left;
+    width:249px;
+    position: relative;
+}
+
+.gnb .downmenu li a.depth1 {
+    color: #fff;
+    height: 20px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 10px 0px 20px ;
+}
+
+.gnb .downmenu li ul {
+    position:absolute;
+    top:40px;
+    left:0;
+    width:249px;
+    height: 105px;
+    line-height: 35px;
+    display: none;
+}
+
+.gnb .downmenu li li {
+}
+
+.gnb .downmenu li li a {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 15px;
+    display: block;
+}
+
+.gnb .downmenu li li a:hover {
+    opacity: .5
+}
+
+/* 푸터 영역 */
+footer{
+    width: auto;
+    min-width: 1200px;
+    background: #202020;
+}
+.footerInner{
+    width: 1200px;
+    margin: 0 auto
+}
+.foot_etc_nav {overflow: hidden;}
+.foot_etc_nav li{
+    float: left;
+    padding:20px;
+    position: relative;
+}
+.foot_etc_nav li a{
+    color: #fff;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.foot_etc_nav li a:after{
+    position: absolute;
+    top: 23px;
+    right: -1px;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background: #e1e1e1;
+}
+.foot_copy_wrap {
+    overflow: hidden;
+    border-top: 1px solid #444
+}
+.foot_logo a{
+    float: left;
+    margin: 0 auto;
+    display: block;
+    width:144px;
+    height: 20px;
+    text-indent: -1000%;
+    background: url(../../image/logo.png)no-repeat;
+    background-size: auto 20px;
+    margin: 40px 20px;
+}
+.foot_copy{
+    float: left;
+    width: 956px;
+    margin: 14px 20px 14px 40px;
+}
+.foot_copy address {
+    color: #fff;
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 1.5em
+}
+.foot_copy address span {
+    margin-right: 20px;
+}
+.foot_copy address span.copy{
+    opacity: .5;
+    line-height: 3em
+}

@@ -1,0 +1,110 @@
+/* 비쥬얼영역 */
+.visual {
+    margin-top: 100px;
+    width: 100%;
+    padding: 150px 0;
+    background-color: #ccc;
+    background-image: url(../image/shop/shop_s.jpg);
+    background-size: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.visual dt {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.visual dd {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* 서브네비게이션 */
+#content {
+    width: 1080px;
+    margin: 100px auto 30px auto;
+    overflow: hidden;
+}
+
+.shop_nav {
+    width: 220px;
+    float: left;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.shop_nav dt {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.shop_nav dd {
+    margin-bottom: 50px;
+    color: #898989;
+    line-height: 1.5em
+}
+
+.shop_nav li a {
+    display: block;
+    color: #898989;
+    width: 98px;
+    height: 30px;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: lighter
+}
+
+.shop_nav li .now {
+    border: 1px solid #151515;
+    font-weight: bold;
+    color: #151515;
+}
+
+.content {
+    width: 860px;
+    float: left;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.content li {
+    width: 260px;
+    margin-right: 40px;
+    float: left;
+    margin-bottom: 70px;
+}
+
+.content li:nth-of-type(3n) {
+    margin-right: 0px
+}
+
+.content img {
+    width: 260px;
+    margin-bottom: 20px
+}
+
+.content dt {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.content dd {
+    font-size: 16px;
+    line-height: 1.5em
+}
+
+.content span {
+    margin-top: 30px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}

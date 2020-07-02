@@ -1,0 +1,598 @@
+<?
+	session_start();
+    @extract($_POST);
+    @extract($_GET);
+    @extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>re_mypage</title>
+    <link rel="stylesheet" type="text/css" href="common/css/common.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../../js/prefixfree.min.js"></script>
+    <style>
+        /* 콘텐츠 영역 */
+
+        #wrapper {
+            width: 100%;
+            background-color: #eee;
+            margin-top: 100px;
+        }
+
+        .mypage_top {
+            width: 1080px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .profile {
+            width: 240px;
+            height: 290px;
+            background: #fff;
+            text-align: center;
+            float: left;
+            box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.05)
+        }
+
+        .profile_pic {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            display: block;
+            box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.05);
+        }
+
+        .profile span {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .visual {
+            width: 800px;
+            height: 290px;
+            margin-left: 40px;
+            line-height: 290px;
+            text-align: center;
+            color: #fff;
+            float: left;
+            background: url(image/slider/people5.jpg);
+            background-size: 800px;
+            overflow: hidden;
+            font-size: 40px;
+            font-weight: 700;
+            box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.05)
+        }
+
+        .mypage_btm {
+            width: 1080px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-bottom: 100px;
+        }
+
+        .mypage_nav {
+            width: 240px;
+            background-color: #fff;
+            margin-right: 40px;
+            box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.05);
+            float: left;
+        }
+
+        .mypage_nav li a {
+            display: block;
+            width: 240px;
+            height: 40px;
+            line-height: 38px;
+            text-align: center;
+            border: 1px solid #eee;
+            box-sizing: border-box;
+        }
+
+
+        .mypage_nav .now {
+            background-color: #00361E;
+            border: 1px solid #00361E;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        /* 주문내역 조회*/
+        .content{
+            width: 800px;
+            background-color: #fff;
+            box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.05);
+            float: right;
+        }
+
+        .month_area {
+            font-weight: 300;
+            margin: 20px 0 0 20px;
+            overflow: hidden;
+        }
+
+        .month_area li a {
+            display: block;
+            width: 80px;
+            height: 24px;
+            font-size: 12px;
+            line-height: 24px;
+            text-align: center;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .month_area li:nth-of-type(1) a {
+            border: 0;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+
+        .month_area .on {
+            border: 0;
+            background-color: #00361E;
+            color: #fff;
+            font-weight: bolder;
+        }
+        
+        .order_list {
+           text-align: center;
+            margin: 20px auto;
+        }
+        .order_list thead tr {
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+            font-size: 14px;
+            margin: 20px 0 0 20px;
+        }
+
+        .order_list thead th {
+            line-height: 48px;
+            height: 50px;
+            width: 120px;
+        }
+
+        .order_list thead th:nth-of-type(3) {
+            width: 140px;
+        }
+
+        .order_list thead th:nth-of-type(6) {
+            width: 140px;
+        }
+
+        .order_list tbody tr {
+            width: 760px;
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+            font-size: 14px;
+            font-weight: 300;
+            margin-left: 20px
+        }
+
+        .order_list tbody td {
+            line-height: 48px;
+            height: 50px;
+            width: 120px;
+        }
+
+        .order_list tbody td:nth-of-type(3) {
+            width: 140px;
+        }
+
+        .order_list tbody td:nth-of-type(6) {
+            width: 140px;
+        }
+
+        .paginate {
+            overflow: hidden;
+            margin: 20px auto;
+            width: 120px;
+        }
+
+        .paginate a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            float: left;
+            line-height: 38px;
+            text-align: center;
+        }
+
+
+
+        /*1:1문의*/
+        .ask {
+            width: 800px;
+            height: 400px;
+            background-color: #fff;
+
+
+            position: absolute;
+            left: 0px;
+            top: 0;
+            z-index: 1;
+            display: none;
+            box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.05)
+        }
+
+
+        .ask_time {
+            width: 780px;
+            height: 60px;
+            line-height: 20px;
+
+            font-size: 14px;
+            font-weight: 300;
+            margin: 20px 0 20px 20px
+        }
+
+        .line {
+            width: 800px;
+            height: 4px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+
+        }
+
+        .ask_table {
+            width: 760px;
+            height: 50px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+            margin: 20px 0 0 20px;
+            font-size: 14px;
+            font-weight: 500;
+
+        }
+
+        .ask_table>div {
+            text-align: center;
+            line-height: 50px;
+            height: 50px;
+            float: left;
+            width: 120px;
+        }
+
+        .ask_table>div:nth-of-type(2) {
+            width: 280px;
+        }
+
+        .ask_table2 {
+            clear: both;
+            width: 760px;
+            height: 50px;
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+            margin-left: 20px;
+
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .ask_table2>div {
+            text-align: center;
+            line-height: 50px;
+            height: 50px;
+            float: left;
+            width: 120px;
+        }
+
+        .ask_table2>div:nth-of-type(2) {
+            width: 280px;
+        }
+
+        .ask_btn {
+            clear: both;
+            width: 120px;
+            height: 24px;
+            background-color: #00361E;
+            line-height: 24px;
+            text-align: center;
+            margin: 20px 0 0 660px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        .ask_arrow {
+            width: 120px;
+            height: 40px;
+            margin: 20px auto;
+        }
+
+        .ask_arrow>div {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            float: left;
+            line-height: 38px;
+            text-align: center;
+        }
+
+        /*개인정보 수정*/
+        .mychk {
+            width: 800px;
+            height: 370px;
+            background-color: #fff;
+            float: left;
+            text-align: center;
+
+            position: absolute;
+            left: 0px;
+            top: 0;
+
+            z-index: 1;
+            display: none;
+            box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.05)
+        }
+
+        .mychk>div:nth-of-type(1) {
+            margin-top: 80px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .mychk>div:nth-of-type(2) {
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .pass {
+            margin: 40px 240px;
+            width: 320px;
+            font-size: 16px;
+            font-weight: 500;
+            height: 30px;
+        }
+
+        .pass>div {
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            width: 80px;
+            height: 30px;
+        }
+
+        .pass>input {
+            float: left;
+            width: 180px;
+            height: 30px;
+            border: 1px solid #cecece;
+            box-sizing: border-box;
+
+        }
+
+        .pass>div:nth-of-type(2) {
+            width: 50px;
+            background-color: #00361E;
+            color: #fff;
+            margin-left: 10px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+
+        .box {
+            clear: both;
+            width: 800px;
+            background-color: #eee;
+
+            box-sizing: border-box;
+            height: 80px;
+            padding: 20px 0;
+            line-height: 20px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 300;
+
+        }
+
+    </style>
+    <script>
+        $(".notice_menu > p").on("click", function() {
+            var no = $(".notice_menu > p").index($(this))
+
+            var wra = $("#my_wrapper > div").eq(no).css('height')
+            var hh = parseInt(wra) + 490
+
+
+            $(".notice_menu > p").removeClass()
+            $(this).addClass("nowNav")
+
+            $("#my_wrapper>div").removeClass('nowdiv')
+            $("#my_wrapper > div").eq(no).addClass(' nowdiv ')
+
+            $("#wrapper").stop().animate({
+                height: hh
+            }, 500)
+
+        })
+
+
+        $(".notice_menu > p").eq(0).addClass("nowNav")
+        $("#my_wrapper > div").eq(0).addClass(' nowdiv ')
+
+    </script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">글로벌네비게이션바로가기</a>
+    </div>
+    <div id="wrapper">
+        <!--헤더 삽입-->
+        <? include "common/header.html" ?>
+
+        <article class="mypage_top" id="content">
+            <h2 class="hidden">my page</h2>
+            
+            <!--회원정보-->
+            <section class="profile">
+                <h3 class="hidden">회원정보</h3>
+                <img src="image/my/1.png" alt="">
+                <span>안녕하세요 qazsw님</span>
+            </section>
+            
+            <!--배너-->
+            <div class="visual">
+                MY PAGE
+            </div>
+        </article>
+        
+        
+        <article class="mypage_btm">
+            <!--카테고리 메뉴-->
+            <h3 class="hidden">카테고리 메뉴</h3>
+            <ul class="mypage_nav">
+                <li><a class="now" href="#" class="btnLoad1">주문 내역</a></li>
+                <li><a href="#" class="btnLoad2">1:1 문의</a></li>
+                <li><a href="#" class="btnLoad3">내 정보 수정</a></li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+            <a href=""></a>
+            <!--카테고리 본문-->
+            <section class="content">
+                <h3 class="hidden">주문내역 본문</h3>
+                    <ul class="month_area">
+                        <li><a href="#">조회기간</a></li>
+                        <li><a href="#">15일</a></li>
+                        <li><a href="#">1개월</a></li>
+                        <li><a href="#" class="on">3개월</a></li>
+                        <li><a href="#">6개월</a></li>
+                        <li><a href="#">6개월 이전</a></li>
+                    </ul>
+                <table class="order_list">
+                    <caption class="hidden">주문목록</caption>
+                    <thead>
+                        <tr>
+                            <th>주문번호</th>
+                            <th>주문일자</th>
+                            <th>주문상품</th>
+                            <th>총 구매금액</th>
+                            <th>주문상태</th>
+                            <th>교환/취소 반품</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1919191919</td>
+                            <td>2019-11-25</td>
+                            <td>[과월호] 비건 10월호</td>
+                            <td>14,000원</td>
+                            <td>배송</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1919191919</td>
+                            <td>2019-11-25</td>
+                            <td>[과월호] 비건 10월호</td>
+                            <td>14,000원</td>
+                            <td>배송</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="paginate">
+                    <a></a>
+                    <a>1</a>
+                    <a></a>
+                </div>
+
+            </section>
+        </article>
+
+        <!--푸터 삽입-->
+        <? include "common/footer.html" ?>
+    </div>
+
+    <!--주문내역 수정-->
+
+
+
+    <!--1:1문의 시작-->
+    <!--
+            <div class="ask">
+                <div class="ask_time">
+                    한번 등록한 상담 내용은 수정 불가합니다. 수정을 원하시는 경우, 삭제 후 재등록 하셔야 합니다.<br>
+                    1:1상담은 24시간 신청가능하며 접수된 내용은 빠른시간내에 답변을 드리도록 하겠습니다.<br>
+                    문의하신 1:1상담은 고객님의 메일로도 확인하실 수 있습니다.
+                </div>
+                        
+                <div class="line"></div>
+                <div class="ask_table">
+                    <div>구분</div>
+                    <div>상담명</div>
+                    <div>등록일</div>
+                    <div>상태</div>
+                    <div>관리</div>
+                </div>
+                <div class="ask_table2">
+                    <div>주문/입금문의</div>
+                    <div>무통장 입금 관련 문의입니다.</div>
+                    <div>2019-11-23</div>
+                    <div>답변완료</div>
+                    <div></div>
+                </div>
+                <div class="ask_table2">
+                    <div>취소문의</div>
+                    <div>배송 준비중인데 취소하고싶어요</div>
+                    <div>2019-12-17</div>
+                    <div>미답변</div>
+                    <div></div>
+                </div>
+                <div class="ask_btn">
+                    1:1 상담 신청하기
+                </div>
+                    
+                <div class="arrow">
+                    <div></div>
+                    <div>1</div>
+                    <div></div>
+                </div>
+            </div>
+-->
+    <!--1:1문의 끝-->
+
+    <!--개인정보 수정-->
+    <!--
+            <div class="mychk">
+                <div>비밀번호 확인</div>
+                <div>
+                   고객님의 정보를 안전하게 보호하기 위해 비밀번호를 다시 한 번 확인합니다.
+                </div>
+                <div class="pass">
+                    <div>비밀번호</div> 
+                    <input type="text">
+                    <div>확인</div>
+                </div>
+                <div class="box">
+                    회원님의 개인 정보를 신중히 취급하며, 회원님의 동의 없이는<br>
+                    기재하신 회원 정보를 공개 및 변경하지 않습니다.
+                </div>      
+            </div>
+-->
+    <!--개인정보수정-->
+
+</body>
+
+</html>

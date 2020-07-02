@@ -1,0 +1,18 @@
+
+.pot > img {
+    margin: 50px 0;
+}
+
+.pot li.box3 dl {
+    color: #333;
+    text-shadow: none;
+}
+
+.pot li.box3 dl dt:after {
+    border-bottom: 2px solid #333;
+}
+
+.pot li.box3 a.more {
+    color: #333;
+    border: 2px solid #333;
+}
