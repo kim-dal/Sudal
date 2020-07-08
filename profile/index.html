@@ -4,44 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
-    <link rel="stylesheet" type="text/css" href="css/examples.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/examples.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
     <script src="js/typer.js"></script>
-    <script>
-        $(document).ready(function() {
-            var el = document.querySelector('.main-text')
-            var options = {
-                text: ' 세 상 어 디 에 도 없 는 \n 준 비 된 ─ \n 주 도 적 인 ─ 퍼 블 리 셔 \n 김 수 연 입 니 다',
-                textSpeed: 95,
-                blinkSpeed: 0.06
-            }
-            var instance = new tinytyper(el, options);
-        })
-    </script>
-
+    <script src="js/main.js"></script>
+    
 </head>
 
 <body>
     <div id="wrap">
+        <h1 class="hidden">김수연의 포트폴리오</h1>
         <div class="menu">
+            <h2 class="hidden">네비게이션</h2>
             <ul id="menu">
-                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Hello</a></li>
-                <li data-menuanchor="secondPage"><a href="#secondPage">PROFILE</a></li>
-                <li data-menuanchor="3rdPage"><a href="#3rdPage">PC WEB</a></li>
-                <li data-menuanchor="4rdPage"><a href="#4rdPage">PC WEB</a></li>
-                <li data-menuanchor="5rdPage"><a href="#5rdPage">MOBILE WEB</a></li>
-                <li data-menuanchor="6rdPage"><a href="#6rdPage">RESPONSIVE WEB</a></li>
-                <li data-menuanchor="7rdPage"><a href="#7rdPage">WordPress WEB</a></li>
+                <li data-menuanchor="firstPage" class="active"><h3><a href="#firstPage">Hello</a></h3></li>
+                <li data-menuanchor="secondPage"><h3><a href="#secondPage">PROFILE</a></h3></li>
+                <li data-menuanchor="3rdPage"><h3><a href="#3rdPage">PC WEB</a></h3></li>
+                <li data-menuanchor="4rdPage"><h3><a href="#4rdPage">PC WEB</a></h3></li>
+                <li data-menuanchor="5rdPage"><h3><a href="#5rdPage">MOBILE WEB</a></h3></li>
+                <li data-menuanchor="6rdPage"><h3><a href="#6rdPage">RESPONSIVE WEB</a></h3></li>
+                <li data-menuanchor="7rdPage"><h3><a href="#7rdPage">WordPress WEB</a></h3></li>
             </ul>
         </div>
 
-        <div id="fullpage">
+        <article id="fullpage">
+            <h2 class="hidden">본문 영역</h2>
             <div class="section" id="section0">
                 <div class="main-text"></div>
             </div>
-            <div class="section" id="section1">
+            <section class="section" id="section1">
+                <h3 class="hidden">김수연 프로필</h3>
                 <div class="intro">
                     <p>김수연<span> WEB PUBLISHER</span></p>
                     <div class="intro_t">
@@ -65,9 +61,10 @@
                         <a href="https://github.com/kim-dal/Sudal" class="btn" target="_blank">GIT HUB 바로가기</a>
                     </div>
                 </div>
-            </div>
-            <div class="section" id="section2">
-               <div class="wrap">
+            </section>
+            <section class="section" id="section2">
+                <h3 class="hidden">PC 사이트 - 발뮤다</h3>
+                <div class="wrap">
                     <div class="img">
                         <img src="image/pc2.gif" alt="">
                         <img src="image/pc.png" alt="">
@@ -91,11 +88,16 @@
                                 - W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 크로스브라우징 완료
                             </dd>
                         </dl>
+                        <dl>
+                            <dt>제작페이지 수</dt>
+                            <dd>12 Pages</dd>
+                        </dl>
                         <a href="http://qazsw1.cafe24.com/pc2/index.html" target="_blank" title="pc 사이트 새창에 열림">View Site</a>
                     </div>
                 </div>
-            </div>
-            <div class="section" id="section2">
+            </section>
+            <section class="section" id="section6">
+                <h3 class="hidden">PC 사이트 - 비건</h3>
                 <div class="wrap">
                     <div class="img">
                         <img src="image/pc.gif" alt="">
@@ -105,7 +107,7 @@
                     <div class="text">
                         <span class="text_t">PC WEB</span>
                         <dl>
-                            <dt>비건 메거진 웹사이트 제작</dt>
+                            <dt>비건 매거진 웹사이트 제작</dt>
                             <dd>기존 웹사이트의 산만한 Interface, Image Alt누락으로인한 접근성 부재를 문제점으로 삼아 트렌드에 맞는 UI와 웹 표준을 지향하는 마크업으로 접근성을 고려하여 새롭게 구축하였습니다.</dd>
                         </dl>
                         <dl>
@@ -120,11 +122,16 @@
                                 - W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 크로스브라우징 완료
                             </dd>
                         </dl>
+                        <dl>
+                            <dt>제작페이지 수</dt>
+                            <dd>14 Pages</dd>
+                        </dl>
                         <a href="http://qazsw1.cafe24.com/pc/index.html" target="_blank" title="pc 사이트 새창에 열림">View Site</a>
                     </div>
                 </div>
-            </div>
-            <div class="section" id="section3">
+            </section>
+            <section class="section" id="section3">
+                <h3 class="hidden">모바일 사이트 - 발뮤다</h3>
                 <div class="wrap">
                     <div class="img">
                         <img src="image/3.gif" alt="">
@@ -149,13 +156,17 @@
                                 - W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 대표 기기별 테스트 완료
                             </dd>
                         </dl>
-                        <a 
-                        a href="#none" onclick="window.open('http://qazsw1.cafe24.com/mobile/index.html'
+                        <dl>
+                            <dt>제작페이지 수</dt>
+                            <dd>10 Pages</dd>
+                        </dl>
+                        <a a href="#none" onclick="window.open('http://qazsw1.cafe24.com/mobile/index.html'
                         ,'발뮤다 모바일','width=480,height=640'); return false" target="_blank" title="모바일 사이트 새창에 열림">View Site</a>
                     </div>
                 </div>
-            </div>
-            <div class="section" id="section4">
+            </section>
+            <section class="section" id="section4">
+                <h3 class="hidden">반응형 사이트 - Dolby</h3>
                 <div class="wrap">
                     <div class="img">
                         <img src="image/4.gif" alt="">
@@ -181,11 +192,17 @@
                                 - W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 대표 기기별 테스트 완료
                             </dd>
                         </dl>
+                        <dl>
+                            <dt>제작페이지 수</dt>
+                            <dd>5 Pages</dd>
+                        </dl>
                         <a href="http://qazsw1.cafe24.com/media/index.html" target="_blank" title="반응형 사이트 새창에 열림">View Site</a>
+                        
                     </div>
                 </div>
-            </div>
-            <div class="section" id="section5">
+            </section>
+            <section class="section" id="section5">
+                <h3 class="hidden">워드프레스 사이트 - 쿠스미티</h3>
                 <div class="wrap">
                     <div class="img">
                         <img src="image/5.gif" alt="">
@@ -211,23 +228,18 @@
                                 - Wordpress 플러그인을 사용한 레이아웃 커스터마이징
                             </dd>
                         </dl>
+                        <dl>
+                            <dt>제작페이지 수</dt>
+                            <dd>4 Pages</dd>
+                        </dl>
                         <a href="http://qazsw1.dothome.co.kr/wp/" target="_blank" title="워드프레스 사이트 새창에 열림">View Site</a>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
     </div>
 
-    <script type="text/javascript" src="js/fullpage.js"></script>
-    <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage', '7rdPage'],
-            menu: '#menu',
-            loopTop: true,
-            loopBottom: true
-        });
 
-    </script>
 </body>
 
 </html>
