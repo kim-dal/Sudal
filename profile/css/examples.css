@@ -50,6 +50,13 @@ a{
 }
 
 /* Custom CSS */
+
+.fadeinleft {
+    opacity: 0;
+    margin-left: -300px;
+    max-width: 100%;
+}
+
 body{
 	font-family: 'Nanum Gothic', sans-serif;
 	color: #333;

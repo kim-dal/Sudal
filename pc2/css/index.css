@@ -1,3 +1,11 @@
+.hideme {
+            opacity: 0;
+        }
+.fadeinleft {
+            opacity: 0;
+            margin-left: -300px;
+            max-width: 100%;
+        }
 @keyframes scrollsign {
     0% {
         margin-left: 0px;
@@ -31,77 +39,84 @@
 }
 
 .visual {
+    position: relative;
     width: 100%;
     height: 600px;
-    position: relative;
     overflow: hidden;
 }
 
-.visual button {
+.bannerwrap .banner {
     position: absolute;
-    top: 50%;
-    margin-top: -25px;
-    font-size: 50px;
-    background: none;
-    border: none;
-    outline: none;
+    left: 0;
+    top: 0;
+    transition: all 0.5s
 }
 
-.visual button#next {
-    right: 5%;
-}
-
-.visual button#prev {
-    left: 5%;
-}
-
-.visual ul {
-    width: 200%;
-    overflow: hidden;
+.visual .btn {
     position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -46px
 }
 
-.visual li {
+.visual .btn span {
+    display: block;
     float: left;
-    width: 50%;
-    position: relative;
+    width: 24px;
+    height: 24px;
+    background: rgba(51, 51, 51, .5);
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 12px;
+    color: #fff
 }
 
-.visual li a {
-    display: block
+.visual .btn span:nth-of-type(3) {
+    margin-right: 0
 }
 
-.visual ul li p{
+.btn span.now {
+    background: rgba(51, 51, 51, 1);
+}
+
+.visual ul li p {
     font-size: 40px;
     position: absolute;
     font-size: 36px;
-    font-weight: 700;  
+    font-weight: 700;
 }
-.visual ul li span{
+
+.visual ul li span {
     display: block;
     font-size: 24px;
     font-weight: 300;
 }
-.visual ul a.v1 p{   
+
+.visual ul a.v1 p {
     top: 43%;
-    left: 15%;
+    left: 20%;
 }
-.visual ul a.v2 p{   
-    top: 43%;
-    left: 42%;
-    text-align: center;
-}
-.visual ul a.v3 p{   
+
+.visual ul a.v2 p {
     top: 43%;
     right: 15%;
     text-align: right;
 }
+
+.visual ul a.v3 p {
+    top: 43%;
+    left: 25%;
+    text-align: rigth;
+}
+
 .story {
     width: 1160px;
     padding: 42px 40px 20px;
     overflow: hidden;
     margin: 100px auto;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15)
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .3);
 }
 
 .story_r {
@@ -110,7 +125,7 @@
     margin-right: 20px;
 }
 
-.story_r>p {
+.story_r > p {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 100;
     font-size: 30px;
@@ -128,9 +143,11 @@
     font-weight: normal;
     color: #333;
 }
-.abtn{
+
+.abtn {
     cursor: pointer;
 }
+
 .story_r .move_btn > .action {
     background-position: 0 -20px
 }
@@ -157,7 +174,6 @@
     float: left;
     width: 830px;
     overflow: hidden;
-
 }
 
 .story_wrap {
@@ -185,7 +201,8 @@
 .story_l ul.l li {
     margin-bottom: 22px
 }
-.story_l ul p{
+
+.story_l ul p {
     position: absolute;
     right: 15px;
     top: 0;
@@ -195,15 +212,18 @@
     color: #fff;
     letter-spacing: 1.6px;
 }
-.story_l ul.s p{
+
+.story_l ul.s p {
     letter-spacing: 0;
 }
-.story_l ul span{
+
+.story_l ul span {
     display: block;
     font-size: 14px;
     font-weight: 100;
     letter-spacing: 0px;
 }
+
 .story li:nth-of-type(3n) {
     margin-right: 0;
 }
@@ -492,29 +512,34 @@
 }
 
 
-.popup,.popup1{
+.popup,
+.popup1 {
     background: #fff;
     border: 4px solid #cf0000;
     font-size: 16px;
-    
+
 }
+
 .popup {
     border-bottom: none;
-    border-radius: 20px 20px 0 0 ;
-    padding:  40px ;
+    border-radius: 20px 20px 0 0;
+    padding: 40px;
     padding-bottom: 0;
     text-align: center;
 }
+
 .popup i {
     font-size: 40px;
 }
-.popup span{
+
+.popup span {
     display: block;
     font-weight: bold;
     margin-top: 20px;
 }
-.popup1{
+
+.popup1 {
     border-radius: 0 0 20px 20px;
-    padding:  20px 40px 40px ;
+    padding: 20px 40px 40px;
     border-top: none
 }

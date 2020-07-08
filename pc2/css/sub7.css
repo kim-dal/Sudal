@@ -41,7 +41,7 @@
 }
 .support li a {
     display: block;
-    background: #efefef;
+    background: #e2e2e2;
     border-radius: 0 10px 10px 0;
     line-height: 1.5em;
     text-align: left;
@@ -75,7 +75,7 @@
 
 .notice{
     padding: 40px 0 ;
-    background: #202020;
+    background:#444;
     color: #fff;
     border-bottom: 1px solid #444;
 }
