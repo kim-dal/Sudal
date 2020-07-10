@@ -28,4 +28,4 @@ img{border: 0; vertical-align: top;}
 
 .hidden{display: block;position: absolute;left: -1000%;width: 1px;height: 1px;overflow: hidden;color: #fff;}
 
-body{font-family: "돋움", Dotum,"굴림",Gulim, sans-serif; font-size: 14px; color: #333;}
+body{font-family: 'Nanum Gothic', sans-serif; font-size: 14px; color: #333;}
