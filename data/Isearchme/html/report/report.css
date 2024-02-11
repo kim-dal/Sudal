@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+
+.hidden { position:absolute; display:inline-block; left:0; top:-1000px; font-size:0; padding:0; background:none; text-indent:-99999px; z-index:99999; }
+
+body { font-size:16px; font-family:'Spoqa Han Sans Neo', 'sans-serif'; color:#121b42; font-weight:300;  word-break:keep-all; }
+
+
+#header { padding:40px 0; background:#00b0ad; color:#fff; }
+#header .inner { display:flex; justify-content:space-between; align-items:stretch; width:1110px; margin:0 auto; }
+#header .inner > div { display:flex; flex-direction:column; justify-content:space-between; }
+#header .title { margin-bottom:30px; font-size:1.5em; font-weight:400; }
+#header .title span { font-weight:bold; }
+#header .location { font-size:14px; line-height:30px; } 
+#header .location i { margin:0 5px; }
+#header .location .navi { font-weight:400; }
+#header a { display:flex; justify-content:flex-end; align-items:center; color:#fff; font-size:14px; }
+#header .closeBtn i { display:block; width:31px; height:31px; margin-left:15px; background:url('../../images/sub/closeBtn.png')no-repeat center; text-indent:-9999px; }
+#header .listBtn i { display:block; width:31px; height:31px; margin-left:15px; background:url('../../images/sub/listBtn.png')no-repeat center; text-indent:-9999px; }
+
+#bodyArea { width:1110px; margin:0 auto; }
+
+.copy { width:1110px; margin:50px auto 100px; text-align:center; color:rgba(18, 27, 66, 0.6); font-size:14px; }

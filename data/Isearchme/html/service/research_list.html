@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>iSearchme</title>
+    <meta name="description" content="iSearchme">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="iSearchme">
+	<link rel="icon" href="/admission/images/favicon.ico">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="iSearchme"> 
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content=""> 
+	<meta property="og:description" content="iSearchme" >
+
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/sub.css">
+	<link rel="stylesheet" href="../../css/respon.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/sub.js"></script>
+</head>
+<body>
+    <!-- BODY -->
+	<div id="bodyArea">
+		<div class="contWrap">
+			<div class="subMain">
+				<h2>서비스 소개</h2>	
+				<div class="subTabWrap">
+					<ul class="subTab">
+						<li><a href="member.html"><span>팀원 소개</span></a></li>
+						<li><a href="technology.html"><span>㈜아이크로진 기술력</span></a></li>
+						<li><a href="research_list.html" class="on"><span>선행연구 소개</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="subTitle">선행연구 소개</p>
+			<div class="boardSearch">
+				<div class="totalNum">총 <span>5건</span>의 게시물이 있습니다.</div>
+				<form name="frmData" method="post" class="search">
+					<fieldset>
+						<legend>게시물 검색</legend>
+						<select name="s_code" title="검색조건">
+							<option selected>제목</option>
+							<option >내용</option>
+						</select>
+						<input type="text" title="검색어" name="s_data" value="" placeholder="검색어를 입력하세요.">
+						<a href="#" class="btn-search">검색</a>
+					</fieldset>
+				</form>
+			</div>
+			<table class="bList" summary="">
+				<caption>선행연구 소개 게시글</caption>
+				<colgroup>
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<td><span class="top">TOP</span></td>
+						<td>
+							<a href="research_view.html">
+								<p class="subject">아이서치미에서 알려드립니다. 본 게시물은 TOP 설정 공지사항 입니다.</p>
+								<div class="reg"><span class="bar">작성일 : 2022-07-01</span><span>조회수 : 2</span>
+								<span class="file"><img src="../../images/sub/icon_file.png" alt="첨부파일 아이콘"></span></div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td><span>10</span></td>
+						<td>
+							<a href="research_view.html">
+								<p class="subject">아이서치미에서 알려드립니다. 본 게시물은 TOP 설정 공지사항 입니다<span class="new">N</span></p>
+								<div class="reg"><span class="bar">작성일 : 2022-07-01</span><span>조회수 : 2</span>
+								<span class="file"><img src="../../images/sub/icon_file.png" alt="첨부파일 아이콘"></span></div>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="pageArea">
+				<div class="paging">
+					<a href="#" onclick="return false;"><span class="btn"><img src="../../images/sub/pagePrev.png" alt="이전 페이지"></span></a>
+					<a href="#" onclick="" class="num on">1</a>
+					<a href="#" onclick="" class="num">2</a>
+					<a href="#" onclick="return false;"><span class="btn"><img src="../../images/sub/pageNext.png" alt="다음 페이지"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- //BODY -->
+</body>
+</html>

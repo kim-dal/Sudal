@@ -1,0 +1,1198 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>iSearchme</title>
+    <meta name="description" content="iSearchme">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="iSearchme">
+	<link rel="icon" href="/admission/images/favicon.ico">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="iSearchme"> 
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content=""> 
+	<meta property="og:description" content="iSearchme" >
+
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/slick.css">
+	<link rel="stylesheet" href="../../css/slick-theme.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="../../js/slick.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/main.js"></script>
+</head>
+<body>
+	<!-- pop1 -->
+	<div class="popup pop1">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>아이서치미에서 알려드립니다!</p>
+				<span class="date">2022-05-20</span>
+			</div>
+			<div class="popContent">
+				<p>서비스 점검 및 보안 업데이트 내용으로 2022년 5월 20일 밤 12시부터 약 2시간 동안 유전자 데이터 업로드 서비스가 일시 중단 됩니다.<br><br>
+				더 좋은 서비스를 위하여 노력하겠습니다.<br>감사합니다.</p>
+			</div>
+			<div class="popEtc">
+				<a href="">공지사항 더보기<i>더보기</i></a>
+				<div class="checkForm">
+					<input type="checkbox" name="NotToday" id="NotToday">
+					<label for="NotToday" class="checkbox">오늘 하루 열지 않기</label>
+				</div>
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //pop1 -->
+
+    <!-- HEADER -->
+	<div id="header">
+		<h1><a href="">로고</a></h1>
+		<h2 class="hidden">헤더 콘텐츠</h2>
+		<ul class="gnb">
+			<li><a href="" class="depth1">서비스 소개</a>
+				<ul class="depth2">
+					<li><a href="../service/member.html">팀원 소개</a></li>
+					<li><a href="../service/technology.html">㈜아이크로진 기술력</a></li>
+					<li><a href="../service/research_list.html">선행연구 소개</a></li>
+				</ul>
+			</li>
+			<li><a href="" class="depth1">유전자검사</a>
+				<ul class="depth2">
+					<li><a href="../test/guide.html">키트 활성화 방법 안내</a></li>
+					<li><a href="../test/activate.html">키트 활성화</a></li>
+					<li><a href="">유전자 검사 리포트</a></li>
+				</ul>
+			</li>
+			<li><a href="" class="depth1">파일업로드</a>
+				<ul class="depth2">
+					<li><a href="../file/guide.html">바코드 등록 방법 안내 </a></li>
+					<li><a href="../file/upload.html">파일 업로드</a></li>
+					<li><a href="">유전자 분석 리포트</a></li>
+				</ul>
+			</li>
+			<li><a href="" class="depth1">게시판</a>
+				<ul class="depth2">
+					<li><a href="../board/faq.html">자주 묻는 질문</a></li>
+					<li><a href="../board/notice_list.html">공지사항</a></li>
+					<li><a href="../board/pr_list.html">홍보자료</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="control">
+			<!-- 클래스 on 추가시 모바일에서 빨간 도트로 알림 보임-->
+			<div class="name on">
+				<a href="javascript:void(0);" class="nameTitle popupOpen" aria-controls="messagePop"><span>홍길동</span>님</a><span class="num">24</span>
+				<!-- messagePop -->
+				<!-- 클래스 noList 추가시 배경이 '메세지가 없습니다'로 변경됨-->
+				<div class="messagePop noList">
+					<div class="Title">
+						<p>홍길동님, <span>24건</span> 의 메시지가 있습니다.</p>
+						<a href="javascript:void(0);" class="popClose">닫기</a>
+					</div>
+					<div class="List">
+						<ul>
+							<li class="on">
+								<div>
+									<p>리포트가 생성되었습니다. 여기를 클릭하세요</p>
+									<span class="date">2022-05-20</span>
+								</div>
+								<a href="javascript:void(0);" class="listDelete">삭제</a>
+							</li>
+							<li>
+								<div>
+									<p>게놈파일이 등록되었습니다. 1일 이내 </p>
+									<span class="date">2022-05-20</span>
+								</div>
+								<a href="javascript:void(0);" class="listDelete">삭제</a>
+							</li>
+							<li>
+								<div>
+									<p>회원 인증이 완료되었습니다.</p>
+									<span class="date">2022-05-20</span>
+								</div>
+								<a href="javascript:void(0);" class="listDelete">삭제</a>
+							</li>
+							<li>
+								<div>
+									<p>회원 인증이 완료되었습니다.</p>
+									<span class="date">2022-05-20</span>
+								</div>
+								<a href="javascript:void(0);" class="listDelete">삭제</a>
+							</li>
+							<li>
+								<div>
+									<p>게놈파일이 등록되었습니다. 1일 이내 </p>
+									<span class="date">2022-05-20</span>
+								</div>
+								<a href="javascript:void(0);" class="listDelete">삭제</a>
+							</li>
+							<li>
+								<div>
+									<p>회원 인증이 완료되었습니다.</p>
+									<span class="date">2022-05-20</span>
+								</div>
+								<a href="javascript:void(0);" class="listDelete">삭제</a>
+							</li>
+							<li>
+								<div>
+									<p>회원 인증이 완료되었습니다.</p>
+									<span class="date">2022-05-20</span>
+								</div>
+								<a href="javascript:void(0);" class="listDelete">삭제</a>
+							</li>
+							<li>
+								<div>
+									<p>게놈파일이 등록되었습니다. 1일 이내 </p>
+									<span class="date">2022-05-20</span>
+								</div>
+								<a href="javascript:void(0);" class="listDelete">삭제</a>
+							</li>
+							<li>
+								<div>
+									<p>회원 인증이 완료되었습니다.</p>
+									<span class="date">2022-05-20</span>
+								</div>
+								<a href="javascript:void(0);" class="listDelete">삭제</a>
+							</li>
+							<li>
+								<div>
+									<p>회원 인증이 완료되었습니다.</p>
+									<span class="date">2022-05-20</span>
+								</div>
+								<a href="javascript:void(0);" class="listDelete">삭제</a>
+							</li>
+							<li>
+								<div>
+									<p>회원 인증이 완료되었습니다.</p>
+									<span class="date">2022-05-20</span>
+								</div>
+								<a href="javascript:void(0);" class="listDelete">삭제</a>
+							</li>
+							<li>
+								<div>
+									<p>회원 인증이 완료되었습니다.</p>
+									<span class="date">2022-05-20</span>
+								</div>
+								<a href="javascript:void(0);" class="listDelete">삭제</a>
+							</li>
+						</ul>
+					</div>
+					<div class="Btn">
+						<a href="javascript:void(0);" class="listAllDelete"><span>전체 삭제</span></a>
+						<a href="javascript:void(0);" class="listCheckDelete"><span>읽은 알림 삭제</span></a>
+					</div>
+				</div>
+				<!-- //messagePop -->
+			</div>
+			<a href="" class="state">로그아웃</a>
+			<dl class="dashboard">
+				<dt>대쉬보드<i class="arrow wh"></i></dt>
+				<dd>
+					<ul>
+						<li><a href="../dashboard/dnaTest.html">유전자검사</a></li>
+						<li><a href="../dashboard/upload.html">파일업로드</a></li>
+						<li><a href="../dashboard/mypage.html">회원정보</a></li>
+					</ul>
+				</dd>
+			</dl>
+			<div class="lang">
+				<p>KO<i class="arrow">화살표</i></p>
+				<ul>
+					<li><a href="" class="pop">KO</a></li>
+					<li><a href="" class="pop">EN</a></li>
+				</ul>
+			</div>
+			<a href="javascript:void(0)" class="mGnbOpen">모바일 메뉴 열기</a>
+		</div>		
+		<div class="mGnbWrap">	
+			<div class="top">
+				<div class="logo">로고</div>
+				<a href="javascript:void(0)" class="close">닫기</a>
+			</div>
+			<div class="wrap">
+				<p class="name"><strong>홍길동</strong>님 안녕하세요.</p>
+				<div class="control">
+					<a href="" class="state">로그아웃</a>
+					<div class="lang">
+						<p>KO<i class="arrow">화살표</i></p>
+						<ul>
+							<li><a href="" class="pop">KO</a></li>
+							<li><a href="" class="pop">EN</a></li>
+						</ul>
+					</div>
+					<dl class="dashboard">
+						<dt>대쉬보드<i class="arrow wh"></i></dt>
+						<dd>
+							<ul>
+								<li><a href="../dashboard/dnaTest.html">유전자검사</a></li>
+								<li><a href="../dashboard/upload.html">파일업로드</a></li>
+								<li><a href="../dashboard/mypage.html">회원정보</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				<ul class="mGnb">
+					<li><a href="javascript:void(0);" class="depth1">서비스 소개</a>
+						<ul class="depth2">
+							<li><a href="../service/member.html">팀원 소개</a></li>
+							<li><a href="../service/technology.html">㈜아이크로진 기술력</a></li>
+							<li><a href="../service/research_list.html">선행연구 소개</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);" class="depth1">유전자검사</a>
+						<ul class="depth2">
+							<li><a href="../test/guide.html">키트 활성화 방법 안내</a></li>
+							<li><a href="../test/activate.html">키트 활성화</a></li>
+							<li><a href="">유전자 검사 리포트</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);" class="depth1">파일업로드</a>
+						<ul class="depth2">
+							<li><a href="../file/guide.html">바코드 등록 방법 안내 </a></li>
+							<li><a href="../file/upload.html">파일 업로드</a></li>
+							<li><a href="">유전자 분석 리포트</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);" class="depth1">게시판</a>
+						<ul class="depth2">
+							<li><a href="../board/faq.html">자주 묻는 질문</a></li>
+							<li><a href="../board/notice_list.html">공지사항</a></li>
+							<li><a href="../board/pr_list.html">홍보자료</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0);" class="depth1">이용안내</a>
+						<ul class="depth2">
+							<li><a href="../use/termsofConsent.html">유전자서비스 이용약관</a></li>
+							<li><a href="../use/privacyPolicy.html">개인정보처리방침</a></li>
+							<li><a href="../use/termsOfService.html">서비스 이용약관</a></li>
+							<li><a href="../use/sitemap.html">사이트맵</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</div>	
+	<div class="dim"></div>
+    <!-- //HEADER -->
+
+    <!-- BODY -->
+	<div id="bodyArea">
+		<h2 class="hidden">메인컨텐츠</h2>
+		<div class="mainWrap">
+			<div class="main no1 on" aria-selected="true">
+				<div class="videoWrap contWrap">
+					<div class="mainTitle">	
+						<h3>DTC 유전자 검사</h3>
+						<p>한국인 빅데이터 전문가들이 제공하는 세계 최고의 유전체 분석 기술</p>
+						<a href="javascript:void(0)" onclick="playYoutube(); return false;">영상 보기</a>
+					</div>
+					<div class="img">
+						<img src="../../images/main/videoWrap1_1.png" alt="">
+						<a href="javascript:void(0)" onclick="playYoutube(); return false;"><img src="../../images/main/videoWrap1_2.png" alt=""></a>
+					</div>
+				</div>
+				<div class="serviceWrap contWrap">
+					<div class="mainTitle">	
+						<h3>서비스 절차</h3>
+						<p>언제 어디서든 내가 원할 때, 웹/앱을 통해 제공되는 내 유전자 정보를 확인해보세요.</p>
+					</div>
+					<ul class="col col4">
+						<li>
+							<img src="../../images/main/serviceWrap1_1.png" alt="">
+							<span class="pop num">STEP 01</span>
+							<p>검사 의뢰</p>
+							<span>아이써치미 협력병원을 방문하여 유전자검사 신청</span>
+						</li>
+						<li>
+							<img src="../../images/main/serviceWrap1_2.png" alt="">
+							<span class="pop num">STEP 02</span>
+							<p>검체 채취</p>
+							<span>타액이나 혈액의 <br>DNA 채취</span>
+						</li>
+						<li>
+							<img src="../../images/main/serviceWrap1_3.png" alt="">
+							<span class="pop num">STEP 03</span>
+							<p>해독 및 분석</p>
+							<span>실험실 해독 후 <br>리포트 분석</span>
+						</li>
+						<li>
+							<img src="../../images/main/serviceWrap1_4.png" alt="">
+							<span class="pop num">STEP 04</span>
+							<p>결과지 전송</p>
+							<span>의료기관과의 협력방법에 따라 다양한 형태로(웹/앱/pdf/결과지) 리포트 전송</span>
+						</li>
+					</ul>	
+				</div>
+				<div class="useWrap">
+					<div class="contWrap">
+						<div class="mainTitle">	
+							<h3>키트 사용 방법</h3>
+							<p>자세한 방법은 키트에 동봉된 사용 가이드를 참고해주세요.</p>
+						</div>
+						<ul class="col col5">
+							<li>
+								<img src="../../images/main/useWrap1_1.png" alt="">
+								<span class="num pop">01</span>
+								<p>1시간 전 양치, 음료 등<br>사용 자제</p>
+							</li>
+							<li>
+								<img src="../../images/main/useWrap1_2.png" alt="">
+								<span class="num pop">02</span>
+								<p>볼 아래(침샘)<br>문지르기</p>
+							</li>
+							<li>
+								<img src="../../images/main/useWrap1_3.png" alt="">
+								<span class="num pop">03</span>
+								<p>시료 채취하기</p>
+							</li>
+							<li>
+								<img src="../../images/main/useWrap1_4.png" alt="">
+								<span class="num pop">04</span>
+								<p>보존액 섞어주기</p>
+							</li>
+							<li>
+								<img src="../../images/main/useWrap1_5.png" alt="">
+								<span class="num pop">05</span>
+								<p>키트 발송하기</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="faqWrap contWrap">
+					<div class="mainTitle">	
+						<h3>유전자 검사 서비스<br>자주 묻는 질문</h3>
+						<p>자주 문의되는 질문으로 빠르고 간편하게 해결하세요.</p>
+						<a href="../board/faq.html" class="pcView">FAQ 전체보기</a>
+					</div>
+					<dl>
+						<dt class="on"><strong>[유전자 검사]</strong> 유전자 검사는 건강검진처럼 주기적으로 해야 하나요? <i>아이콘</i></dt>
+						<dd>유전자검사는 1 년 2 년 마다 주기적으로 하는 건강검진과 달리 평생에 단 한 번만 검사를 통해 다양한 영역에서 활용가능 합니다. 사람의 유전정보는 태어나기 전부터 정해져 있으며, 변하지 않습니다.
+						아이크로진은 유전검사를 통하여 고객님의 맞춤형 헬스케어를 제공합니다.</dd>
+						<dt><strong>[유전자 검사]</strong> 현재 신체적인 문제가 특별히 없는데도 유전자 검사 서비스를 받을 필요가 있나요?<i>아이콘</i></dt>
+						<dd>답변</dd>
+						<dt><strong>[주문]</strong> 아이크로진 키트는 어떻게 구매하나요?<i>아이콘</i></dt>
+						<dd>답변</dd>
+						<dt><strong>[배송]</strong> 채취한 검체는 언제까지 발송해야 하나요?<i>아이콘</i></dt>
+						<dd>답변</dd>
+						<dt><strong>[기타]</strong> 아이크로진 검사를 통한 유전자 정보를 진단 및 의료 정보로 활용할 수 있나요?<i>아이콘</i></dt>
+						<dd>답변</dd>
+					</dl>	
+					<a href="../board/faq.html" class="moView">FAQ 전체보기</a>
+				</div>
+				<div class="reportWrap">
+					<div class="contWrap">
+						<div class="mainTitle">	
+							<h3>만성질환 리포트</h3>
+							<p>㈜아이크로진의 아이디닥터 프리미엄 리포트는 질병관리청 한국인 15만명의 역학 정보와 유전자형 정보를 바탕으로 유전적 위험도(위험,보통,좋음)별 실제 발생률을 계산하여 보다 정확한 정보를 제공합니다.</p>
+						</div>
+						<div class="imgWrap scrollNone">
+							<ul class="col col3">
+								<li>
+									<div class="titlebox">㈜아이크로진</div>	
+									<div class="textWrap">
+										<p class="title">계산방법</p>
+										<p class="des">검사자의 발생률 = 한국인 15만명 중 검사자와 동일한 연령, 유전자형을 가진 사람의 실제 발생률</p>
+										<div class="line"></div>
+										<p class="title">제2형 당뇨</p>
+										<div class="img">
+											<img src="../../images/main/reportWrap1_1.png" alt="">
+										</div>
+										<div class="line"></div>
+										<p class="title">유전형-발생률 연계 여부</p>
+										<p class="des">검사자와 동일한 유전자형과<br>
+										실제 발생률을 연계</p>	
+										<div class="line"></div>
+										<p class="title">유전적 위험도</p>
+										<p class="des">모든 유전적 위험도 별 발생률 제공</p>
+									</div>	
+								</li>
+								<li>
+									<div class="titlebox">A사</div>	
+									<div class="textWrap">
+										<p class="title">계산방법</p>
+										<p class="des">검사자의 유병률 = 통계자료기반 한국인 평균 유병률 x 검사자의 위험도<br><br></p>
+										<div class="line"></div>
+										<p class="title">제2형 당뇨</p>
+										<div class="img">
+											<img src="../../images/main/reportWrap1_2.png" alt="">
+										</div>
+										<div class="line"></div>
+										<p class="title">유전형-발생률 연계 여부</p>
+										<p class="des">검사자의 유전자형과 무관한<br>통계 평균값 반영</p>	
+										<div class="line"></div>
+										<p class="title">유전적 위험도</p>
+										<p class="des">검사자의 위험도만을 제공</p>
+									</div>	
+								</li>
+								<li>
+									<div class="titlebox">B사</div>	
+									<div class="textWrap">
+										<p class="title">계산방법</p>
+										<p class="des">검사자의 발병률 = 통계자료기반 한국인 평균 발병률 x 검사자의 위험도<br><br></p>
+										<div class="line"></div>
+										<p class="title">제2형 당뇨</p>
+										<div class="img">
+											<img src="../../images/main/reportWrap1_3.png" alt="">
+										</div>
+										<div class="line"></div>
+										<p class="title">유전형-발생률 연계 여부</p>
+										<p class="des">검사자의 유전자형과 무관한<br>통계 평균값 반영</p>	
+										<div class="line"></div>
+										<p class="title">유전적 위험도</p>
+										<p class="des">검사자의 위험도만을 제공</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tableWrap">
+							<div class="text">
+								<p>예측 정확도</p>
+								<span>아이디닥터 프리미엄 리포트는 질병관리청 한국인 15만명의 유전자형 정보를 바탕으로 예측한 고위험군(상위 1%)과 실제 역학 정보를 비교하여 85%의 높은 예측 정확도를 보유하고 있습니다.</span>
+								<span class="pcView">※ 오른쪽의 표는 예시입니다.</span>
+								<span class="moView">※ 아래 표는 예시입니다.</span>
+							</div>
+							<table>
+								<caption>예측 정확도</caption>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>유전적 고위험군</th>
+										<th>실제 환자 수</th>
+										<th>예측 정확도</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>상위 1%</td>
+										<td>100명</td>
+										<td>85명</td>
+										<td>85.0%</td>
+									</tr>
+									<tr>
+										<td>상위 5%</td>
+										<td>500명</td>
+										<td>357명</td>
+										<td>71.3%</td>
+									</tr>
+									<tr>
+										<td>상위 20%</td>
+										<td>2,000명</td>
+										<td>1,200명</td>
+										<td>60.0%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="patentWrap contWrap">
+					<div class="mainTitle">	
+						<h3>한국 질병청 특허</h3>
+						<p>제2형 당뇨 프리미엄 서비스 특허정보 안내입니다.</p>
+					</div>
+					<ul>
+						<li>
+							<div class="img"><img src="../../images/main/patentWrap1_1.png" alt=""></div>
+							<div class="text">
+								<p>질병관리청</p>
+								<span>질병관리청 국립보건연구원은 감염병 및 만성질환 위험에 대비 및 대응하기 위한 보건 의료 연구개발을 수행하는 보건복지부 소속기관으로 제2형 당뇨병을 비롯한 만성질환 원인 규명을 위한 최고 수준의 유전체 연구를 수행하고 있습니다.</span>
+							</div>								
+						</li>
+						<li>
+							<div class="img"><img src="../../images/main/patentWrap1_2.png" alt=""></div>
+							<div class="text">
+								<p>특허정보</p>
+								<span>본 리포트는 질병관리청 국립보건연구원에서 수행한 제2형 당뇨병 위험군 진단 방법과 관련된 특허 (특허 제 10-2254341호)를 기술이전하여 개발되었습니다.</span>
+							</div>								
+						</li>
+					</ul>
+				</div>
+				<div class="techWrap">
+					<div class="contWrap">
+						<div class="mainTitle">	
+							<h3>유전자 검사 기술력</h3>
+							<p>한국인 빅데이터 전문가들이 제공하는 세계 최고의 유전체 분석 기술 기반으로 유전자 서비스를 경험해보세요.</p>
+						</div>
+						<div class="techSlideWrap">
+							<div class="img">
+								<img src="../../images/main/techWrap1_1.png" alt="" class="pcView">
+								<img src="../../images/main/techWrap1_1_m.png" alt="" class="moView">
+							</div>	
+							<div class="techSlide">
+								<dl>
+									<dt>01. 한국인 대규모 유전자 빅데이터 분석 경험</dt>
+									<dd>질병관리청 17만명 이상 한국인 인구집단 유전체 분석 경험 보유</dd>
+									<dt>02. 글로벌 최고 수준의 연구 개발 기술력</dt>
+									<dd>Nature, Nature Genetics, Science, Nature Communications 등 주요 논문 80편 이상</dd>
+									<dt>03. 일루미나 칩 기반 유전자 해독</dt>
+									<dd>샘플 혼동 추적, 샘플 오염도 및 판독률 기술 보유 SNP 에러율 측정 기술 보유</dd>
+									<dt>04. 웹/앱/PDF 통한 분석결과 제공</dt>
+									<dd>질환 및 암 항목 등을 포함한 유전자 검사 결과 제공</dd>
+								</dl>
+								<dl>
+									<dt>05. 전장 게놈파일 소유</dt>
+									<dd>검사 결과와 해독된 전체 유전자 파일 제공</dd>
+									<dt>06. 글로벌 품질 관리 수준 확보</dt>
+									<dd>ISO9001 인증</dd>
+									<dt>07. 글로벌 보안 수준 확보</dt>
+									<dd>ISO27001, CSA STAR 인증</dd>
+									<dt>08. 안전한 개인민감정보 처리</dt>
+									<dd>한국의 까다로운 개인정보처리정책을 따르는 개인정보 및 민감정보 처리</dd>
+									<dt>09. 헬스케어 분야 특화된 클라우드 사용</dt>
+									<dd>네이버 클라우드 플랫폼을 통해 보안 모니터링 및 솔루션 적용된 인프라 구축</dd>
+								</dl>						
+							</div>
+							<div class="techSlide3">
+								<div>
+									<div class="text">
+										<span class="num pop">01</span>
+										<p class="title">한국인 대규모 유전자 빅데이터 분석 경험</p>
+										<p>질병관리청 17만명 이상 한국인 인구집단 유전체 분석 경험 보유</p>
+									</div>
+								</div>
+								<div>
+									<div class="text">
+										<span class="num pop">02</span>
+										<p class="title">글로벌 최고 수준의 연구 개발 기술력</p>
+										<p>Nature, Nature Genetics, Science, Nature Communications 등 주요 논문 80편 이상</p>
+									</div>
+								</div>
+								<div>
+									<div class="text">
+										<span class="num pop">03</span>
+										<p class="title">일루미나 칩 기반 유전자 해독</p>
+										<p>샘플 혼동 추적, 샘플 오염도 및 판독률 기술 보유 SNP 에러율 측정 기술 보유</p>
+									</div>
+								</div>
+								<div>
+									<div class="text">
+										<span class="num pop">04</span>
+										<p class="title">웹/앱/PDF 통한 분석결과 제공</p>
+										<p>질환 및 암 항목 등을 포함한 유전자 검사 결과 제공</p>
+									</div>
+								</div>
+								<div>
+									<div class="text">
+										<span class="num pop">05</span>
+										<p class="title">전장 게놈파일 소유</p>
+										<p>검사 결과와 해독된 전체 유전자 파일 제공</p>
+									</div>
+								</div>
+								<div>
+									<div class="text">
+										<span class="num pop">06</span>
+										<p class="title">글로벌 품질 관리 수준 확보</p>
+										<p>ISO9001 인증</p>
+									</div>
+								</div>
+								<div>
+									<div class="text">
+										<span class="num pop">07</span>
+										<p class="title">글로벌 보안 수준 확보</p>
+										<p>ISO27001, CSA STAR 인증</p>
+									</div>
+								</div>
+								<div>
+									<div class="text">
+										<span class="num pop">08</span>
+										<p class="title">안전한 개인민감정보 처리</p>
+										<p>한국의 까다로운 개인정보처리정책을 따르는 개인정보 및 민감정보 처리</p>
+									</div>
+								</div>
+								<div>
+									<div class="text">
+										<span class="num pop">09</span>
+										<p class="title">헬스케어 분야 특화된 클라우드 사용</p>
+										<p>네이버 클라우드 플랫폼을 통해 보안 모니터링 및 솔루션 적용된 인프라 구축</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="proBar">
+							<div class="currentBar"></div>
+						</div>
+						<div class="arrow">
+							<a href="javascript:void(0);" class="prev">prev</a>
+							<a href="javascript:void(0);" class="next"><span>next</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main no2" aria-selected="false">
+				<div class="videoWrap contWrap">
+					<div class="mainTitle">	
+						<h3 class="pop">Your DNA <br>knows the best</h3>
+						<p>유전자 데이터를 업로드하고 나의 유전자 정보를 확인하세요.</p>
+						<a href="javascript:void(0)">리포트 등록하기</a>
+					</div>
+					<div class="img">
+						<img src="../../images/main/videoWrap2_1.png" alt="">
+						<a href="javascript:void(0)"><img src="../../images/main/videoWrap2_2.png" alt=""></a>
+					</div>
+				</div>
+				<div class="fileWrap contWrap">
+					<div class="mainTitle">	
+						<h3>서비스 가능한 <br>유전자 정보 파일</h3>
+						<p>아이서치미에서는 다양한 유전자 분석서비스의 정보 파일을 지원합니다.<br>
+						보다 손쉬운 아이서치미의 리포트를 많은 분들이 이용할 수 있도록 계속하여 서비스 범위가 추가될 예정입니다.</p>
+					</div>
+					<ul class="col col6">
+						<li><img src="../../images/main/fileWrap1_1.png" alt=""></li>
+						<li><img src="../../images/main/fileWrap1_2.png" alt=""></li>
+						<li><img src="../../images/main/fileWrap1_3.png" alt=""></li>
+						<li><img src="../../images/main/fileWrap1_4.png" alt=""></li>
+						<li><img src="../../images/main/fileWrap1_5.png" alt=""></li>
+						<li><img src="../../images/main/fileWrap1_6.png" alt=""></li>
+					</ul>
+				</div>
+				<div class="myDnaWrap">
+					<div class="contWrap clearfix">
+						<div class="mainTitle">	
+							<h3>유전자 데이터 업로드를 통해 <br>내 유전자 정보를 확인해 보세요</h3>
+							<p>부모님께 물려받은 DNA는 평생 변하지 않습니다.<br>파일 업로드만으로 DNA서열을 분석하여 나의 특성을 예측해 보세요.</p>
+							<a href="" class="w250">내 유전자 정보 확인하기</a>
+						</div>
+						<ul class="myDnaList">
+							<li>
+								<img src="../../images/main/myDna_1.png" alt="">
+								<div class="text">
+									<span class="pop">STEP 01</span>
+									<p class="title">전장게놈파일 준비</p>
+									<p class="des">검체 체취 사이트에서 <br>전장 게놈 파일을 다운로드 해주세요.</p>
+								</div>
+							</li>
+							<li>
+								<img src="../../images/main/myDna_2.png" alt="">
+								<div class="text">
+									<span class="pop">STEP 02</span>
+									<p class="title">파일 업로드</p>
+									<p class="des">회원가입 후 다운로드한 파일을<br>손쉽게 업로드 하세요.</p>
+								</div>
+							</li>
+							<li>
+								<img src="../../images/main/myDna_3.png" alt="">
+								<div class="text">
+									<span class="pop">STEP 03</span>
+									<p class="title">분석 및 리포트</p>
+									<p class="des">업로드 후 1일 이내,<br>유전자 분석 리포트를 제공해 드립니다.</p>
+								</div>
+							</li>
+						</ul>	
+					</div>	
+				</div>	
+				<div class="reportWrap2">
+					<div class="contWrap">
+						<div class="mainTitle">	
+							<h3>맞춤형 전문 리포트 제공</h3>
+							<p>단 한번의 업로드 40여가지 정보를 알 수 있으며, 꾸준한 연구를 통해 지속적으로 업데이트 됩니다.</p>
+							<a href="">리포트 샘플 보기</a>
+						</div>
+					</div>
+						<div class="reportSlide">
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_1.png" alt="">
+								<p>체질량지수</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_2.png" alt="">
+								<p>피부탄력</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_3.png" alt="">
+								<p>모험심</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_4.png" alt="">
+								<p>체지방율</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_5.png" alt="">
+								<p>칼슘농도</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_6.png" alt="">
+								<p>태양 노출 후 태닝 반응</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_7.png" alt="">
+								<p>색소침착</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_8.png" alt="">
+								<p>원형 탈모</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_10.png" alt="">
+								<p>골밀도</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_11.png" alt="">
+								<p>비타민 B12</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_12.png" alt="">
+								<p>주의력결핍 과잉행동장애</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_13.png" alt="">
+								<p>엽산</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_14.png" alt="">
+								<p>철 저장 및 농도</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_15.png" alt="">
+								<p>마그네슘 농도</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_16.png" alt="">
+								<p>신장</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_17.png" alt="">
+								<p>비타민 E</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_18.png" alt="">
+								<p>비타민 c 농도</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_19.png" alt="">
+								<p>기미/주근깨</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_20.png" alt="">
+								<p>허리-엉덩이 비율</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_21.png" alt="">
+								<p>비만</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_22.png" alt="">
+								<p>단거리 질주 능력</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_23.png" alt="">
+								<p>모발굵기</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_24.png" alt="">
+								<p>남성형 탈모</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_25.png" alt="">
+								<p>여드름 발생</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_26.png" alt="">
+								<p>비타민 B6</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_27.png" alt="">
+								<p>모발모양</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_28.png" alt="">
+								<p>걱정</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_29.png" alt="">
+								<p>공격성향</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_30.png" alt="">
+								<p>운동 후 회복능력</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_31.png" alt="">
+								<p>소금민감성</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_32.png" alt="">
+								<p>오메가 3</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_33.png" alt="">
+								<p>근력 운동 적합성</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_34.png" alt="">
+								<p>유연성</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_35.png" alt="">
+								<p>원시</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_36.png" alt="">
+								<p>광반사재채기</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_37.png" alt="">
+								<p>근시</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_38.png" alt="">
+								<p>난시</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_39.png" alt="">
+								<p>HDL 콜레스테롤</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_40.png" alt="">
+								<p>피부노화</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_41.png" alt="">
+								<p>하체강도</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_42.png" alt="">
+								<p>중성지방농도</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_43.png" alt="">
+								<p>LDL 콜레스테롤</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_44.png" alt="">
+								<p>총 콜레스테롤</p>
+							</div>
+							<div class="slide">
+								<img src="../../images/main/reportWrap2_45.png" alt="">
+								<p>카페인 섭취</p>
+							</div>
+						</div>
+						<div class="proBar">
+							<div class="currentBar"></div>
+						</div>
+				</div>
+				<div class="faqWrap contWrap">
+					<div class="mainTitle">	
+						<h3>유전자 파일 업로드 <br>서비스 자주 묻는 질문</h3>
+						<p>자주 문의되는 질문으로 빠르고 간편하게 해결하세요.</p>
+						<a href="../board/faq.html" class="pcView">FAQ 전체보기</a>
+					</div>
+					<dl>
+						<dt class="on"><strong>[유전자 검사]</strong> 유전자 검사는 건강검진처럼 주기적으로 해야 하나요? <i>아이콘</i></dt>
+						<dd>유전자검사는 1 년 2 년 마다 주기적으로 하는 건강검진과 달리 평생에 단 한 번만 검사를 통해 다양한 영역에서 활용가능 합니다. 사람의 유전정보는 태어나기 전부터 정해져 있으며, 변하지 않습니다.
+						아이크로진은 유전검사를 통하여 고객님의 맞춤형 헬스케어를 제공합니다.</dd>
+						<dt><strong>[유전자 검사]</strong> 현재 신체적인 문제가 특별히 없는데도 유전자 검사 서비스를 받을 필요가 있나요?<i>아이콘</i></dt>
+						<dd>답변</dd>
+						<dt><strong>[주문]</strong> 아이크로진 키트는 어떻게 구매하나요?<i>아이콘</i></dt>
+						<dd>답변</dd>
+						<dt><strong>[배송]</strong> 채취한 검체는 언제까지 발송해야 하나요?<i>아이콘</i></dt>
+						<dd>답변</dd>
+						<dt><strong>[기타]</strong> 아이크로진 검사를 통한 유전자 정보를 진단 및 의료 정보로 활용할 수 있나요?<i>아이콘</i></dt>
+						<dd>답변</dd>
+					</dl>	
+					<a href="../board/faq.html" class="moView">FAQ 전체보기</a>
+				</div>
+				<div class="techWrap">
+					<div class="contWrap">
+						<div class="mainTitle">	
+							<h3>유전자 검사 기술력</h3>
+							<p>한국인 빅데이터 전문가들이 제공하는 세계 최고의 유전체 분석 기술 기반으로 유전자 서비스를 경험해보세요.</p>
+						</div>
+						<div class="techSlideWrap">
+							<div class="img">
+								<img src="../../images/main/techWrap2_1.png" alt="" class="pcView">
+								<img src="../../images/main/techWrap2_1_m.png" alt="" class="moView">
+							</div>	
+							<div class="techSlide2">
+								<div class="text">
+									<p class="title">한국인 빅데이터 전문가들이 제공하는 세계 최고의 유전체 분석 기술</p>
+									<p>한국인 대규모 유전자 빅데이터 분석 경험이 있는 연구진이 구축한 유전자 영향력 데이터 베이스 기반으로 대용량 유전체 분석 기술을 활용하여 모든 참여자에게 유전자 검사 서비스를 제공합니다.</p>
+									<ul class="col col5">
+										<li><img src="../../images/main/techWrap2_2.png" alt=""></li>
+										<li><img src="../../images/main/techWrap2_3.png" alt=""></li>
+										<li><img src="../../images/main/techWrap2_4.png" alt=""></li>
+										<li><img src="../../images/main/techWrap2_5.png" alt=""></li>
+										<li><img src="../../images/main/techWrap2_6.png" alt=""></li>
+									</ul>
+									<p class="dot">1,000개 이상 유전자 데이터베이스 보유</p>
+									<p class="dot">글로벌 유전체 공용데이터베이스 분석</p>
+									<p class="dot">고유 유전체 영향력 모델 확립</p>
+									<p class="dot">질병관리본부 출신의 글로벌 최고수준 유전체·생명정보학 전문가</p>
+									<p class="dot">17만명 이상 유전체 데이터 분석 경험 보유, Nature, Science, Nature Genetics 등 주요 학술지 저자</p>
+								</div>	
+								<div class="text">
+									<p class="title">한국인 빅데이터 전문가들의 선행 연구</p>
+									<p>질병관리본부 출신 연구자, 인공지능 전문가 등을 포함하여 질병 유전체 분석 경험 보유한 석박사급 연구원으로 구성한 분석팀을 보유하고 있습니다. 해당 팀원들은 Nature 등 주요 저널에 약 80편 이상의 연구 성과를 보유하였습니다.</p>
+									<ul class="col col2">
+										<li><img src="../../images/main/techWrap2_7.png" alt=""></li>
+										<li><img src="../../images/main/techWrap2_8.png" alt=""></li>
+										<li><img src="../../images/main/techWrap2_9.png" alt=""></li>
+										<li><img src="../../images/main/techWrap2_10.png" alt=""></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="arrow2">
+							<a href="javascript:void(0);" class="prev">prev</a>
+							<a href="javascript:void(0);" class="next"><span>next</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="javascript:void(0);" class="main_nav on" aria-controls="no1"><span>Upload DNA Data</span><i>화살표</i></a>	
+			<a href="javascript:void(0);" class="main_nav" aria-controls="no2"><i>화살표</i><span>DNA Test</span></a>	
+		</div>
+	</div>
+    <!-- //BODY -->
+	
+	<!-- 클래스 off 추가시 노출 안됨-->
+	<div class="cookie off"> 
+		<div class="contWrap">
+			<p>아이서치미에 오신 것을 환영합니다. 아이서치미에서는 웹사이트를 원활하게 표시하기 위하여 쿠키를 사용합니다. <br>
+			쿠키사용에 동의하십니까?</p>
+			<div class="btnWrap">
+				<a href="" class="btn">예(전체 허용)</a>
+				<a href="" class="btn">예(최소 허용)</a>
+				<a href="" class="btn">아니오</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<div class="inquiry">
+		<div class="contWrap">
+			<a href="javascript:void(0);" class="popupOpen" aria-controls="servicePop">
+				<p>서비스 문의하기</p>
+				<span>아이서치미 서비스에 대해 궁금하신 사항이 있으신가요?<br>
+				언제든지 문의 주세요. 빠르게 답변 드리겠습니다.</span>
+				<a href="javascript:void(0);" class="popupOpen pink btnType2 w200" aria-controls="servicePop">문의하기</a>
+			</a>
+		</div>	
+	</div>
+	<div id="footer">
+		<h2 class="hidden">푸터 컨텐츠</h2>
+		<div class="contWrap">
+			<div class="top">
+				<ul class="list">
+					<li><a href="../use/termsofConsent.html">유전자 서비스 이용약관</a></li>
+					<li><a href="../use/privacyPolicy.html">개인정보처리방침</a></li>
+					<li><a href="../use/termsOfService.html">서비스 이용약관</a></li>
+					<li><a href="../use/sitemap.html">사이트맵</a></li>
+				</ul>
+				<div class="familyWrap">
+					<div class="familyTitle">관련사이트<i class="arrowUp">화살표</i></div>
+					<ul class="familyList">
+						<li><a href="">관련사이트 이름</a></li>
+						<li><a href="">관련사이트 이름</a></li>
+						<li><a href="">관련사이트 이름</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				<address>
+					<p><span>아이크로진 (한국법인)</span><span class="none"> : </span>경기도 수원시 영통구 창룡대로 256번길 77, 1205-1206호</p>
+					<p><span>Ichrogene USA, Inc (미국법인)</span><span class="none"> : </span>1952 Gallows Street Suite #303, Vienna, VA, 22182</p>
+				</address>
+				<span class="copy">© ichrogene, Inc. 2022. All rights reserved.</span>
+			</div>
+		</div>
+	</div>
+	<!-- //FOOTER -->
+
+	<!-- servicePop -->
+	<div class="popup servicePop">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>서비스 문의하기</p>
+				<span>이름과 이메일은 일회성으로 사용되며 서비스 처리 후 삭제됩니다.<br>
+				문의하신 내용은 영업일 기준 2일이내 답변드립니다.</span>
+			</div>
+			<div class="popContent">
+				<form action="">
+					<div class="inputWrap">
+						<input type="text" id="name" name="s_name" class="wfull icon_name" placeholder="이름을 입력하세요." maxlength="10">
+						<input type="text" id="name" name="s_name" class="wfull icon_email" placeholder="이메일을 입력하세요.">
+						<textarea name="" id="" cols="30" rows="10" class="wfull icon_text" placeholder="문의 내용을 입력하세요."></textarea>
+					</div>
+					
+					<div class="checkForm">
+						<input type="checkbox" name="agreeOk" id="agreeOk">
+						<label for="agreeOk" class="checkbox">이름과 이메일 수집에 동의합니다.</label>
+					</div>
+					<a href="" class="btnType1 w250">문의 접수하기</a>
+				</form>
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //servicePop -->
+	<!-- youtubePop-->
+	<div class='popup youtubePop'>
+		<div class='popupDim'></div>
+		<div class='popWrap'>
+			<img src="../../images/main/youtubePop_img.png" alt="">
+			<!--<div id="youtube_player"></div>-->	
+			<a href='javascript:void(0);' class='popClose'>닫기</a>
+		</div>
+	</div>
+	<!-- //youtubePop-->
+	<script>
+		function playYoutube(youtube_id) {
+			$(".youtubePop").addClass('open');
+			$("#youtube_player").html("<iframe allowfullscreen='' frameborder='0' src='https://www.youtube.com/embed/'></iframe>");
+		}
+
+		$('.techSlide').slick({
+			dots: false,
+			infinite:false,
+			autoplay:false,
+			fade:true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: $('.techWrap .arrow .prev'),
+			nextArrow: $('.techWrap .arrow .next')
+		});
+
+		$window = $(window);
+		$slick_slider = $('.techSlide2');
+		settings = {
+		  dots: false,
+			infinite:false,
+			autoplay:false,
+			fade:true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: $('.techWrap .arrow2 .prev'),
+			nextArrow: $('.techWrap .arrow2 .next')
+		};
+		$slick_slider.slick(settings);
+
+		$window.on('resize', function() {
+			if ($window.width() < 768) {
+				if ($slick_slider.hasClass('slick-initialized'))
+				$slick_slider.slick('unslick');
+				return
+			}
+			if ( !$slick_slider.hasClass('slick-initialized'))
+				return $slick_slider.slick(settings);
+		});
+		
+		$window.on('load', function() {
+			if ($window.width() < 768) {
+				if ($slick_slider.hasClass('slick-initialized'))
+				$slick_slider.slick('unslick');
+				return
+			}
+			if ( !$slick_slider.hasClass('slick-initialized'))
+				return $slick_slider.slick(settings);
+		}); 
+ 
+
+		
+		var techslider = $('.techSlide3')
+		if (techslider.length) {
+			var currentSlide;
+			var slidesCount;
+			var curWid;
+
+			var barSliderCounter2 = function(slick, currentIndex) {
+				currentSlide = slick.slickCurrentSlide() + 1;
+				slidesCount = slick.slideCount;
+				curWid = 100 / slidesCount;
+				barWidth = parseInt(curWid * currentSlide)
+				$('.techWrap .currentBar').css('width', barWidth + "%");
+			};
+
+			techslider.on('init', function(event, slick) {
+				barSliderCounter2(slick);
+			});
+
+			techslider.on('afterChange', function(event, slick, currentSlide) {
+				barSliderCounter2(slick, currentSlide);
+			});
+
+			techslider.slick({
+				dots: false,
+				infinite:false,
+				autoplay:false,
+				fade:false,
+				arrows:false,
+				slidesToShow: 1.5,
+				slidesToScroll: 1
+			});
+		}
+
+		var slider = $('.reportSlide')
+		if (slider.length) {
+			var currentSlide;
+			var slidesCount;
+			var curWid;
+
+			var barSliderCounter = function(slick, currentIndex) {
+				currentSlide = slick.slickCurrentSlide() + 1;
+				slidesCount = slick.slideCount;
+				curWid = 100 / slidesCount;
+				barWidth = parseInt(curWid * currentSlide)
+				$('.reportWrap2 .currentBar').css('width', barWidth + "%");
+			};
+
+			slider.on('init', function(event, slick) {
+				barSliderCounter(slick);
+			});
+
+			slider.on('afterChange', function(event, slick, currentSlide) {
+				barSliderCounter(slick, currentSlide);
+			});
+
+			slider.slick({
+				dots: false,
+				infinite:false,
+				autoplay:false,
+				fade:false,
+				arrows:false,
+				slidesToShow: 6,
+				slidesToScroll: 2,
+				responsive: [
+					{
+					  breakpoint: 1281,
+					  settings: {
+						slidesToShow: 4.5,
+						slidesToScroll: 2
+					  }
+					},
+					{
+					  breakpoint: 769,
+					  settings: {
+						slidesToShow: 2.5,
+						slidesToScroll: 1
+					  }
+					}
+				]
+			});
+		}
+
+		$('.main_nav').click(function(){
+			var nowClass = $(this).attr("aria-controls");
+			var nextOn = $('.main[aria-selected=false]').attr('class').split(/\s+/);
+			var nextClass = nextOn[1];
+
+			$('.main_nav').removeClass('on');
+			$('.main_nav[aria-controls='+nextClass+']').addClass('on');
+
+			$('.main').removeClass('on');
+			$('.main').attr('aria-selected','false');
+			$('.'+nextClass).addClass('on');
+			$('.'+nextClass).attr('aria-selected','true');
+
+			 $('.techSlide2').slick('setPosition');
+		});
+
+	</script>
+</body>
+</html>

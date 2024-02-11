@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>iSearchme</title>
+    <meta name="description" content="iSearchme">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="iSearchme">
+	<link rel="icon" href="/admission/images/favicon.ico">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="iSearchme"> 
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content=""> 
+	<meta property="og:description" content="iSearchme" >
+
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/sub.css">
+	<link rel="stylesheet" href="../../css/respon.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/sub.js"></script>
+</head>
+<body>
+    <!-- BODY -->
+	<div id="bodyArea">
+		<h2 class="hidden">메인컨텐츠</h2>
+		<div class="contWrap">	
+			<div class="memberTitle">
+				<h3><strong>아이서치미</strong>에 오신 것을 환영합니다.</h3>
+				<p>회원으로 등록하여 언제 어디서든 내가 원할 때,웹/앱으로 제공되는 내 유전자 정보를 확인해보세요.</p>
+			</div>
+			<form action="" class="joinForm">
+				<table class="tableStyle1">
+					<caption>회원가입 양식</caption>
+					<tbody>
+						<tr>
+							<th>계정(이메일)</th>
+							<td>
+								<input type="text" id="email" name="" class="wfull disabled error" value="test@naver.com">
+								<p class="error">! 필수 항목입니다.</p>
+							</td>
+						</tr>
+						<tr>
+							<th>이름</th>
+							<td class="col col2">
+								<div class="box">
+									<input type="text" id="firstName" name="" class="wfull error" placeholder="이름을 입력하세요.">
+									<p class="error">! 필수 항목입니다.</p>
+								</div>
+								<div class="box">
+									<input type="text" id="lastName" name="" class="wfull error" placeholder="성을 입력하세요.">
+									<p class="error">! 필수 항목입니다.</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>비밀번호</th>
+							<td class="col col2">
+								<input type="password" id="password" name="" class="wfull error" placeholder="비밀번호를 입력하세요.">
+								<p class="error">! 필수 항목 입니다.</p>
+								<input type="password" id="checkPassword" name="" class="wfull error" placeholder="비밀번호를 다시 한번 입력하세요.">
+								<p class="error">! 비밀번호가 일치하지 않습니다.</p>			
+							</td>
+						</tr>
+						<tr>
+							<th>성별/별명</th>
+							<td class="col col2">
+								<div class="box genderWrap">
+									<div class="radioForm error">
+										<input type="radio" name="gender" id="gender_m" checked>
+										<label for="gender_m">남자</label>
+										<input type="radio" name="gender" id="gender_w">
+										<label for="gender_w">여자</label>
+									</div>	
+									<p class="error">! 필수 항목 입니다.</p>				
+								</div>
+								<input type="text" id="nickName" name="" class="box" placeholder="별명을 입력하세요.">
+							</td>
+						</tr>
+						<tr>
+							<th>생년월일</th>
+							<td class="col col3">
+								<select name="" id="" class="box">
+									<option value="">년도</option>
+									<option value="2021">2021년</option>
+									<option value="2022">2022년</option>
+								</select>	
+								<select name="" id="" class="box">
+									<option value="">월</option>
+									<option value="1">1월</option>
+									<option value="2">2월</option>
+									<option value="3">3월</option>
+									<option value="4">4월</option>
+									<option value="5">5월</option>
+									<option value="6">6월</option>
+									<option value="7">7월</option>
+									<option value="8">8월</option>
+									<option value="9">9월</option>
+									<option value="10">10월</option>
+									<option value="11">11월</option>
+									<option value="12">12월</option>
+								</select>	
+								<select name="" id="" class="box">
+									<option value="">일</option>
+									<option value="1">1일</option>
+									<option value="2">2일</option>
+									<option value="3">3일</option>
+									<option value="4">4일</option>
+									<option value="5">5일</option>
+									<option value="6">6일</option>
+									<option value="7">7일</option>
+									<option value="8">8일</option>
+									<option value="9">9일</option>
+									<option value="10">10일</option>
+									<option value="11">11일</option>
+									<option value="12">12일</option>
+									<option value="13">13일</option>
+									<option value="14">14일</option>
+									<option value="15">15일</option>
+									<option value="16">16일</option>
+									<option value="17">17일</option>
+									<option value="18">18일</option>
+									<option value="19">19일</option>
+									<option value="20">20일</option>
+									<option value="21">21일</option>
+									<option value="22">22일</option>
+									<option value="23">23일</option>
+									<option value="24">24일</option>
+									<option value="25">25일</option>
+									<option value="26">26일</option>
+									<option value="27">27일</option>
+									<option value="28">28일</option>
+									<option value="29">29일</option>
+									<option value="30">30일</option>
+									<option value="31">31일</option>
+								</select>							
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="checkForm">
+					<input type="checkbox" name="gender" id="agree1">
+					<label for="agree1"><a href="../use/privacyPolicy.html" target="_blank" title="새창">개인정보처리방침</a>에 동의합니다.</label>
+					<p class="error">! 필수 항목입니다.</p>
+					<input type="checkbox" name="gender" id="agree2">
+					<label for="agree2"><a href="../use/termsOfService.html" target="_blank" title="새창">서비스 이용약관</a>에 동의합니다.</label>
+					<p class="error">! 필수 항목입니다.</p>
+					<input type="checkbox" name="gender" id="agree3">
+					<label for="agree3">사이트 및 마케팅 정보 수신에 동의합니다 (선택)</label>
+					
+				</div>
+				<a href="user_certification.html" class="btnType1 w300">회원가입</a>
+			</form>
+		</div>
+	</div>
+    <!-- //BODY -->
+</body>
+</html>

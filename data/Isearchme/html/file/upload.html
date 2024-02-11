@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>iSearchme</title>
+    <meta name="description" content="iSearchme">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="iSearchme">
+	<link rel="icon" href="/admission/images/favicon.ico">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="iSearchme"> 
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content=""> 
+	<meta property="og:description" content="iSearchme" >
+
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/sub.css">
+	<link rel="stylesheet" href="../../css/respon.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/sub.js"></script>
+</head>
+<body class="upload">
+    <!-- BODY -->
+	<div id="bodyArea">
+		<div class="contWrap">
+			<div class="subMain">
+				<h2>파일업로드</h2>	
+				<div class="subTabWrap">
+					<ul class="subTab">
+						<li><a href="guide.html"><span>파일 업로드 방법 안내</span></a></li>
+						<li><a href="upload.html" class="on"><span>파일업로드</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="subTitle">1. 등록하려는 파일의 서비스 제공자를 선택하세요.</p>
+			<ul class="logoList">
+				<li class="on">
+					<img src="../../images/sub/upload_logo1.png" alt="">
+					<p class="pop">ichrogene</p>
+				</li>
+				<li>
+					<img src="../../images/sub/upload_logo2.png" alt="">
+					<p class="pop">23 and me</p>
+				</li>
+				<li>
+					<img src="../../images/sub/upload_logo3.png" alt="">
+					<p class="pop">ancestry</p>
+				</li>
+				<li>
+					<img src="../../images/sub/upload_logo4.png" alt="">
+					<p class="pop">MyHeritage</p>
+				</li>
+				<li>
+					<img src="../../images/sub/upload_logo5.png" alt="">
+					<p class="pop">FamilyTreeDNA</p>
+				</li>
+				<li>
+					<img src="../../images/sub/upload_logo6.png" alt="">
+					<p class="pop">Living DNA</p>
+				</li>
+			</ul>
+			<p class="subTitle">2. 아래 사항을 모두 꼼꼼히 읽어보시고, 유전자 파일 업로드 분석 서비스를 신청해 주세요.</p>
+			<div class="wrap">
+				무료 서비스 기간동안 파일업로드 후 유전자 분석 리포트가 발행되기까지 약 1일 정도 소요예정입니다. 파일의 포맷에 오류가 생겼거나 23andme, Ancestry, MyHeritage, FamilyTreeDNA, LivingDNA, ichrogene외의 파일 업로드시 서비스가 불가능하거나 고지된 1일보다 분석 시간이   소요될 수 있음을 알려드립니다.<br><br>iSearchMe는 업로드 하는 원본 DNA raw data quality를 보장하지 않습니다. DNA raw data quality는 원본 파일 제공업체에 문의 바랍니다.
+			</div>
+			<div class="checkForm">
+				<input type="checkbox" name="agreeOk" id="agreeOk">
+				<label for="agreeOk">위 내용을 읽고 모두 이해하였으며, 파일 저장에 동의 합니다.</label>
+				<p class="error">! 필수 항목입니다.</p>
+			</div>
+			<p class="subTitle">3. 닉네임을 등록하고 파일을 첨부하거나 파일을 드래그 앤 드롭 하세요.</p>
+			<table class="tableStyle1">
+				<caption>회원가입 양식</caption>
+				<tbody>
+					<tr>
+						<th>닉네임</th>
+						<td><input type="text" id="nickName" name="nickName" class="wfull error" placeholder="등록하실 닉네임을 입력하세요.">
+						<p class="error">! 필수 항목입니다.</p></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="inputWrap">
+				<label for="file"><i class="icon_file">아이콘</i><p>파일 첨부하기</p></label>
+				<input type="file" id="file" name="file">
+			</div>
+
+			<a href="" class="btnType1 w300">파일 업로드</a>
+		</div>
+	</div>
+    <!-- //BODY -->
+	<!-- fileuploadPop -->
+	<div class="popup fileuploadPop open">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>파일업로드</p>
+			</div>
+			<div class="popContent">
+				<i class="icon_wait"></i>
+				<p class="title">등록하신 파일을 서버에 업로드 중입니다.<br>잠시만 기다려 주세요.</p>
+				<p class="c_red">페이지를 닫거나 새로고침하면 <br>내용이 사라지고 다시 진행해야 할 수 있습니다.</p>
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //fileuploadPop -->
+	<!-- fileuploadPop -->
+	<div class="popup fileuploadPop open">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>파일업로드</p>
+			</div>
+			<div class="popContent">
+				<i class="icon_flag">아이콘</i>
+				<p class="title">등록하신 파일이 정상적으로 업로드 되었습니다.</p>
+				<p>분석이 완료되면 알림과 이메일로 안내 받으실 수 있습니다.</p>
+				<a href="" class="btnType1 w250">확인</a>
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //fileuploadPop -->
+	<!-- fileuploadPop -->
+	<div class="popup fileuploadPop open">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>파일업로드</p>
+			</div>
+			<div class="popContent">
+				<i class="icon_fail">아이콘</i>
+				<p class="title">파일에 문제가 있거나 네트워크 문제로 업로드하지 못했습니다.</p>
+				<p>파일을 확인하여 다시 파일 업로드를 진행해주세요.</p>
+				<a href="" class="btnType1 w250">확인</a>
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //fileuploadPop -->
+</body>
+</html>

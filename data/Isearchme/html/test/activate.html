@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>iSearchme</title>
+    <meta name="description" content="iSearchme">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="iSearchme">
+	<link rel="icon" href="/admission/images/favicon.ico">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="iSearchme"> 
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content=""> 
+	<meta property="og:description" content="iSearchme" >
+
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/sub.css">
+	<link rel="stylesheet" href="../../css/respon.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/sub.js"></script>
+</head>
+<body class="activate">
+    <!-- BODY -->
+	<div id="bodyArea">
+		<div class="contWrap">
+			<div class="subMain">
+				<h2>유전자검사</h2>	
+				<div class="subTabWrap">
+					<ul class="subTab">
+						<li><a href="guide.html"><span>키트 활성화 방법 안내</span></a></li>
+						<li><a href="activate.html" class="on"><span>키트활성화</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="subTitle">1. 검사 키트에 동봉된 바코드를 확인하세요.</p>
+			<div class="col col1">
+				<div class="box">바코드 확인용 샘플 키트 이미지 또는 바코드 안내 내용</div>
+			</div>
+			<p class="subTitle">2. 아래 사항을 모두 꼼꼼히 읽어보시고, 이용 동의에 체크해 주세요.</p>
+			<div class="col col1">
+				<div class="box">이용 동의 내용</div>
+			</div>	
+			<div class="checkForm">
+				<input type="checkbox" name="agreeOk" id="agreeOk">
+				<label for="agreeOk">위 내용을 읽고 모두 이해하였으며, 검사, 분석에 동의 합니다.</label>
+			</div>
+			<p class="subTitle">3. 바코드 등록</p>
+			<div class="barcode">
+				<div class="box">
+					<p class="title">키트 활성화</p>
+					<div class="inputWrap">
+						<input type="text" id="barcode" name="barcode" class="wfull icon_barcode error" maxlength="12" placeholder="12자리 바코드를 입력하세요.">
+					</div>
+					<p class="error">! 바코드번호를 확인해주세요. 아이크로진에 없는 바코드입니다.</p>	
+					<a href="" class="btnType1 wfull">바코드 등록하기</a>	
+					<p class="dot">바코드는 영문과 숫자 조합의 12자리 번호입니다.</p>
+					<p class="dot">바코드 등록이 어려울 경우 고객센터 (031-243-1063)으로 연락주세요.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- //BODY -->
+	<!-- activatePop -->
+	<div class="popup activatePop open">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>키트활성화 완료</p>
+			</div>
+			<div class="popContent">
+				<i class="icon_flag">아이콘</i>
+				<p class="title">입력하신 바코드가 정상 등록되었습니다.</p>
+				<p>대시보드에서 다음 단계 또는 리포트를 확인하실 수 있습니다.</p>
+				<a href="" class="btnType1 w250">확인</a>
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //activatePop -->
+</body>
+</html>

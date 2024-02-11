@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Asset Library</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Asset Library">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Asset Library">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+	<div class="header">
+		<p class="pageTitle">Add New Asset</p>
+		<div class="right">
+			<a href="" class="btn btnSmall btnColor1 btnCancel w150"><span>Cancel</span></a>
+			<a href="" class="btn btnSmall btnColor1 btnSubmit w150"><span>Submit</span></a>
+		</div>
+	</div>	
+	<!-- content -->
+	<div class="content writeForm">
+		<form action="">
+			<p class="title">Asset Info</p>
+			<div class="inputWrap">
+				<label for="AssetTitle" class="th">Title</label>
+				<input type="text" name="" id="AssetTitle" class="wfull" placeholder="">
+			</div>
+			<div class="inputWrap">
+				<label for="AssetFormat" class="th">Format</label>
+				<select name="" title="AssetFormat" id="AssetFormat">
+					<option value="UE" selected>UE</option>
+					<option value="MAX">MAX</option>
+					<option value="MAYA">MAYA</option>
+					<option value="FBX">FBX</option>
+					<option value="JPG">JPG</option>
+					<option value="TGA">TGA</option>
+					<option value="TIFF">TIFF</option>
+					<option value="DPX">DPX</option>
+					<option value="EXR">EXR</option>
+					<option value="MOV">MOV</option>
+					<option value="직접입력">직접입력</option>
+				</select>
+				<input type="text" name="" id="AssetFormat_etc" placeholder="직접입력">
+			</div>
+			<div class="inputWrap">
+				<label for="AssetVersion" class="th">Version</label>
+				<input type="text" name="" id="AssetVersion" placeholder="">
+			</div>
+			<div class="inputWrap">
+				<p class="th">Resolution(pixel)</p>
+				<label class="inputInText">
+					<span>W</span>
+					<input type="text" name="" id="Resolution_w" placeholder="">
+				</label>
+				<label class="inputInText">
+					<span>H</span>
+					<input type="text" name="" id="Resolution_h" placeholder="">
+				</label>
+			</div>
+			<div class="inputWrap">
+				<label for="AssetCODEC" class="th">CODEC</label>
+				<select name="" title="AssetCODEC" id="AssetCODEC">
+					<option value="ProRes" selected>ProRes</option>
+					<option value="HAP">HAP</option>
+					<option value="직접입력">직접입력</option>
+				</select>
+				<input type="text" name="" id="AssetCODEC_etc" placeholder="직접입력">
+			</div>
+			<div class="inputWrap">
+				<label for="AssetFPS" class="th">FPS</label>
+				<select name="" title="AssetFPS" id="AssetFPS">
+					<option value="23.98" selected>23.98</option>
+					<option value="24">24</option>
+					<option value="29.97">29.97</option>
+					<option value="30">30</option>
+					<option value="59.94">59.94</option>
+					<option value="60">60</option>
+					<option value="직접입력">직접입력</option>
+				</select>
+				<input type="text" name="" id="AssetFPS_etc" placeholder="직접입력">
+			</div>
+			<div class="inputWrap">
+				<label for="AssetSize" class="th">Size</label>
+				<input type="text" name="" id="AssetSize" placeholder="">
+				<select name="AssetSizeUnit" title="AssetSizeUnit" id="AssetSizeUnit">
+					<option value="MB" selected>MB</option>
+					<option value="GB">GB</option>
+				</select>
+			</div>
+			<div class="bar"></div>
+			<p class="title">Storage Info</p>
+			<div class="inputWrap">
+				<label for="StorageCategory" class="th">Category</label>
+				<select name="" title="StorageCategory" id="StorageCategory">
+					<option value="UE">UE</option>
+					<option value="SI" selected>SI</option>
+					<option value="SV">SV</option>
+					<option value="2D">2D</option>
+					<option value="MC">MC</option>
+					<option value="3D">3D</option>
+				</select>
+			</div>
+			<div class="inputWrap">
+				<p class="th">Tag</p>
+				<label class="inputInText">
+					<span>1</span>
+					<input type="text" name="" id="StorageTag1" placeholder="">
+				</label>
+				<label class="inputInText">
+					<span>2</span>
+					<input type="text" name="" id="StorageTag2" placeholder="">
+				</label>
+				<label class="inputInText">
+					<span>3</span>
+					<input type="text" name="" id="StorageTag3" placeholder="">
+				</label>
+				<label class="inputInText">
+					<span>4</span>
+					<input type="text" name="" id="StorageTag4" placeholder="">
+				</label>
+				<label class="inputInText">
+					<span>5</span>
+					<input type="text" name="" id="StorageTag5" placeholder="">
+				</label>
+			</div>
+			<div class="inputWrap">
+				<label for="FilePath" class="th">File Path</label>
+				<input type="text" name="" id="FilePath" class="wfull" placeholder="" value="z:\Asset\UE\000.abc">
+			</div>
+			<div class="inputWrap">
+				<label for="Description" class="th">Description</label>
+				<textarea name="" id="Description" class="wfull" rows="5"></textarea>
+			</div>
+			<div class="bar"></div>
+			<p class="title">Preview Files</p>
+			<div class="previewFile">
+				<div>
+					<span>1. Image Drag in<br>(1920 x 1080)</span>
+				</div>
+			</div>
+			<ul>
+				<li class="dot">Drop a video/image file or click to select a file. </li>
+				<li class="dot">Image format : jpg / 1920x1080</li>
+			</ul>
+		</form>
+	</div>
+	<p class="copy">©2022 VIVE STUDIOS. All right reserved.</p>
+</body>
+</html>

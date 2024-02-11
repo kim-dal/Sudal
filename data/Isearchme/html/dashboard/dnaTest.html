@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>iSearchme</title>
+    <meta name="description" content="iSearchme">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="iSearchme">
+	<link rel="icon" href="/admission/images/favicon.ico">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="iSearchme"> 
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content=""> 
+	<meta property="og:description" content="iSearchme" >
+
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/sub.css">
+	<link rel="stylesheet" href="../../css/respon.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/sub.js"></script>
+</head>
+<body>
+    <!-- BODY -->
+	<div id="bodyArea">
+		<div class="contWrap">
+			<div class="subMain">
+				<h2>대시보드</h2>	
+				<div class="subTabWrap">
+					<ul class="subTab">
+						<li><a href="dnaTest.html" class="on"><span>유전자검사</span></a></li>
+						<li><a href="upload.html"><span>파일업로드</span></a></li>
+						<li><a href="mypage.html"><span>회원정보</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="profileWrap">
+				<div class="dashProfile">
+					<p>닉네임 <span>홍길동</span></p>
+					<p>성별 <span>남성</span></p>
+					<p>생년월일 <span>1980.09.26</span></p>
+				</div>	
+			</div>
+			<div class="dashList">
+				<div class="left">
+					<div class="box">
+						<p class="subTitle">서비스 이용현황</p>
+						<p>각 항목의 이용동의 및 파일 업로드, 설문조사를 완료하시면 리포트 서비스를 이용할 수 있습니다.</p>
+						<ul>
+							<li>
+								<p class="title icon icon1">서비스 이용 동의</p>
+								<div class="detail">
+									<div class="state"><span class="pass">완료</span></div>
+									<span class="date">2022-05-20 / 19:30:00</span>
+								</div>
+							</li>
+							<li>
+								<p class="title icon icon2">바코드 등록</p>
+								<div class="detail">
+									<div class="state"><span class="pass">완료</span><span class="code">ZTR0KMVQKGTA</span></div>
+									<span class="date">2022-05-20 / 19:30:00</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="box">
+						<p class="subTitle">나의 파일</p>
+						<p>파일 다운로드가 불가능한 파일의 경우 요청버튼을 선택하시면 담당자가 확인 후 파일을 생성하거나 다운로드가 불가능한 이유를 알려드립니다.</p>
+						<ul>
+							<li>
+								<p class="title icon icon3">유전정보 파일</p>
+								<a href="" class="btnType2 w120 bk">다운로드</a>
+							</li>
+							<li>
+								<p class="title icon icon4">연구 동의서</p>
+								<a href="" class="btnType2 w120">요청</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="right">
+					<div class="box">
+						<p class="subTitle">리포트</p>
+						<p>설문조사 완료 후 리포트를 확인하실 수 있습니다.<br><br></p>
+						<ul>
+							<li>
+								<p class="title icon icon5">설문조사</p>
+								<div class="detail">
+									<div class="state"><span class="none">미등록</span></div>
+									<a href="javascript:void(0);" class="popupOpen" aria-controls="survayPop"><span>설문조사 바로가기</span></a>
+								</div>
+							</li>
+							<li>
+								<p class="title icon icon6">DTC 유전자 검사 리포트</p>
+								<a href="javascript:void(0)" class="btnType2 w120 bk popupOpen" aria-controls="dnaPop">보기</a>
+							</li>
+							<li>
+								<p class="title icon icon7">만성질환 위험도 분석 리포트</p>
+								<a href="javascript:void(0)" class="btnType2 w120 bk popupOpen" aria-controls="chronicPop">보기</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="javascript:void(0);" class="directInquiry popupOpen" aria-controls="inquiryPop">1:1 <br>문의</a>
+	</div>
+    <!-- //BODY -->
+
+	<!-- inquiryPop -->
+	<div class="popup inquiryPop">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>1:1 문의</p>
+			</div>
+			<div class="popContent">
+				<ul>
+					<li>
+						<a href="">
+							<p>안녕하세요. 건강관련 문의사항이 있습니다. 예측정보를 보았는데 보다 상세한 답변을 듣고 싶습니다!</p>
+							<span class="date">2022-05-17</span>
+							<span class="alarm pop">24</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>안녕하세요. 건강관련 문의사항이 있습니다. 예측정보를 보았는데 보다 상세한 답변을 듣고 싶습니다!</p>
+							<span class="date">2022-05-17</span>
+							<span class="alarm pop">24</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>안녕하세요. 건강관련 문의사항이 있습니다. 예측정보를 보았는데 보다 상세한 답변을 듣고 싶습니다!</p>
+							<span class="date">2022-05-17</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>안녕하세요. 건강관련 문의사항이 있습니다. 예측정보를 보았는데 보다 상세한 답변을 듣고 싶습니다!</p>
+							<span class="date">2022-05-17</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>안녕하세요. 건강관련 문의사항이 있습니다. 예측정보를 보았는데 보다 상세한 답변을 듣고 싶습니다!</p>
+							<span class="date">2022-05-17</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>안녕하세요. 건강관련 문의사항이 있습니다. 예측정보를 보았는데 보다 상세한 답변을 듣고 싶습니다!</p>
+							<span class="date">2022-05-17</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //inquiryPop -->
+	<!-- inquiryPop -->
+	<div class="popup inquiryPop">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>1:1 문의</p>
+			</div>
+			<div class="popContent chatWrap">
+				<div class="chat">
+					<div class="message">
+						<span>안녕하세요, 문의드립니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+					<div class="sender">
+						<span>안녕하세요, 답변드립니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+					<div class="message">
+						<span>답변 감사합니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+				</div>
+				<div class="inputWrap">
+					<textarea name="" id="" rows="1" placeholder="메세지를 입력하세요."></textarea>
+					<a href="" class="w120 btnType2">전송</a>
+				</div>	
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //inquiryPop -->
+	<!-- dnaPop -->
+	<div class="popup dnaPop open">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>유전자 검사 리포트</p>
+			</div>
+			<div class="popContent">
+				<div class="left">
+					<div class="box1">
+						<p class="title">유전자 분석 결과</p>
+						<p class="des">혈당 수치가 높을 것으로 예상되었어요</p>
+						<span class="state warn">주의</span>
+						<a href="" class="icon_reset"><i>아이콘</i></a>
+					</div>
+					<p class="box2">#생활습관  #영양소  #피부/모발  #건강관리</p>
+					<a href="" class="downBtn"><span>PDF 다운로드</span></a>
+					<ul class="list">
+						<li class="state warn">
+							<p>카페인 섭취</p>
+							<span>주의</span>
+						</li>
+						<li class="state warn">
+							<p>비타민 C농도</p>
+							<span>주의</span>
+						</li>
+						<li class="state warn">
+							<p>색소침착</p>
+							<span>주의</span>
+						</li>
+						<li class="state warn">
+							<p>피부탄력</p>
+							<span>주의</span>
+						</li>
+						<li class="state normal">
+							<p>탈모</p>
+							<span>보통</span>
+						</li>
+						<li class="state normal">
+							<p>중성지방 농도</p>
+							<span>보통</span>
+						</li>
+						<li class="state normal">
+							<p>체질량지수</p>
+							<span>보통</span>
+						</li>
+						<li class="state good">
+							<p>콜레스트롤</p>
+							<span>좋음</span>
+						</li>
+						<li class="state good">
+							<p>혈당</p>
+							<span>좋음</span>
+						</li>
+						<li class="state good">
+							<p>혈압</p>
+							<span>좋음</span>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="guide on">
+						<p class="dot">유전자 리포트 보는 방법</p>
+						<ul>
+							<li>
+								<div>
+									<p>1. 나의 유전자 검사 결과</p>
+									<span>해당 항목에 대해 나의 유전자 검사 결과가 긍정적인 결과인지 주의가 필요한 결과인지를 좋은 / 보통 / 주의로 표시합니다.</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p>2. 나의 유전자형</p>
+									<span>㈜아이크로진 유전자 검사 서비스를 사용한 전체 참여자의 평균 유전자형 점수와 나의 유전자형 점수를 비교한 결과 입니다.</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p>3. 나의 유전자형 점수</p>
+									<span>㈜아이크로진 유전자 검사 서비스를 사용한 전체 참여자의 평균 유전자형 점수와 나의 유전자형 점수를 비교한 점수 입니다.</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p>4. 생활 습관 추천</p>
+									<span>각 항목에 대해 알맞은 건강한 생활습관을 추천해 드립니다.<br>해당 내용은 권장 사항으로, 정확한 진단과 처방은 전문의와 함께 상의할 것을 추천합니다.</span>
+								</div>
+							</li>
+							<li class="blue">
+								<div>유전자 검사 리포트의 좌측 각 항목을 선택하면 상세 내용을 확인하실 수 있습니다.</div>
+							</li>
+						</ul>
+					</div>
+					<div class="detail">
+						<div class="box">
+							<div class="titleWrap">
+								<i class="icon"><img src="../../images/sub/icon_caffeine.png" alt=""></i>
+								<div>
+									<span>생활습관</span>
+									<p>카페인 섭취<span class="state warn">주의</span></p>
+								</div>
+							</div>
+							<p class="des">카페인은 세계적으로 가장 널리 소비되는 각성제입니다. 대부분 커피를 통해 카페인을 섭취하며, 탄산음료, 에너지음료, 녹차, 우롱차, 홍차 등의 음료와 초콜릿에도 카페인이 포함되어 있습니다.</p>
+							<div class="textWrap">
+								<p class="title">나의 유전자형</p>
+								<p class="des">카페인 섭취에 대해 분석한 3개 유전자 중 높은 영향력을 나타내는 0개 유전자에 대한 결과입니다.</p>
+								<div class="dnaTableWrap">
+									<div class="tabledetail">영향 인자
+										<span class="success">아이콘</span>없음
+										<span class="info">아이콘</span>1개
+										<span class="danger">아이콘</span>2개
+									</div>
+									<table class="dnaTable">
+										<thead>
+											<tr>
+												<th>유전자</th>
+												<th>영향인자</th>
+												<th>기준 유전형</th>
+												<th colspan="2">유전형</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>CYP1A1</td>
+												<td class="text_danger">T</td>
+												<td><p class="badge badge_info">CC</p></td>
+												<td>C<span class="text_danger">T</span></td>
+												<td><span class="text_danger">T</span><span class="text_danger">T</span></td>
+											</tr>
+											<tr>
+												<td>CYP1A1</td>
+												<td class="text_danger">T</td>
+												<td><p class="badge badge_info">CC</p></td>
+												<td>C<span class="text_danger">T</span></td>
+												<td><span class="text_danger">T</span><span class="text_danger">T</span></td>
+											</tr>
+											<tr>
+												<td>AHR</td>
+												<td class="text_danger">C</td>
+												<td>TT</td>
+												<td><p class="badge badge_success">T<span class="text_danger">C</span></p></td>
+												<td><span class="text_danger">C</span><span class="text_danger">C</span></td>
+											</tr>
+											<tr>
+												<td>AHR</td>
+												<td class="text_danger">C</td>
+												<td>TT</td>
+												<td>T<span class="text_danger">C</span></td>
+												<td><p class="badge badge_danger">CC</p></td>
+											</tr>
+										</tbody>
+									</table>
+									<p>※색상으로 표시된 유전형은 나의 유전형을 의미합니다.</p>
+								</div>
+								<p class="title">나의 유전자형 점수</p>
+								<p class="des">접속로그및앱테스트님의 유전자형 점수는 <span class="my-date-num">33점</span>으로 참여자 평균 점수인 46점보다 적은 카페인 섭취량이 예상됩니다.</p>
+								<div class="humanChart">
+									<div id="human-chart">
+										<p class="human-title">아이크로진 <br>참여자 평균 점수</p>
+										<div class="human-icon">
+											<div class="chart-num" style="height:46%;"></div>
+											<img src="../../images/sub/human.png" style="width:65px;height:auto;" alt="아이크로진 참여자 평균 점수 이미지">
+										</div>
+										<p class="num">46점</p>
+									</div>
+									<div class="human-progress">
+										<p>100</p>
+										<div class="human-progress-chart">
+											<div class="chart-num"></div>
+										</div>
+										<p class="num">0</p>
+									</div>
+									<div id="my-human-chart">
+										<p class="human-title">나의 점수</p>
+										<div class="human-icon">
+											<div class="chart-num" style="height:33%;"></div>
+											<img src="../../images/sub/human.png" style="width:65px;height:auto;" alt="나의 점수 이미지">
+										</div>
+										<p class="num">33점</p>
+									</div>
+								</div>
+
+								<p class="title">카페인 섭취를 줄이기 위한 생활습관</p>
+								<p class="des">카페인 섭취를 줄이기 위한 몇 가지 생활습관을 추천해 드립니다</p>
+								<ul>
+									<li><i class="icon"><img src="../../images/sub/icon_caffeine.png" alt=""></i>커피, 녹차, 에너지 드링크와 같은 카페인 함량이 높은 음료 섭취를 줄이세요</li>
+									<li><i class="icon"><img src="../../images/sub/icon_caffeine.png" alt=""></i>스트레칭과 같은 운동을 해보세요. 유산소 운동이나 근력 운동은 카페인 음료와 같은 각성 효과를 줄 수 있습니다.</li>
+									<li><i class="icon"><img src="../../images/sub/icon_caffeine.png" alt=""></i>충분한 수면으로 피곤함을 해소해보세요. 카페인은 일시적인 각성효과를 내지만 수면 시간을 줄여 피로해질 수 있습니다.</li>
+									<li><i class="icon"><img src="../../images/sub/icon_caffeine.png" alt=""></i>카페인 섭취는 하루 400mg을 넘지 않도록 주의하세요. 400mg은 커피 4-5잔에 해당하지만 음료수나 다양한 음식에도 카페인이 들어있습니다.</li>
+								</ul>
+							</div>
+							<a href="javascript:void(0)" class="boxClose btnType2" >닫기</a>
+						</div>
+						<div class="box">
+							<div class="titleWrap">
+								<i class="icon"><img src="../../images/sub/icon_caffeine.png" alt=""></i>
+								<div>
+									<span>생활습관</span>
+									<p>비타민 C농도<span class="state warn">주의</span></p>
+								</div>
+							</div>
+							<p class="des">카페인은 세계적으로 가장 널리 소비되는 각성제입니다. 대부분 커피를 통해 카페인을 섭취하며, 탄산음료, 에너지음료, 녹차, 우롱차, 홍차 등의 음료와 초콜릿에도 카페인이 포함되어 있습니다.</p>
+							<div class="textWrap">
+								<p class="title">나의 유전자형</p>
+								<p class="des">카페인 섭취에 대해 분석한 3개 유전자 중 높은 영향력을 나타내는 0개 유전자에 대한 결과입니다.</p>
+								<div class="img"><img src="../../images/sub/caffeine_01.png" alt=""></div>
+								<p class="title">나의 유전자형 점수</p>
+								<p class="des">접속로그및앱테스트님의 유전자형 점수는 33점으로 참여자 평균 점수인 46점보다 적은 카페인 섭취량이 예상됩니다.</p>
+								<div class="img"><img src="../../images/sub/caffeine_02.png" alt=""></div>
+								<p class="title">카페인 섭취를 줄이기 위한 생활습관</p>
+								<p class="des">카페인 섭취를 줄이기 위한 몇 가지 생활습관을 추천해 드립니다</p>
+								<ul>
+									<li><i class="icon"><img src="../../images/sub/icon_caffeine.png" alt=""></i>커피, 녹차, 에너지 드링크와 같은 카페인 함량이 높은 음료 섭취를 줄이세요</li>
+									<li><i class="icon"><img src="../../images/sub/icon_caffeine.png" alt=""></i>스트레칭과 같은 운동을 해보세요. 유산소 운동이나 근력 운동은 카페인 음료와 같은 각성 효과를 줄 수 있습니다.</li>
+									<li><i class="icon"><img src="../../images/sub/icon_caffeine.png" alt=""></i>충분한 수면으로 피곤함을 해소해보세요. 카페인은 일시적인 각성효과를 내지만 수면 시간을 줄여 피로해질 수 있습니다.</li>
+									<li><i class="icon"><img src="../../images/sub/icon_caffeine.png" alt=""></i>카페인 섭취는 하루 400mg을 넘지 않도록 주의하세요. 400mg은 커피 4-5잔에 해당하지만 음료수나 다양한 음식에도 카페인이 들어있습니다.</li>
+								</ul>
+							</div>							
+							<a href="javascript:void(0)" class="boxClose btnType2" >닫기</a>
+						</div>				
+					</div>
+				</div>
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //dnaPop -->
+	<!-- secessionPop -->
+	<div class="popup chronicPop">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>만성질환 위험도 분석 리포트</p>
+			</div>
+			<div class="popContent">
+				<div class="box1">
+					<span class="line">질병관리청 특허 기술이전</span>
+					<p class="title">제2형 당뇨병 및 대사증후군<br>위험도 분석</p>
+					<span>최근 업데이트 : 2022-01-30</span>
+				</div>
+				<p class="box2">
+					iDNADoctor premium 제2형 당뇨병 및 iDNADoctor 5개항목 (중성지방, 비만, 혈압, 콜레스테롤)의 결과를 종합하였을 때, 3개에서
+					<span class="c_red">대사증후군 위험도가 높을 것으로 예상됩니다.</span>
+				</p>
+				<a href="" class="downBtn"><span>만성질환 리포트 PDF</span></a>
+				<ul>
+					<li class="state warn">
+						<p>제2형 당뇨</p>
+						<span>주의</span>
+					</li>
+					<li class="state warn">
+						<p>중성지방 농도</p>
+						<span>주의</span>
+					</li>
+					<li class="state warn">
+						<p>비만</p>
+						<span>주의</span>
+					</li>
+					<li class="state normal">
+						<p>수축기혈압</p>
+						<span>보통</span>
+					</li>
+					<li class="state good">
+						<p>HDL-콜레스테롤</p>
+						<span>좋음</span>
+					</li>
+				</ul>
+				<p class="dot noti">대사증후군은 심장질환, 당뇨, 뇌졸중 등의 질환 발병 위험성을 증가시키는 5가지 요소 (고혈압, 고혈당, 고중성지방혈증, 낮은 HDL-콜레스테롤 농도, 복부비만) 중 3가지 이상에 해당되는 경우를 의미합니다.</p>
+				<p class="dot noti">본 리포트는 질병관리청 국립보건연구원에서 수행한 제2형 당뇨병 위험군 진단 방법과 관련된 특허 (특허 제10-2254341호)를 기술이전하여 개발되었습니다.</p>
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //secessionPop -->
+	<!-- survayPop -->
+	<div class="popup survayPop">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="survayTitle"><strong>홍길동</strong>님의 설문조사 참여 내용</div>
+			<div class="tableWrap">
+				<table>
+					<caption>설문조사 참여 내용</caption>
+					<colgroup>
+						<col style="width:16.6666%">
+						<col style="width:16.6666%">
+						<col style="width:16.6666%">
+						<col style="width:16.6666%">
+						<col style="width:16.6666%">
+						<col style="width:16.6666%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>카테고리</th>
+							<td>개인정보</td>
+							<td>운동량</td>
+							<td>생활습관</td>
+							<td>스킨케어</td>
+							<td>건강관리</td>
+						</tr>
+						<tr>
+							<th>문항수</th>
+							<td>6</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<th>완료여부</th>
+							<td class="complete">완료</td>
+							<td class="complete">완료</td>
+							<td class="incomplete">미완료</td>
+							<td class="incomplete">미완료</td>
+							<td class="incomplete">미완료</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="dot">유전자와 환경간 상호작용을 파악하기 위해 이 설문 자료를 수집하여 분석하고 있습니다.<br>
+				본 설문지는 ‘소비자 생활 환경’ 에 대해 조사하기 위한 목적으로 작성되었습니다. 본 조사의 내용과 결과는 연구목적으로만 사용됩니다.
+			</p>
+			<ul class="survayTab">
+				<li class="on"><a href="javascript:void(0);">개인정보</a></li>
+				<li><a href="javascript:void(0);">운동량</a></li>
+				<li><a href="javascript:void(0);">생활습관</a></li>
+				<li><a href="javascript:void(0);">스킨케어</a></li>
+				<li><a href="javascript:void(0);">건강관리</a></li>
+			</ul>
+			<div class="survayList scrollEdit">
+				<div class="box on">
+					<div class="inputWrap">
+						<label for="survay1_1"><span class="num">Q.1 </span><span class="essential">(필수) </span>귀하의 국적은 어디입니까?</label>
+						<input type="text" id="survay1_1" name="" class="wfull" value="대한민국">
+						<label for="survay1_2"><span class="num">Q.2 </span><span class="essential">(필수) </span>귀하의 신장은 몇 cm입니까?</label>
+						<input type="text" id="survay1_2" name="" class="wfull" value="180" disabled>
+						<label for="survay1_3"><span class="num">Q.3 </span><span class="essential">(필수) </span>귀하의 체중은 몇 kg입니까?</label>
+						<input type="text" id="survay1_3" name="" class="wfull" value="80" disabled>
+						<p class="label"><span class="num">Q.4 </span><span class="essential">(필수) </span>귀하는 16살 이전에 비만이셨습니까?</p>
+						<div>
+							<div class="radioForm disabled">
+								<input type="radio" name="survay1_3" id="survay1_3_y" checked disabled>
+								<label for="survay1_3_y">예</label>
+								<input type="radio" name="survay1_3" id="survay1_3_n" disabled>
+								<label for="survay1_3_n">아니오</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.5 </span><span class="essential">(필수) </span>귀하의 성별은 무엇입니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay1_4" id="survay1_4_m" checked>
+								<label for="survay1_4_m">남자</label>
+								<input type="radio" name="survay1_4" id="survay1_4_f">
+								<label for="survay1_4_f">여자</label>
+								<input type="radio" name="survay1_4" id="survay1_4_e">
+								<label for="survay1_4_e">기타</label>
+							</div>
+							<p class="noti c_red">성별에 따라 달라지는 결과가 있습니다. 선택된 성별에 따라 리포트가 조회됩니다</p>
+						</div>
+						<label for="survay1_6"><span class="num">Q.6 </span><span class="essential">(필수) </span>귀하의 연령은 몇 세 입니까?</label>
+						<input type="text" id="survay1_6" name="" class="wfull" value="40">
+						<a href="" class="btnType1 wfull">개인정보 항목 저장</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="inputWrap">
+						<p class="label"><span class="num">Q.1 </span><span class="essential">(필수) </span>귀하가 최근 일주일 동안 평소보다 몸이 힘들거나, 숨이 가쁜 신체 활동을 10분 이상 한 날은 며칠입니까?</p>
+						<p class="noti c_red">신체 활동 달리기(조깅), 등산, 자전거 타기, 수영, 축구, 농구, 줄넘기, 스쿼시, 단/복식 테니스, 물건 나르기 등의 직업 활동 및 체육활동, 단 걷기는 제외</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay2_1" id="survay2_1_0" checked>
+								<label for="survay2_1_0">전혀 하지 않음 (문항 3으로 넘어가세요)</label><br>
+								<input type="radio" name="survay2_1" id="survay2_1_1">
+								<label for="survay2_1_1">1일</label>
+								<input type="radio" name="survay2_1" id="survay2_1_2">
+								<label for="survay2_1_2">2일</label>
+								<input type="radio" name="survay2_1" id="survay2_1_3">
+								<label for="survay2_1_3">3일</label>
+								<input type="radio" name="survay2_1" id="survay2_1_4">
+								<label for="survay2_1_4">4일</label>
+								<input type="radio" name="survay2_1" id="survay2_1_5">
+								<label for="survay2_1_5">5일</label>
+								<input type="radio" name="survay2_1" id="survay2_1_6">
+								<label for="survay2_1_6">6일</label>
+								<input type="radio" name="survay2_1" id="survay2_1_7">
+								<label for="survay2_1_7">7일</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.2 </span><span class="optional">(선택) </span>이러한 신체 활동은 하루에 얼마 동안 이루어졌습니까?</p>
+						<div class="col col2">
+							<input type="text" id="survay2_1_1" name="" class="box" placeholder="시간">
+							<input type="text" id="survay2_1_2" name="" class="box" placeholder="분">
+						</div>
+						<p class="label"><span class="num">Q.3 </span><span class="essential">(필수) </span>귀하는 어떠한 목적으로 운동을 하십니까? (해당 사항에 모두 체크하세요.)</p>
+						<div>
+							<div class="checkForm disabled">
+								<input type="checkbox" name="survay2_3" id="survay2_3_0" disabled>
+								<label for="survay2_3_0">체중증가</label>
+								<input type="checkbox" name="survay2_3" id="survay2_3_1" disabled>
+								<label for="survay2_3_1">체중감량</label>
+								<input type="checkbox" name="survay2_3" id="survay2_3_2" disabled> 
+								<label for="survay2_3_2">체형교정</label>
+								<input type="checkbox" name="survay2_3" id="survay2_3_3" disabled>
+								<label for="survay2_3_3">체력증진</label>
+								<input type="checkbox" name="survay2_3" id="survay2_3_4" disabled>
+								<label for="survay2_3_4">없음</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.4 </span><span class="essential">(필수) </span>귀하의 일상생활은 다음 중 어떠한 활동 영역에 가깝습니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay2_4" id="survay2_4_0" checked>
+								<label for="survay2_4_0">안정 상태 <span class="noti">(거의 누워 있거나 앉아서 지냄)</span></label><br>
+								<input type="radio" name="survay2_4" id="survay2_4_1">
+								<label for="survay2_4_1">가벼운 활동 <span class="noti">(사무관리,기술직, 가사 시간이 적은 주부, 이와 유사한 직종)</span></label><br>
+								<input type="radio" name="survay2_4" id="survay2_4_2">
+								<label for="survay2_4_2">보통 활동 <span class="noti">(가사 시간이 많은 주부, 제조업?가공업?판매업, 교사 등의 직종)</span></label><br>
+								<input type="radio" name="survay2_4" id="survay2_4_3">
+								<label for="survay2_4_3">심한 활동 <span class="noti">(농업?어업?토목업?건축업, 운동선수, 이와 유사한 직종)</span></label>
+							</div>
+						</div>
+						<a href="" class="btnType1 wfull">운동량 항목 저장</a>
+					</div>				
+				</div>
+				<div class="box">
+					<div class="inputWrap">
+						<p class="label"><span class="num">Q.1 </span><span class="essential">(필수) </span>귀하는 본인의 의지로 몸무게를 조절하려고 노력한 적이 있습니까?<br>(해당 사항에 모두 체크하세요.)</p>
+						<div>
+							<div class="checkForm">
+								<input type="checkbox" name="survay3_1" id="survay3_1_0">
+								<label for="survay3_1_0">노력해본 적 없다 <span class="noti">(문항 3으로 넘어가세요)</span></label><br>
+								<input type="checkbox" name="survay3_1" id="survay3_1_1">
+								<label for="survay3_1_1">몸무게를 줄이려고 노력했다</label><br>
+								<input type="checkbox" name="survay3_1" id="survay3_1_2">
+								<label for="survay3_1_2">몸무게를 유지하려고 노력했다</label><br>
+								<input type="checkbox" name="survay3_1" id="survay3_1_3">
+								<label for="survay3_1_3">몸무게를 유지하려고 노력했다</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.2 </span><span class="optional">(선택) </span>귀하가 몸무게를 조절하기 위해 사용한 방법은 무엇입니까?<br>(해당 사항에 모두 체크하세요.)</p>
+						<div>
+							<div class="checkForm">
+								<input type="checkbox" name="survay3_2" id="survay3_2_0">
+								<label for="survay3_2_0">운동</label><br>
+								<input type="checkbox" name="survay3_2" id="survay3_2_1">
+								<label for="survay3_2_1">단식 <span class="noti">(24시간 이상)</span></label><br>
+								<input type="checkbox" name="survay3_2" id="survay3_2_2">
+								<label for="survay3_2_2">식단 조절</label><br>
+								<input type="checkbox" name="survay3_2" id="survay3_2_3">
+								<label for="survay3_2_3">결식 <span class="noti">(식사를 거름)</span></label><br>
+								<input type="checkbox" name="survay3_2" id="survay3_2_4">
+								<label for="survay3_2_4">의사 처방 없이 임의로 살 빼는 약 복용</label><br>
+								<input type="checkbox" name="survay3_2" id="survay3_2_5">
+								<label for="survay3_2_5">의사 처방을 받아서 살 빼는 약 복용</label><br>
+								<input type="checkbox" name="survay3_2" id="survay3_2_6">
+								<label for="survay3_2_6">한약 복용</label><br>
+								<input type="checkbox" name="survay3_2" id="survay3_2_7">
+								<label for="survay3_2_7">건강기능식품</label><br>
+								<input type="checkbox" name="survay3_2" id="survay3_2_8">
+								<label for="survay3_2_8">원푸드 다이어트 <span class="noti">(우유, 감자, 고구마 등 한 가지 음식만을 먹는 다이어트)</span></label><br>
+								<input type="checkbox" name="survay3_2" id="survay3_2_9">
+								<label for="survay3_2_9">기타</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.3 </span><span class="essential">(필수) </span>귀하는 카페인이 포함된 식품을 얼마나 자주 섭취하고 계십니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay3_3" id="survay3_3_0" checked>
+								<label for="survay3_3_0">전혀 섭취하지 않음</label><br>
+								<input type="radio" name="survay3_3" id="survay3_3_1">
+								<label for="survay3_3_1">월 1회</label><br>
+								<input type="radio" name="survay3_3" id="survay3_3_2">
+								<label for="survay3_3_2">월 2~3회</label><br>
+								<input type="radio" name="survay3_3" id="survay3_3_3">
+								<label for="survay3_3_3">주 1회</label><br>
+								<input type="radio" name="survay3_3" id="survay3_3_4">
+								<label for="survay3_3_4">주 2~3회</label><br>
+								<input type="radio" name="survay3_3" id="survay3_3_5">
+								<label for="survay3_3_5">주 4~6회</label><br>
+								<input type="radio" name="survay3_3" id="survay3_3_6">
+								<label for="survay3_3_6">주 7회 이상</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.4 </span><span class="essential">(필수) </span>귀하는 술을 얼마나 자주 드십니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay3_4" id="survay3_4_0" checked>
+								<label for="survay3_4_0">최근 1년간 전혀 마시지 않았다 <span>(문항 6으로 넘어가세요)</span></label><br>
+								<input type="radio" name="survay3_4" id="survay3_4_1">
+								<label for="survay3_4_1">월 1회</label><br>
+								<input type="radio" name="survay3_4" id="survay3_4_2">
+								<label for="survay3_4_2">월 2~4회</label><br>
+								<input type="radio" name="survay3_4" id="survay3_4_3">
+								<label for="survay3_4_3">주 2~3회</label><br>
+								<input type="radio" name="survay3_4" id="survay3_4_4">
+								<label for="survay3_4_4">주 4회 이상</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.5 </span><span class="optional">(선택) </span>귀하는 한 번에 술을 얼마나 드십니까?</p>
+						<p class="noti c_red">소주, 양주 구분 없이 각각의 술잔으로 계산합니다. 단 캔맥주 1 개 (355 cc)는 맥주 1.6 잔과 같습니다.</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay3_5" id="survay3_5_0" checked>
+								<label for="survay3_5_0">0~3잔</label><br>
+								<input type="radio" name="survay3_5" id="survay3_5_1">
+								<label for="survay3_5_1">4~7잔</label><br>
+								<input type="radio" name="survay3_5" id="survay3_5_2">
+								<label for="survay3_5_2">8~10잔</label><br>
+								<input type="radio" name="survay3_5" id="survay3_5_3">
+								<label for="survay3_5_3">11~13잔</label><br>
+								<input type="radio" name="survay3_5" id="survay3_5_4">
+								<label for="survay3_5_4">14잔 이상</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.6 </span><span class="essential">(필수) </span>귀하는 현재 담배를 피우고 계십니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay3_6" id="survay3_6_0" checked>
+								<label for="survay3_6_0">전혀 피운 적 없다</label><br>
+								<input type="radio" name="survay3_6" id="survay3_6_1">
+								<label for="survay3_6_1">흡연경력은 있으나 현재 안 피운다</label><br>
+								<input type="radio" name="survay3_6" id="survay3_6_2">
+								<label for="survay3_6_2">가끔 피운다</label><br>
+								<input type="radio" name="survay3_6" id="survay3_6_3">
+								<label for="survay3_6_3">습관적으로 계속 피운다</label>
+							</div>
+						</div>
+						<a href="" class="btnType1 wfull">생활습관 항목 저장</a>
+					</div>				
+				</div>
+				<div class="box">
+					<div class="inputWrap">
+						<p class="label"><span class="num">Q.1 </span><span class="essential">(필수) </span>귀하는 피부관리를 위해 일주일에 얼마나 많은 시간을 사용합니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay4_1" id="survay4_1_0" checked>
+								<label for="survay4_1_0">전혀 하지 않음</label><br>
+								<input type="radio" name="survay4_1" id="survay4_1_1">
+								<label for="survay4_1_1">1시간 미만</label><br>
+								<input type="radio" name="survay4_1" id="survay4_1_2">
+								<label for="survay4_1_2">1~2시간</label><br>
+								<input type="radio" name="survay4_1" id="survay4_1_3">
+								<label for="survay4_1_3">2시간 이상</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.2 </span><span class="essential">(필수) </span>귀하는 하루에 얼마나 햇빛에 노출되어 있습니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay4_2" id="survay4_2_0" checked>
+								<label for="survay4_2_0">전혀 노출되지 않음</label><br>
+								<input type="radio" name="survay4_2" id="survay4_2_1">
+								<label for="survay4_2_1">1시간 미만</label><br>
+								<input type="radio" name="survay4_2" id="survay4_2_2">
+								<label for="survay4_2_2">1~2시간</label><br>
+								<input type="radio" name="survay4_2" id="survay4_2_3">
+								<label for="survay4_2_3">2~3시간</label><br>
+								<input type="radio" name="survay4_2" id="survay4_2_4">
+								<label for="survay4_2_4">4시간 이상</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.3 </span><span class="optional">(선택) </span>귀하의 피부는 평소 트러블이 자주 발생합니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay4_3" id="survay4_3_y" checked>
+								<label for="survay4_3_y">그렇다</label><br>
+								<input type="radio" name="survay4_3" id="survay4_3_n">
+								<label for="survay4_3_n">아니다</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.4 </span><span class="optional">(선택) </span>평소 트러블이 발생한다면 어떠한 유형의 트러블이 발생합니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay4_4" id="survay4_4_y" checked>
+								<label for="survay4_4_y">그렇다</label><br>
+								<input type="radio" name="survay4_4" id="survay4_4_n">
+								<label for="survay4_4_n">아니다</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.5 </span><span class="essential">(필수) </span>머리카락이 하루에 100가닥 이상 빠지십니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay4_5" id="survay4_5_y" checked>
+								<label for="survay4_5_y">그렇다</label><br>
+								<input type="radio" name="survay4_5" id="survay4_5_n">
+								<label for="survay4_5_n">아니다</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.6 </span><span class="essential">(필수) </span>최근 귀하의 두피에 비듬이 생겼으며, 가려움증을 동반합니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay4_6" id="survay4_6_y" checked>
+								<label for="survay4_6_y">그렇다</label><br>
+								<input type="radio" name="survay4_6" id="survay4_6_n">
+								<label for="survay4_6_n">아니다</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.7 </span><span class="essential">(필수) </span>귀하의 가족 중 (본인 포함) 탈모 증상을 가지고 있는 사람이 있습니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay4_7" id="survay4_7_y" checked>
+								<label for="survay4_7_y">그렇다</label><br>
+								<input type="radio" name="survay4_7" id="survay4_7_n">
+								<label for="survay4_7_n">아니다</label>
+							</div>
+						</div>
+						<a href="" class="btnType1 wfull">스킨케어 항목 저장</a>
+					</div>				
+				</div>
+				<div class="box">
+					<div class="inputWrap">
+						<p class="label"><span class="num">Q.1 </span><span class="essential">(필수) </span>귀하의 평소 수면시간은 몇 시간입니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay5_1" id="survay5_1_0" checked>
+								<label for="survay5_1_0">8시간 이상</label><br>
+								<input type="radio" name="survay5_1" id="survay5_1_1">
+								<label for="survay5_1_1">8시간 미만</label><br>
+								<input type="radio" name="survay5_1" id="survay5_1_2">
+								<label for="survay5_1_2">4시간 미만</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.2 </span><span class="essential">(필수) </span>귀하는 기상 시를 제외하고 수면 도중에 잠에서 깨십니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay5_2" id="survay5_2_y" checked>
+								<label for="survay5_2_y">그렇다</label><br>
+								<input type="radio" name="survay5_2" id="survay5_2_n">
+								<label for="survay5_2_n">아니다 <span class="noti">(문항 4로 넘어가세요)</span></label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.3 </span><span class="optional">(선택) </span>귀하는 기상 시를 제외하고 수면 도중 몇 번 정도 깨십니까?</p>
+						<div>
+							<div class="radioForm">
+								<input type="radio" name="survay5_3" id="survay5_3_0" checked>
+								<label for="survay5_3_0">1회</label><br>
+								<input type="radio" name="survay5_3" id="survay5_3_1">
+								<label for="survay5_3_1">2회</label><br>
+								<input type="radio" name="survay5_3" id="survay5_3_2">
+								<label for="survay5_3_2">3회</label><br>
+								<input type="radio" name="survay5_3" id="survay5_3_3">
+								<label for="survay5_3_3">4회 이상</label>
+							</div>
+						</div>
+						<p class="label"><span class="num">Q.4 </span><span class="essential">(필수) </span>귀하의 평소 기상 시간은 몇 시입니까?</p>
+						<select name="" id="" class="wfull" disabled>
+							<option value="">04:00 a.m. - 04:59 a.m</option>
+							<option value="">05:00 a.m. - 05:59 a.m</option>
+							<option value="">06:00 a.m. - 06:59 a.m</option>
+							<option value="">07:00 a.m. - 07:59 a.m</option>
+							<option value="">08:00 a.m. - 08:59 a.m</option>
+							<option value="">09:00 a.m. - 09:59 a.m</option>
+							<option value="">10:00 a.m. - 10:59 a.m</option>
+							<option value="">11:00 a.m. - 11:59 a.m</option>
+							<option value="">12:00 a.m. - 12:59 p.m</option>
+							<option value="">01:00 p.m. - 01:59 p.m</option>
+							<option value="">02:00 p.m. - 02:59 p.m</option>
+							<option value="">03:00 p.m. - 03:59 p.m</option>
+							<option value="">04:00 p.m. - 04:59 p.m</option>
+							<option value="">05:00 p.m. - 05:59 p.m</option>
+							<option value="">06:00 p.m. - 06:59 p.m</option>
+							<option value="">07:00 p.m. - 07:59 p.m</option>
+							<option value="">08:00 p.m. - 08:59 p.m</option>
+							<option value="">09:00 p.m. - 09:59 p.m</option>
+							<option value="">10:00 p.m. - 10:59 p.m</option>
+							<option value="">11:00 p.m. - 11:59 p.m</option>
+							<option value="">12:00 p.m. - 12:59 a.m</option>
+							<option value="">01:00 a.m. - 01:59 a.m</option>
+							<option value="">02:00 a.m. - 02:59 a.m</option>
+							<option value="">03:00 a.m. - 03:59 a.m</option>
+						</select>
+						<p class="label"><span class="num">Q.5 </span><span class="essential">(필수) </span>귀하의 평소 취침 시간은 몇 시입니까?</p>
+						<select name="" id="" class="wfull">
+							<option value="">04:00 a.m. - 04:59 a.m</option>
+							<option value="">05:00 a.m. - 05:59 a.m</option>
+							<option value="">06:00 a.m. - 06:59 a.m</option>
+							<option value="">07:00 a.m. - 07:59 a.m</option>
+							<option value="">08:00 a.m. - 08:59 a.m</option>
+							<option value="">09:00 a.m. - 09:59 a.m</option>
+							<option value="">10:00 a.m. - 10:59 a.m</option>
+							<option value="">11:00 a.m. - 11:59 a.m</option>
+							<option value="">12:00 a.m. - 12:59 p.m</option>
+							<option value="">01:00 p.m. - 01:59 p.m</option>
+							<option value="">02:00 p.m. - 02:59 p.m</option>
+							<option value="">03:00 p.m. - 03:59 p.m</option>
+							<option value="">04:00 p.m. - 04:59 p.m</option>
+							<option value="">05:00 p.m. - 05:59 p.m</option>
+							<option value="">06:00 p.m. - 06:59 p.m</option>
+							<option value="">07:00 p.m. - 07:59 p.m</option>
+							<option value="">08:00 p.m. - 08:59 p.m</option>
+							<option value="">09:00 p.m. - 09:59 p.m</option>
+							<option value="">10:00 p.m. - 10:59 p.m</option>
+							<option value="">11:00 p.m. - 11:59 p.m</option>
+							<option value="">12:00 p.m. - 12:59 a.m</option>
+							<option value="">01:00 a.m. - 01:59 a.m</option>
+							<option value="">02:00 a.m. - 02:59 a.m</option>
+							<option value="">03:00 a.m. - 03:59 a.m</option>
+						</select>
+						<a href="" class="btnType1 wfull">건강관리 항목 저장 / 설문조사 완료</a>
+					</div>				
+				</div>
+			</div>	
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //survayPop -->
+	<script>
+	$('.dnaPop .left .list li').click(function(){
+		if( $(this).hasClass('on') ){
+			$(this).removeClass('on');
+			$('.dnaPop .right .detail .box').removeClass('on');
+			$('.dnaPop .right .guide').addClass('on');
+		}else{
+			var nowEq = $(this).index();
+
+			$('.dnaPop .left .list li').removeClass('on');
+			$(this).addClass('on');
+
+			$('.dnaPop .right .guide').removeClass('on');
+			$('.dnaPop .right .detail .box').removeClass('on');
+			$('.dnaPop .right .detail .box').eq(nowEq).addClass('on');		
+		}
+	});	
+	
+	$('.dnaPop .detail .boxClose').click(function(){
+		var nowEq = $(this).parents('.box').index();
+		$(this).parents('.box').removeClass('on');
+		$('.dnaPop .left .list li').eq(nowEq).removeClass('on');
+		$('.dnaPop .right .guide').addClass('on');
+	
+	})
+	</script>
+</body>
+</html>

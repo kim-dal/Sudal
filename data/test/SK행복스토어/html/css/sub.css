@@ -1,0 +1,58 @@
+.col2 { overflow:hidden; }
+.col2 li { float:left; width:46%; margin-right:8% }
+.col2 li:nth-of-type(2n) { margin-right:0% }
+
+.sub h4 { margin-bottom:20px; font-size:40px; font-weight:bold; text-align:center; }
+.sub .subtitle { margin-bottom:40px; font-size:18px; text-align:center; }
+
+.sub .title { position:relative; margin-bottom:40px; font-size:24px; font-weight:bold; }
+.sub .title:after { content:''; position:absolute; bottom:50%; right:0; left:25%; 
+	display:block; margin-top:-2.5px; height:5px; border-radius:2.5px; }
+.sub .box a { display:block; height:260px; padding:30px; border:1px solid; box-sizing:border-box; word-break:keep-all; }
+.sub .box p.text { position:relative; height:111px; font-size:24px; font-weight:bold; }
+.sub .box p.text:after { content:''; position:absolute; bottom:22px; left:0; 
+	display:block; width:30px; height:5px; border-radius:2.5px; }
+.sub .box a span { display:block; padding-right:20px; letter-spacing:-1px; }
+
+.bk .title { color:#434159; }
+.red .title { color:#f42d37; }
+.bk .title:after { background:#434159; }
+.red .title:after { background:#f42d37; }
+.bk .box a { border-color:#434159; box-shadow: 0px 20px 20px 0 rgba(67, 65, 89, 0.3); }
+.red .box a { border-color:#f42d37; box-shadow: 0px 20px 20px 0 rgba(67, 65, 89, 0.3); }
+.bk .box a:hover { background:url(../image/subIcon_bk.png)no-repeat right 20px bottom 20px #434159 !important; 
+	color:#fff; }
+.red .box a:hover { background:url(../image/subIcon_red.png)no-repeat right 20px bottom 20px #f42d37 !important; 
+	color:#fff; }
+
+.bk p.text:after { background:#434159; }
+.red p.text:after { background:#f42d37; }
+.box a:hover > p.text:after { background:#fff; }
+
+.subcon01 .bk li:nth-of-type(1) a { background:url(../image/subIcon02.png)no-repeat right 20px bottom 20px #fff; }
+.subcon01 .bk li:nth-of-type(2) a { background:url(../image/subIcon01.png)no-repeat right 20px bottom 20px #fff; }
+.subcon01 .red li:nth-of-type(1) a { background:url(../image/subIcon02.png)no-repeat right 20px bottom 20px #fff; }
+.subcon01 .red li:nth-of-type(2) a { background:url(../image/subIcon03.png)no-repeat right 20px bottom 20px #fff; }
+
+.subcon02 .bk li:nth-of-type(1) a { background:url(../image/subIcon04.png)no-repeat right 20px bottom 20px #fff; }
+.subcon02 .bk li:nth-of-type(2) a { background:url(../image/subIcon05.png)no-repeat right 20px bottom 20px #fff; }
+.subcon02 .red li:nth-of-type(1) a { background:url(../image/subIcon03.png)no-repeat right 20px bottom 20px #fff; }
+.subcon02 .red li:nth-of-type(2) a { background:url(../image/subIcon06.png)no-repeat right 20px bottom 20px #fff; }
+
+.subcon03 .bk li:nth-of-type(1) a { background:url(../image/subIcon07.png)no-repeat right 20px bottom 20px #fff; }
+.subcon03 .bk li:nth-of-type(2) a { background:url(../image/subIcon08.png)no-repeat right 20px bottom 20px #fff; }
+.subcon03 .red li:nth-of-type(1) a { background:url(../image/subIcon09.png)no-repeat right 20px bottom 20px #fff; }
+.subcon03 .red li:nth-of-type(2) a { background:url(../image/subIcon10.png)no-repeat right 20px bottom 20px #fff; }
+
+.subcon04 .bk a { background:url(../image/subIcon11.png)no-repeat right 20px bottom 20px #fff; }
+.subcon04 .red a { background:url(../image/subIcon12.png)no-repeat right 20px bottom 20px #fff; }
+
+.subcon02, .subcon04 { background:#eee; padding:80px 0; }
+
+.subcon03 .box p.text, .subcon04 .box p.text { height:auto; padding-bottom:45px; }
+
+.subBtnMore { display:block; width:250px; line-height:60px; border:2px solid #434159; padding-right:40px; 
+	margin:50px auto 0; border-radius:30px; font-weight:bold; text-align:center; box-sizing:border-box;
+	background:url(../image/icon_arrow_bk.png)no-repeat center right 40px; }
+.subBtnMore:hover { background:url(../image/icon_arrow_wh.png)no-repeat center right 40px #434159;
+	 color:#fff; }

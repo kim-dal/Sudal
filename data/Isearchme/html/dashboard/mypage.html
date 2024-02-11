@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>iSearchme</title>
+    <meta name="description" content="iSearchme">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="iSearchme">
+	<link rel="icon" href="/admission/images/favicon.ico">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="iSearchme"> 
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content=""> 
+	<meta property="og:description" content="iSearchme" >
+
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/sub.css">
+	<link rel="stylesheet" href="../../css/respon.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/sub.js"></script>
+</head>
+<body>
+    <!-- BODY -->
+	<div id="bodyArea">
+		<div class="contWrap">
+			<div class="subMain">
+				<h2>대시보드</h2>	
+				<div class="subTabWrap">
+					<ul class="subTab">
+						<li><a href="dnaTest.html"><span>유전자검사</span></a></li>
+						<li><a href="upload.html"><span>파일업로드</span></a></li>
+						<li><a href="mypage.html" class="on"><span>회원정보</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<form action="" class="joinForm">
+				<table class="tableStyle1">
+					<caption>회원가입 양식</caption>
+					<tbody>
+						<tr>
+							<th>계정(이메일)</th>
+							<td><input type="text" id="email" name="" class="wfull" value="test@naver.com" disabled></td>
+						</tr>
+						<tr>
+							<th>이름</th>
+							<td class="col col2"> 
+								<input type="text" id="firstName" name="" class="box" value="길동" placeholder="이름을 입력하세요." disabled>
+								<input type="text" id="lastName" name="" class="box" value="홍" placeholder="성을 입력하세요." disabled>
+							</td>
+						</tr>
+						<tr>
+							<th>성별/별명</th>
+							<td class="col col2">
+								<div class="box genderWrap ">
+									<div class="radioForm disabled">
+										<input type="radio" name="gender" id="gender_m" checked disabled>
+										<label for="gender_m">남자</label>
+										<input type="radio" name="gender" id="gender_w" disabled>
+										<label for="gender_w">여자</label>
+									</div>			
+								</div>
+								<input type="text" id="nickName" name="" class="box" value="홍길동" placeholder="별명을 입력하세요.">
+							</td>
+						</tr>
+						<tr>
+							<th>생년월일</th>
+							<td class="col col3">
+								<select name="" id="" class="box">
+									<option value="">년도</option>
+									<option value="2021" selected>2021년</option>
+									<option value="2022">2022년</option>
+								</select>	
+								<select name="" id="" class="box">
+									<option value="">월</option>
+									<option value="1">1월</option>
+									<option value="2">2월</option>
+									<option value="3">3월</option>
+									<option value="4">4월</option>
+									<option value="5" selected>5월</option>
+									<option value="6">6월</option>
+									<option value="7">7월</option>
+									<option value="8">8월</option>
+									<option value="9">9월</option>
+									<option value="10">10월</option>
+									<option value="11">11월</option>
+									<option value="12">12월</option>
+								</select>	
+								<select name="" id="" class="box">
+									<option value="">일</option>
+									<option value="1">1일</option>
+									<option value="2">2일</option>
+									<option value="3" selected>3일</option>
+									<option value="4">4일</option>
+									<option value="5">5일</option>
+									<option value="6">6일</option>
+									<option value="7">7일</option>
+									<option value="8">8일</option>
+									<option value="9">9일</option>
+									<option value="10">10일</option>
+									<option value="11">11일</option>
+									<option value="12">12일</option>
+									<option value="13">13일</option>
+									<option value="14">14일</option>
+									<option value="15">15일</option>
+									<option value="16">16일</option>
+									<option value="17">17일</option>
+									<option value="18">18일</option>
+									<option value="19">19일</option>
+									<option value="20">20일</option>
+									<option value="21">21일</option>
+									<option value="22">22일</option>
+									<option value="23">23일</option>
+									<option value="24">24일</option>
+									<option value="25">25일</option>
+									<option value="26">26일</option>
+									<option value="27">27일</option>
+									<option value="28">28일</option>
+									<option value="29">29일</option>
+									<option value="30">30일</option>
+									<option value="31">31일</option>
+								</select>							
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="checkForm">
+					<input type="checkbox" name="gender" id="agree1" checked disabled>
+					<label for="agree1"><p><strong>개인정보처리방침</strong><span class="etc">2022-05-17 / 19:02:10</span></p></label>
+					<input type="checkbox" name="gender" id="agree2" checked disabled>
+					<label for="agree2"><p><strong>서비스이용약관 동의</strong><span class="etc">2022-05-17 / 19:02:10</span></p></label>
+					<input type="checkbox" name="gender" id="agree3">
+					<label for="agree3"><p><strong>사이트 및 마케팅 정보 수신 동의</strong><span class="etc">미동의</span></p></label>
+				</div>
+				<div class="col col2">
+					<a href="javascript:void(0);" class="btnType1 box bk popupOpen" aria-controls="passwordPop">비밀번호 변경</a>
+					<a href="javascript:void(0);" class="btnType1 box">정보수정</a>
+				</div>
+				<div class="secession">
+					<a href="javascript:void(0);" class="popupOpen" aria-controls="secessionPop">회원 탈퇴하기</a>
+				</div>
+			</form>
+		</div>
+		<a href="javascript:void(0);" class="directInquiry popupOpen" aria-controls="inquiryPop">1:1 <br>문의</a>
+	</div>
+    <!-- //BODY -->
+	<!-- inquiryPop -->
+	<div class="popup inquiryPop">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>1:1 문의</p>
+			</div>
+			<div class="popContent">
+				<ul>
+					<li>
+						<a href="">
+							<p>안녕하세요. 건강관련 문의사항이 있습니다. 예측정보를 보았는데 보다 상세한 답변을 듣고 싶습니다!</p>
+							<span class="date">2022-05-17</span>
+							<span class="alarm pop">24</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>안녕하세요. 건강관련 문의사항이 있습니다. 예측정보를 보았는데 보다 상세한 답변을 듣고 싶습니다!</p>
+							<span class="date">2022-05-17</span>
+							<span class="alarm pop">24</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>안녕하세요. 건강관련 문의사항이 있습니다. 예측정보를 보았는데 보다 상세한 답변을 듣고 싶습니다!</p>
+							<span class="date">2022-05-17</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>안녕하세요. 건강관련 문의사항이 있습니다. 예측정보를 보았는데 보다 상세한 답변을 듣고 싶습니다!</p>
+							<span class="date">2022-05-17</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>안녕하세요. 건강관련 문의사항이 있습니다. 예측정보를 보았는데 보다 상세한 답변을 듣고 싶습니다!</p>
+							<span class="date">2022-05-17</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<p>안녕하세요. 건강관련 문의사항이 있습니다. 예측정보를 보았는데 보다 상세한 답변을 듣고 싶습니다!</p>
+							<span class="date">2022-05-17</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //inquiryPop -->
+	<!-- inquiryPop -->
+	<div class="popup inquiryPop">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>1:1 문의</p>
+			</div>
+			<div class="popContent chatWrap">
+				<div class="chat">
+					<div class="message">
+						<span>안녕하세요, 문의드립니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+					<div class="sender">
+						<span>안녕하세요, 답변드립니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+					<div class="message">
+						<span>답변 감사합니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+					<div class="message">
+						<span>안녕하세요, 문의드립니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+					<div class="sender">
+						<span>안녕하세요, 답변드립니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+					<div class="message">
+						<span>답변 감사합니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+					<div class="message">
+						<span>안녕하세요, 문의드립니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+					<div class="sender">
+						<span>안녕하세요, 답변드립니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+					<div class="message">
+						<span>답변 감사합니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+					<div class="sender">
+						<span>안녕하세요, 답변드립니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+					<div class="message">
+						<span>답변 감사합니다.</span>
+						<p>2022-05-17 / PM 01:02</p>
+					</div>
+				</div>
+				<div class="inputWrap">
+					<textarea name="" id="" rows="1" placeholder="메세지를 입력하세요."></textarea>
+					<a href="" class="w120 btnType2">전송</a>
+				</div>	
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //inquiryPop -->
+	<!-- passwordPop -->
+	<div class="popup passwordPop">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>비밀번호 변경</p>
+			</div>
+			<div class="popContent">
+				<form action="">
+					<div class="inputWrap">
+						<label for="password">현재 비밀번호</label>
+						<input type="password" id="password" name="" class="wfull error" placeholder="현재 비밀번호를 입력하세요.">
+						<p class="error">! 비밀번호가 일치하지 않습니다.</p>	
+						<label for="changePassword">변경 비밀번호</label>
+						<input type="password" id="changePassword" name="" class="wfull" placeholder="변경 비밀번호를 입력하세요.">
+						<label for="checkPassword">비밀번호 확인</label>
+						<input type="password" id="checkPassword" name="" class="wfull" placeholder="변경 비밀번호를 입력하세요.">
+					</div>
+					<div>
+						<p class="snsTitle">계정 연동</p>
+						<div class="snsJoin">
+							<div>
+								<a href="" class="pop"><img src="../../images/sub/icon_google.png" alt="">Google</a>
+								<p>2022-05-17 연동</p>
+							</div>
+							<div>
+								<a href="" class="pop"><img src="../../images/sub/icon_kakao.png" alt="">Kakao</a>
+								<p>연동정보 없음</p>
+							</div>
+							<div>
+								<a href="" class="pop"><img src="../../images/sub/icon_naver.png" alt="">Naver</a>
+								<p>연동정보 없음</p>
+							</div>
+							<div>
+								<a href="" class="pop"><img src="../../images/sub/icon_line.png" alt="">Line</a>
+								<p>연동정보 없음</p>
+							</div>
+						</div>
+					</div>
+					<a href="" class="btnType1 w250">확인</a>
+				</form>
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //passwordPop -->
+	<!-- secessionPop -->
+	<div class="popup secessionPop">
+		<div class="popupDim"></div>
+		<div class="popWrap">
+			<div class="popTitle">
+				<p>회원탈퇴</p>
+				<span class="des">회원탈퇴 시 사용중인 아이써치미 서비스가 중단되고 관련 정보가<br> 영구적으로 삭제됩니다.</span>
+			</div>
+			<div class="popContent">
+				<form action="">
+					<div class="inputWrap">
+						<label for="email">계정 확인(이메일)</label>
+						<input type="text" id="email" name="" class="wfull" placeholder="이메일을 입력하세요.">
+						<input type="password" id="password" name="" class="wfull" placeholder="패스워드를 입력하세요.">
+						<label for="opinion">탈퇴사유 및 건의사항 (0/200)</label>
+						<textarea name="opinion" id="opinion" rows="10" class="wfull" placeholder="탈퇴 사유 및 건의사항을 자유롭게 입력하세요."></textarea>
+					</div>
+					<div class="checkForm">
+						<input type="checkbox" name="agreeOk" id="agreeOk">
+						<label for="agreeOk" class="checkbox">나의 계정 삭제와 서비스 중단을 확인하였습니다.</label>
+					</div>
+					<a href="" class="btnType1 w250">회원 탈퇴하기</a>
+				</form>
+			</div>
+			<a href="javascript:void(0);" class="popClose">닫기</a>
+		</div>
+	</div>
+	<!-- //secessionPop -->
+</body>
+</html>

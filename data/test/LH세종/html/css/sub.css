@@ -1,0 +1,51 @@
+
+.subkv { position:relative; height:400px; background:url(../image/sub/sub_kv.png) no-repeat center; background-size:cover; }
+.subkv .textWrap { position:absolute; text-align:center; left:50%; top:50%; transform:translate(-50%,-50%); color:#fff; }
+.subkv h2 { font-size:70px; }
+.subkv .bar { display:inline-block; margin:10px 0 20px; width:50px; height:4px; background:#3abb69; }
+.subkv .p { font-size:20px; }
+
+.subLnb { background:#031b57; overflow:hidden; }
+.subLnb li { float:left; text-align:center; border-right:1px solid rgba(255,255,255,0.1); box-sizing:border-box; }
+.subLnb li:first-child { border-left:1px solid rgba(255,255,255,0.1); }
+.subLnb li a { color:#fff; line-height:80px; font-weight:bold; }
+
+.subLnb li.on { background:#fff; }
+.subLnb li.on a { color:#031b57; }
+
+.subLnb.eight li { width:12.5% }
+
+.sub.content { margin-top:80px; }
+.sub h3 { font-size:30px; font-weight:bold; color:#031b57; margin-bottom:40px; }
+
+.smart { margin-bottom:80px; border-radius:10px; padding:50px; padding-right:40%; background:url(../image/sub/sub_bg.png)no-repeat right center #3abb69; color:#fff; }
+.smart .title { font-size:42px; }
+.smart .bar { margin:40px 0; display:block; width:50px; height:4px; background:#fff; }
+.smart .text { font-weight:300; line-height:1.8 }
+.smart a { display:block; margin-top:40px; width:200px; line-height:50px; border-radius:5px; text-align:center; font-weight:bold;
+	 background:#031b57; color:#fff; }
+.smart a span { padding-left:25px; background:url(../image/sub/icon_flag.png)no-repeat left center; }
+
+.totalNum { font-size:16px; padding-left:20px; background:url(../image/sub/icon_num.png) left center no-repeat; margin-bottom:30px; }
+
+.List { display:table; width:100%; }
+.List > li { border-bottom:1px solid #e5e5e5; padding:30px 0; overflow:hidden; }
+.List > li:first-child { border-top:1px solid #e5e5e5; }
+.List .img { display:table-cell; width:30%; }
+.List .img img { width:100%; }
+.List .textWrap { position:relative; display:table-cell; width:70%; padding-left:3%; box-sizing:border-box; vertical-align:top; }
+.List .type { width:90px; line-height:30px; border-radius:15px; background:#031b57; color:#fff; text-align:center; }
+.List .text { margin:20px 0 30px; }
+.List .name { font-size:14px; font-weight:bold; }
+.List .name span { display:block; font-weight:400; color:#999; }
+.List .comment { position:absolute; bottom:0; left:4%; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; }
+.List .comment li { display:block; float:left; width:90px; text-align:center; border-right:1px solid #e5e5e5; line-height:30px; font-size:14px; }
+.List .comment li:hover { background:#efefef; }
+.List .comment li a { padding-left:20px; }
+.List .comment li a span { font-weight:bold; margin-left:5px; }
+.List .comment li.type01 { border-left:1px solid #e5e5e5; }
+.List .comment li.type01 a { background:url(../image/sub/icon_like.png) left center no-repeat; }
+.List .comment li.type02 a { background:url(../image/sub/icon_dislike.png) left center no-repeat; }
+.List .comment li.type03 a { background:url(../image/sub/icon_comment.png) left center no-repeat; }
+
+.List .sns { position:absolute; bottom:0; right:0; }

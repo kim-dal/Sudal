@@ -1,0 +1,139 @@
+@charset "utf-8";
+	.m_mode {display:none;}
+
+@media all and (max-width:1060px) {
+	.header_wrap .header_bottom .header_bottom_wrap {width: auto; margin: 0 30px;}
+	.container {width: auto; margin: 0 30px;  }
+    .ushers .ushers_right #images .seq { top:10%; }
+    .ushers .ushers_right #images .seq img {width:65%;}
+    
+	.ushers .ushers_bottom_left img  {width:110%;}
+	.footer_wrap { padding: 50px 30px}
+	.footer_wrap address p{margin-bottom:20px}
+
+	/*皋牢*/
+	.program li div{padding: 0 0 0 30px}
+	.program li.right div{padding: 0 30px 0 0 }
+	.program li h4{font-size:24px}
+	.program li div{font-size:18px}
+
+	/*力前家俺*/
+	.beauty_title:after, .health_title:after{width:85%}
+
+	.test_title:before,.test_title:after{width:12%;}
+}
+@media all and (max-width:900px) {
+    .ushers .ushers_right #images .seq img {width:70%;}
+}
+
+@media all and (max-width:800px) {
+	.header_wrap .header_top { padding: 0 20px; }
+	.header_wrap .header_bottom .header_bottom_wrap {width: auto; margin: 0; padding:0 20px;}
+	.kv {height:500px;}
+	.kv .title {font-size:28px;padding-top:210px;}
+
+	.product_kv {height:300px;}
+	.howtouse_kv {height:300px;}
+	.customor_kv {height:300px;}
+	.sub_title {font-size:28px;padding-top:120px;}
+
+	.container {width: auto; margin: 0 20px;}
+	.title {font-size: 38px; margin-bottom: 30px;}
+	.explain {font-size: 17px; padding-bottom:60px;}
+	.ss_title {font-size: 20px;}
+	.s_explain {font-size: 17px;}
+	.partners{    width: 100%;max-width: 506px;}
+	.partners li:nth-of-type(3n){margin-right:10px}
+
+	.theway {font-size: 20px; }
+	.said_dj {font-size: 17px;}
+	
+	
+	/*皋牢*/
+	.program li div{font-size:16px}
+
+	/*力前家俺*/
+	.news{padding:50px 70px}
+	.news .text:before,.news .text:after{width:10%;}
+
+	.test_title:before,.test_title:after{width:10%;}
+
+}
+
+@media all and (max-width:680px) {
+    .m_mode {display:block;}
+	.p_mode {display:none;}
+	.top {width:40%;}
+	.header_wrap .header_top {padding: 0 30px;}
+	.header_wrap .top_menu li {margin-left:15px}
+	.ushers{}
+	.footer_wrap {padding: 50px 30px; font-size:18px}
+	.footer_wrap address p span{display:block; width:23%; margin: 0 auto 10px; padding:5px 0;}
+	.footer_wrap address p{display:block; margin-right:0;}
+	.footer_wrap .logo {width: 178px;}
+
+
+	.videos .videos_wrap .videos_view2 .box_list li h6 {padding-top: 0; clear: none;}
+
+    .ushers .ushers_right {width:auto; float:none; margin-top:0; }
+    .list_ul li { width: 49%; float:left; height:auto; border: 1px solid #e3e3e3; margin-right: 2%; margin-bottom: 2%; position: relative;}
+	.list_ul li:nth-child(2n) {margin-right:0;}
+	.list_ul li a.gallery_btn_m {display:block; position:absolute; top: 0; left: 0; width:100%; height:100%; z-index:100;}
+    .list_ul {height:auto; padding-right:0px;}
+
+
+	/*皋牢*/
+	.partners li {width:48%; margin-bottom:10px; margin-right:2%}
+	.partners li:nth-of-type(3n){margin-right:2%}
+	.partners li:nth-of-type(2n){margin-right:0}
+
+	.program li{margin-bottom:50px}
+	.program li div,.program li.right div{float:none; width:auto; padding:20px;font-size:18px}
+	.program li img,.program li.right img{float:none; width:100%}
+
+
+	/*力前家俺*/
+	ul.beauty li div,ul.health li div{float:none; margin:0 auto;}
+	ul.beauty li p,ul.health li p{margin:0; margin-top:40px; padding:30px; text-align:center; }
+	ul.beauty li p:before{left:50%;top:-15px;border-top:15px solid #none;border-bottom: 15px solid #fdf2df;border-right: 15px solid transparent;
+	border-left: 15px solid transparent;margin-left:-15px}
+	ul.health li p:before{left:50%;top:-15px;border-top:15px solid #none;border-bottom: 15px solid #e0f4f5;border-right: 15px solid transparent;
+	border-left: 15px solid transparent;margin-left:-15px}
+
+	ul.service li{width:50%;}
+	ul.service li:nth-of-type(1),ul.service li:nth-of-type(2){border-bottom:1px solid #e5e5e5}
+	.iso div{width:100%; margin-right:0; margin-bottom:20px;}
+
+	.news{padding:50px 10px}
+	.news .text:before,.news .text:after{display:none;}
+	.news .result div,.news .result div:last-child{float:none; width:60%; margin:0 auto 30px; font-size:20px}
+	.news .view{margin:10px auto 0}
+	.news .text{font-size:24px}
+
+	.beauty_title:after, .health_title:after {width:80%}
+	/*捞侩规过*/
+	.test_title:before,.test_title:after{display:none;}
+	ul.test li{float:none; width:auto; overflow:hidden; margin-bottom:30px}
+	ul.test li img{float:left;}
+	ul.test li p{padding:50px 0; margin-left: 200px; padding:30px 0; text-align:left; font-size:16px}
+	ul.test li span{width:60px; margin:0; margin-bottom:10px; font-size:18px; line-height:30px;}
+	
+}
+
+@media all and (max-width:480px) {
+	.header_wrap .name {width:100px}
+	.header_wrap .header_bottom img {width:80%}
+	.header_wrap .top_menu {margin:0 auto; text-align:center;}
+	.ushers .ushers_right {height:200px;}
+    .ushers .ushers_right #images .seq {width:100%;}
+	.header_wrap .top_menu li a {text-align:center; font-size: 16px;}
+	.bottom .document_list dd ul li a {display:block; margin-bottom:5px;}
+	nav{font-size:14px}
+	.header_wrap .name{width:90px}2020-07-24
+	.header_wrap .top_menu li{margin-left:10px}
+	.beauty_title:after, .health_title:after {width:70%}
+	.footer_wrap{font-size:16px}
+	ul.service li{font-size:16px}
+	.partners{width:100%;max-width:506px}
+
+}

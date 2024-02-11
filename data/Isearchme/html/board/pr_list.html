@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>iSearchme</title>
+    <meta name="description" content="iSearchme">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="iSearchme">
+	<link rel="icon" href="/admission/images/favicon.ico">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="iSearchme"> 
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content=""> 
+	<meta property="og:description" content="iSearchme" >
+
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/sub.css">
+	<link rel="stylesheet" href="../../css/respon.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/sub.js"></script>
+</head>
+<body>
+    <!-- BODY -->
+	<div id="bodyArea">
+		<div class="contWrap">
+			<div class="subMain">
+				<h2>게시판</h2>	
+				<div class="subTabWrap">
+					<ul class="subTab">
+						<li><a href="faq.html"><span>자주 묻는 질문</span></a></li>
+						<li><a href="notice_list.html"><span>공지사항</span></a></li>
+						<li><a href="pr_list.html" class="on"><span>홍보자료</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="subTitle">홍보자료</p>
+			<div class="boardSearch">
+				<div class="totalNum">총 <span>5건</span>의 게시물이 있습니다.</div>
+				<form name="frmData" method="post" class="search">
+					<fieldset>
+						<legend>게시물 검색</legend>
+						<select name="s_code" title="검색조건">
+							<option selected>제목</option>
+							<option >내용</option>
+						</select>
+						<input type="text" title="검색어" name="s_data" value="" placeholder="검색어를 입력하세요.">
+						<a href="#" class="btn-search">검색</a>
+					</fieldset>
+				</form>
+			</div>
+			<ul class="gList">
+				<li><a href="pr_view.html">
+					<div class="img">
+						<img src="../../images/sub/pr_1.png" alt="">
+					</div>
+					<p>아이서치미 홍보자료 갤러리타입 게시글 입니다.<span class="new">N</span></p>
+					<div class="attr">
+						<span>2022-07-01</span>
+						<img src="../../images/sub/icon_file.png" alt="첨부파일 아이콘">
+					</div>
+				</a></li>
+				<li><a href="">
+					<div class="img">
+						<img src="../../images/sub/pr_1.png" alt="">
+					</div>
+					<p>아이서치미 홍보자료 갤러리타입 게시글 입니다.아이서치미 홍보자료 갤러리타입 게시글 입니다.</p>
+					<div class="attr">
+						<span>2022-07-01</span>
+						<img src="../../images/sub/icon_file.png" alt="첨부파일 아이콘">
+					</div>
+				</a></li>
+				<li><a href="">
+					<div class="img">
+						<img src="../../images/sub/pr_1.png" alt="">
+					</div>
+					<p>아이서치미 홍보자료 갤러리타입 게시글 입니다.</p>
+					<div class="attr">
+						<span>2022-07-01</span>
+						<img src="../../images/sub/icon_file.png" alt="첨부파일 아이콘">
+					</div>
+				</a></li>
+				<li><a href="">
+					<div class="img">
+						<img src="../../images/sub/pr_1.png" alt="">
+					</div>
+					<p>아이서치미 홍보자료 갤러리타입 게시글 입니다.</p>
+					<div class="attr">
+						<span>2022-07-01</span>
+						<img src="../../images/sub/icon_file.png" alt="첨부파일 아이콘">
+					</div>
+				</a></li>
+				<li><a href="">
+					<div class="img">
+						<img src="../../images/sub/pr_1.png" alt="">
+					</div>
+					<p>아이서치미 홍보자료 갤러리타입 게시글 입니다.아이서치미 홍보자료 갤러리타입 게시글 입니다.</p>
+					<div class="attr">
+						<span>2022-07-01</span>
+						<img src="../../images/sub/icon_file.png" alt="첨부파일 아이콘">
+					</div>
+				</a></li>
+				<li><a href="">
+					<div class="img">
+						<img src="../../images/sub/pr_1.png" alt="">
+					</div>
+					<p>아이서치미 홍보자료 갤러리타입 게시글 입니다.</p>
+					<div class="attr">
+						<span>2022-07-01</span>
+						<img src="../../images/sub/icon_file.png" alt="첨부파일 아이콘">
+					</div>
+				</a></li>
+				<li class="none"><a href="">
+					<div class="img">
+						<img src="../../images/sub/prList_none.png" alt="">
+					</div>
+					<p>아이서치미 홍보자료 갤러리타입 게시글 입니다.</p>
+					<div class="attr">
+						<span>2022-07-01</span>
+						<img src="../../images/sub/icon_file.png" alt="첨부파일 아이콘">
+					</div>
+				</a></li>
+			</ul>
+			<div class="pageArea">
+				<div class="paging">
+					<a href="#" onclick="return false;"><span class="btn"><img src="../../images/sub/pagePrev.png" alt="이전 페이지"></span></a>
+					<a href="#" onclick="" class="num on">1</a>
+					<a href="#" onclick="" class="num">2</a>
+					<a href="#" onclick="return false;"><span class="btn"><img src="../../images/sub/pageNext.png" alt="다음 페이지"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- //BODY -->
+</body>
+</html>

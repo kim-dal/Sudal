@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+.kv {display: block; width:100%; overflow:hidden; text-align:center; margin: 0 auto;} 
+.kv .bg {position:relative;}
+.bg {text-align:center;}
+.ushers {padding: 100px 0px;}
+.ushers .p_mode {width:100%; text-align:center; }
+.ushers .m_mode {width:100%; text-align:center; }
+
+
+.kv {position:relative; text-align: center; width: 100%; height: 800px; background:url(../images/kv.png) center top no-repeat; }
+.kv .title {width: 100%; height: 800px; color:#ffffff; padding-top:350px; font-weight:bold; display:block; margin:0 auto; vertical-align:middle;}
+
+.product_kv {position:relative; text-align: center; width: 100%; height: 300px; background:url(../images/product.jpg) center top no-repeat; }
+.howtouse_kv {position:relative; text-align: center; width: 100%; height: 300px; background:url(../images/howtouse.jpg) center top no-repeat;}
+.customor_kv {position:relative; text-align: center; width: 100%; height: 300px; background:url(../images/customor.jpg) center top no-repeat; }
+
+.sub_title {width: 100%; display:block; margin:0 auto; height: 300px; padding-top:120px; font-size:48px; color:#ffffff; font-weight:bold; vertical-align:middle;}
+
+hr.line01 {width:100%; margin-top:40px; margin-bottom:40px; border-top:1px solid #e5e5e5;}
+
+
+/*메인 홈*/
+.genorhythm{text-align:center}
+
+.partners {width:750px; margin:0 auto; overflow:hidden;}
+.partners li {float:left; width:243px; margin-bottom:10px; margin-right:10px}
+.partners li img{width:100%}
+.partners li:nth-of-type(3n){margin-right:0}
+
+.program {margin-top:100px}
+.program li {margin-bottom:100px; overflow:hidden;}
+.program li img{float:left; width:50%;}
+.program li div{width:50%; float:right; padding:24px 50px; padding-right:0; font-size:20px; line-height:1.5em; letter-spacing: -1px;}
+.program li.right img{float:right}
+.program li.right div{float:left; padding:24px 50px; padding-left:0}
+.program li h4{position:relative; margin-bottom:60px; line-height: initial; font-size:28px;}
+.program li h4:after{content:"";display:block;position:absolute; bottom:-30px; width:40px; height:4px; background:#64c9cf;}
+.program li span{display:block; margin-bottom:10px font-size:22px;}
+
+/*제품소개*/
+.video-container{position:relative; padding-bottom:56.25%; margin-bottom:100px; padding-top:30px; height:0; overflow:hidden; }
+.video-container iframe,.video-container object,.video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+.beauty_title{position:relative; margin-bottom:30px; font-size:24px; color:#e7a66a;}
+.beauty_title:after{content:""; width:90%; height:1px; position:absolute; top:50%; right:0; background:#e7a66a;}
+
+ul.beauty li {overflow:hidden; margin-bottom:30px}
+ul.beauty li div{float:left; width:120px; text-align:center}
+ul.beauty li div span{display: block; margin-top:10px; font-size:20px; line-height:18px; font-weight:500}
+ul.beauty li p {position:relative; width:auto; margin-left:160px; padding:50px 30px; border-radius:30px; background:#fdf2df; font-size:18px}
+ul.beauty li p:before{position:absolute; content:""; display:block; left:-15px; top:50%; margin-top:-10px; width: 0px; height: 0px;
+  border-top:10px solid transparent; border-bottom:10px solid transparent; border-right: 15px solid #fdf2df; border-left: 15px solid none;}
+
+.health{margin-bottom:100px}
+.health_title{position:relative; margin-bottom:30px; font-size:24px; color:#64c9cf;}
+.health_title:after{content:""; width:90%; height:1px; position:absolute; top:50%; right: 0; background:#64c9cf;}
+
+ul.health li {overflow:hidden; margin-bottom:30px}
+ul.health li div{float:left; width:120px; text-align: center;}
+ul.health li div span{display: block; margin-top:10px; font-size:20px; line-height:18px; font-weight:500}
+ul.health li p {position:relative; width:auto; background:#e0f4f5; margin-left:160px; padding:50px 30px; border-radius:30px; font-size:18px}
+ul.health li p:before{position:absolute; content:""; display:block; left:-15px; top:50%; margin-top:-10px; width: 0px; height: 0px;
+  border-top:10px solid transparent;border-bottom:10px solid transparent;border-right: 15px solid #e0f4f5;border-left: 15px solid none;}
+
+ul.service{overflow:hidden; border:1px solid #e5e5e5; margin-bottom:100px}
+ul.service li{float:left; width:25%; padding:30px 15px; border-right:1px solid #e5e5e5; font-size:20px; text-align:center}
+ul.service li:last-child{border-right:none}
+ul.service li img{display:block; margin:0 auto 30px;}
+
+.iso{overflow:hidden; margin-bottom:100px; text-align:center;}
+.iso div{float:left;width:45%; margin-right:5%; background:#f2f2f2; padding:40px 30px}
+.iso div:last-child{margin-right:0}
+.iso div dt{margin-top:20px; font-size:20px; font-weight:700;}
+.iso div dd{font-size:18px;}
+.iso div dd span{display:block; width:30px; height:1px; margin:20px auto; background:#000;}
+
+.news{text-align:center; border:1px solid #e5e5e5; padding:50px 165px; margin-bottom:100px}
+.news .line{display:block; margin:30px auto 0 ;}
+.news .text{position:relative; margin:50px 0; font-size:18px; font-weight:500;}
+.news .text:after{content:"";background:#e7a66a;width:12%;height:1px;position:absolute;top:50%;right: 0;}
+.news .text:before{content:"";background:#e7a66a;width:12%;height:1px;position:absolute;top:50%;left: 0;}
+
+.news .full{width:100%}
+
+.news .result{overflow:hidden}
+.news .result div{width:48%; margin-right:4%; float:left}
+.news .result div:last-child{margin-right:0}
+.news .result img{width:100%}
+.news .result div p{margin-top:10px}
+.news .view {display:block; margin:50px auto 0; background:url(../images/btn.png) center top no-repeat; width: 250px; height:60px; text-indent:-9999px;}
+
+
+/*이용방법*/
+.test_title{position:relative; margin-top:100px; text-align:center; font-size:36px; font-weight:200;}
+.test_title span{font-weight:500}
+.test_title:after{content:""; background:#64c9cf; width:18%; height:1px; position:absolute; top:50%; right:0;}
+.test_title:before{content:""; background:#64c9cf; width:18%; height:1px; position:absolute; top:50%; left:0;}
+
+.testWay {margin-top:100px}
+h4.cc_title{font-size:24px}
+ul.test{overflow:hidden; padding-bottom:40px; border-bottom:1px solid #e5e5e5; margin-bottom:40px }
+ul.test li {float:left; width:18%; margin-right:2.5%; text-align:center;}
+ul.test li:last-child{margin-right:0}
+ul.test li img{display:block; background:#ddd; width:100%;max-width:170px; border-radius:50%;border:none}
+ul.test li span{display:block;  width:50px; border:2px solid #64c9cf; margin:10px auto; border-radius:30px; text-align:center; color:#64c9cf; font-weight:700;line-height:21px;}
+
+ul.caution {text-align:left; padding:0 15px;margin-bottom:70px}
+li.caution {list-style:none; line-height:1.8; font-weight:normal; color:#818181}
+li.caution::before{content:"\2022"; color:#64c9cf; font-weight:bold; display: inline-block; width:1em; margin-left:-1em;}
+
+
+/*고객문의*/
+.custom_center li.caution{color: #333; font-size:18px}
+.caution_title{margin:40px 0}
+
+.faq ul li:last-child{border-bottom:1px solid #e5e5e5}
+.faq .que{position:relative; border-top:1px solid #e5e5e5; padding: 20px 45px 20px 0; line-height:30px; font-size:18px; font-weight:500;}
+.faq .que span{font-size:22px; font-weight:700; padding-right:15px;}
+
+.faq .ans {padding: 30px 20px; display: none; background:#f2f2f2; border-top:1px solid #e5e5e5; font-size:18px; font-weight:300}
+.faq .ans strong{display:block;margin-bottom:10px}
+.faq .que.on{border-top:1px solid #64c9cf;}
+
+.faq img.icon{display:block; position:absolute; right:15px; top:50%}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>iSearchme</title>
+    <meta name="description" content="iSearchme">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="iSearchme">
+	<link rel="icon" href="/admission/images/favicon.ico">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="iSearchme"> 
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content=""> 
+	<meta property="og:description" content="iSearchme" >
+
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/sub.css">
+	<link rel="stylesheet" href="../../css/respon.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/sub.js"></script>
+</head>
+<body>
+    <!-- BODY -->
+	<div id="bodyArea">
+		<div class="contWrap">
+			<div class="subMain">
+				<h2>게시판</h2>	
+				<div class="subTabWrap">
+					<ul class="subTab">
+						<li><a href="faq.html" class="on"><span>자주 묻는 질문</span></a></li>
+						<li><a href="notice_list.html"><span>공지사항</span></a></li>
+						<li><a href="pr_list.html"><span>홍보자료</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="subTitle">자주 묻는 질문</p>
+			<div class="boardSearch">
+				<div class="totalNum">총 <span>5건</span>의 게시물이 있습니다.</div>
+				<form name="frmData" method="post" class="search">
+					<fieldset>
+						<legend>게시물 검색</legend>
+						<select name="s_code" title="검색조건">
+							<option selected>제목</option>
+							<option >내용</option>
+						</select>
+						<input type="text" title="검색어" name="s_data" value="" placeholder="검색어를 입력하세요.">
+						<a href="#" class="btn-search">검색</a>
+					</fieldset>
+				</form>
+			</div>
+			<ul class="faqTab">
+				<li><a href="" class="on">전체</a></li>	
+				<li><a href="">유전자 검사</a></li>	
+				<li><a href="">주문</a></li>	
+				<li><a href="">배송</a></li>	
+				<li><a href="">유전자 분석</a></li>	
+				<li><a href="">기타</a></li>	
+			</ul>
+			<dl class="faqList">
+				<dt><span>Q.01</span><strong>[유전자 검사]</strong> 현재 신체적인 문제가 특별히 없는데도 유전자 검사 서비스를 받을 필요가 있나요? <i>아이콘</i></dt>
+				<dd>답변</dd>
+				<dt><span>Q.02</span><strong>[유전자 검사]</strong> 채취한 검체는 언제까지 발송해야 하나요? <i>아이콘</i></dt>
+				<dd>답변</dd>
+				<dt><span>Q.03</span><strong>[유전자 검사]</strong> 서비스 결과는 어떤 형태로 받아볼 수 있나요? <i>아이콘</i></dt>
+				<dd>답변</dd>
+				<dt><span>Q.04</span><strong>[유전자 검사]</strong> 아이서치미에서 DNA 검사를 받을 수 있나요? <i>아이콘</i></dt>
+				<dd>현재 미국에서는 DNA 시퀀싱 서비스를 제공하지 않고 있으며, 대신 귀하의 유전자 원시 데이터인 iSearchme를 기반으로 유전자 분석 보고서를 제공하는
+				서비스를 제공하고 있습니다. 한국에 거주하시는 분은 ㈜아이크로진 info@ichrogene.com으로 연락하여 검사를 받으시기 바랍니다.</dd>
+				<dt><span>Q.05</span><strong>[주문] </strong> 아이크로진 키트는 어떻게 구매하나요? <i>아이콘</i></dt>
+				<dd>답변</dd>
+			</dl>
+			<div class="pageArea">
+				<div class="paging">
+					<a href="#" onclick="return false;"><span class="btn"><img src="../../images/sub/pagePrev.png" alt="이전 페이지"></span></a>
+					<a href="#" onclick="" class="num on">1</a>
+					<a href="#" onclick="" class="num">2</a>
+					<a href="#" onclick="return false;"><span class="btn"><img src="../../images/sub/pageNext.png" alt="다음 페이지"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- //BODY -->
+</body>
+</html>

@@ -1,0 +1,372 @@
+@media (max-width:1280px) {
+	.contWrap { width:auto; margin:0 20px; }
+
+	.subTab li { margin:0 10px; }
+
+	.dnaPop .popWrap { width:90% !important; padding:20px; border-radius:15px; font-size:14px; }
+	.dnaPop .popTitle { padding-bottom:20px; }
+	.dnaPop .popClose { right:0; top:-45px; width:35px; height:35px; background-size:10px auto; transform:translate(0,0); }
+	.dnaPop .left { margin-right:20px; }
+	.dnaPop .left .box1 { padding:30px 20px; padding-right:130px; background-position:right 20px center; background-size:100px; border-radius:15px; }
+	.dnaPop .box2 { border-radius:15px; }
+	.dnaPop .downBtn { height:50px; border-radius:15px; }
+	.dnaPop .left li { padding:15px; }
+	.dnaPop .state p { padding-left:30px; font-size:1.125em; background-size:18px auto; }
+	.dnaPop .right { margin-left:20px; }
+	.dnaPop .guide, .dnaPop .right .box { padding:20px; }
+	.dnaPop .guide li div  { padding:15px; border-radius:0 15px 15px; }
+	.dnaPop .detail .titleWrap { margin-bottom:20px; }
+	.dnaPop .detail .textWrap { margin-top:20px; padding-top:0; }
+}
+
+@media (max-width:980px) {
+	.subTabWrap { overflow:auto; -webkit-overflow-scrolling:touch; scroll-snap-type:x mandatory; max-width:940px; margin:0 -20px; }
+	.subTabWrap::-webkit-scrollbar { display:none; }
+	.subTabWrap::-webkit-scrollbar-thumb { display:none; }
+	.subTab { justify-content:flex-start; padding:0 20px; }
+	.subTab li { flex-shrink:0; margin-right:10px; margin-left:0; }
+
+	.join .box { padding:40px; }
+	.snsJoin a { padding:10px 20px; }
+	.snsJoin a img { margin-right:10px; }
+	
+	.upload .logoList { flex-wrap:wrap; margin:-10px 0; }
+	.upload .logoList li { width:32%; margin:10px 0; }
+	
+	.gList li p { font-size:1.125em; }
+
+	.dashList li { padding:30px; }
+
+	.use .nav { width:200px; margin-left:30px; }
+	.use .nav .title { padding:20px 30px; }
+	.use .nav ul { padding:30px; }
+	.use .box { padding:30px; }
+
+	.siteMap dd { padding:30px; padding-left:20px; }
+}
+
+@media (max-width:840px) {
+	.dnaPop .popContent { overflow:auto; display:block; max-height:75vh; }
+	.dnaPop .popContent:after { display:none; }
+	.dnaPop .left { width:100%; max-height:none; margin-right:0; margin-bottom:20px; }
+	.dnaPop .right { overflow:hidden; width:100%; max-height:none; margin-left:0; }
+	.dnaPop .right .state { font-size:14px; }
+	.dnaPop .guide li { margin-top:20px; padding-left:18px; }
+	.dnaPop .guide li div:before { width:20px; }
+	.dnaPop .detail .titleWrap p { font-size:18px; }
+	.dnaPop .detail .titleWrap.icon01 { background-size:40px auto; }
+	.dnaPop .detail .textWrap .icon { width:45px; height:45px; }
+	.dnaPop .detail .textWrap .icon01 { background-size:40px auto; }
+
+}
+
+@media (max-width:768px) {
+	body { font-size:14px; font-weight:300; }
+	.contWrap { padding:60px 0 100px; }
+
+	.col { margin:40px 0; }
+	.col.col2 .box { width:100%; }
+	.col.col2 .box:nth-of-type(2n) { margin-top:20px; }
+	.col.col3 .box { width:100%; }
+	.col.col3 .box + .box { margin-top:20px; }
+
+	.dot + .dot { margin-top:5px; }
+
+	.memberTitle { margin-bottom:40px; }
+	.memberTitle h3 { font-size:2em; }
+	.memberTitle p { margin-top:20px; }
+
+	.certification { padding:30px; border-radius:15px; }
+	.certification .title { margin:20px 0; }
+	
+	.findPassword { padding:30px; border-radius:15px; }
+	.findPassword .title { margin:20px 0; }
+	.findPassword .inputWrap { margin-top:30px; }
+
+	.join .box { padding:30px; border-radius:15px; }
+	.join .box .des { margin-bottom:30px; }
+	.snsJoin a { height:50px; padding:10px; font-size:1em; }
+	.snsJoin a img { height:30px; margin-right:10px; }
+	.snsJoin div { margin:5px 0; }
+
+	.tableStyle1 th { width:100px; line-height:50px; }
+	.tableStyle1 .genderWrap .radioForm { min-height:50px; padding:10px 20px; }
+	.tableStyle1 input#nickName, .tableStyle1 input#checkPassword { margin-top:10px; }
+	p.error { margin:10px; margin-bottom:0; font-size:12px; }
+
+	.joinForm .checkForm { margin-top:30px; padding:30px 0; }
+	.joinForm .checkForm .error { margin-left:20px; }
+	.joinForm .col.col3 .box + .box { margin-top:10px; }
+	.joinForm .col.col2 .box:nth-of-type(2n) { margin-top:10px; }
+
+	.subMain { margin:50px 0; }
+	.subMain h2 { font-size:2.5em; }
+	.subTab { margin-top:40px; }
+	.subTab a { padding:15px 30px; font-size:1em; }
+	.subTab a.on span:before { left:-10px; }
+
+	.boardSearch { flex-direction:column; align-items:flex-start; }
+	.boardSearch .totalNum { margin-bottom:30px; }
+	.search { width:100%; }
+	.search input { width:100%; }
+	.search select { padding:10px 20px 10px 10px; background-position:center right 10px; }
+
+	.pageArea { margin-top:30px; }
+
+	table.bList { font-size:1.125em; }
+	table.bList tr { display:block; padding:30px 0; border-bottom:1px solid #ececec; }
+	table.bList td { display:block; border:none; }
+	table.bList td:first-child { width:auto; text-align:left; }
+	table.bList td:first-child span { display:none; }
+	table.bList td:first-child .top { display:block; height:24px; line-height:24px; border-radius:20px; font-size:12px; }
+	table.bList td a { padding:10px 0 0; }
+	table.bList td .file { position:static; transform:translateY(0); vertical-align:top; }
+	table.bList td .file img { height:20px; }
+	table.bList td .reg { margin-top:10px; }
+	table.bList td .reg span { display:inline-block; }
+	table.bList td .reg span:nth-of-type(2) { position:relative; padding-right:15px; margin-right:15px; }
+	table.bList td .reg span:nth-of-type(2):after { content:''; position:absolute; right:0; top:15%; bottom:15%; width:1px; background:#ececec; }
+
+	table.bView td { padding:30px 0; }
+	table.bView .subject { font-size:1.125em; }
+	table.bView .date { margin-top:10px; }
+	table.bView .file { margin-top:20px; padding-left:30px; background-size:20px auto; }
+	table.bView .file a { margin-right:10px; }
+
+	div.bContent { padding:30px 0; font-size:1em; }
+
+	table.viewList th { padding:15px 20px; width:80px; }
+	table.viewList td { padding:15px 20px; }
+	table.viewList + a.btnType1 { margin-top:40px; }
+
+	.gList { margin:-10px 0; }
+	.gList li { width:48%; margin:10px 0; margin-right:4%; }
+	.gList li:nth-of-type(2n) { margin-right:0; }
+	.gList li p { margin:10px 0; font-size:1.125em; }
+	.gList li .attr { font-size:12px; }
+	.gList li .attr img { margin-left:10px; }
+	.gList + .pageArea { margin-top:40px; }
+
+	.subTitle { margin-bottom:40px; font-size:1.5em; }
+	.subTitle ~ .subTitle { margin-top:50px; }
+	.textTitle { margin-bottom:20px; font-size:1.25em; }
+	.textTitle ~ .textTitle { margin-top:50px; }
+	.imgTitle { margin-bottom:20px; font-size:1.125em; }
+
+	.profile { padding:20px; border-radius:15px; }
+	.profile .top { display:block; margin:0; }
+	.profile .img { display:flex; justify-content:flex-start; align-items:center; margin:0; }
+	.profile .img img { width:50%; max-width:250px; margin-right:20px; }
+	.profile .img p { display:block; font-size:1.125em; }
+	.profile .img p strong { display:block; font-size:1.25em; }
+	.profile .name { display:none; }
+	.profile .top dl { margin-top:20px; }
+	.profile .top dt { float:none; width:100%; }
+	.profile .top dt ~ dt { margin-top:15px; }
+	.profile .top dd { float:none; width:100%; }
+	.profile .openCareer { justify-content:center; margin-top:20px; padding:20px; padding-bottom:0; border-top:1px solid rgba(0,0,0,0.1); }
+	.profile .openCareer.open { margin-bottom:20px; padding-bottom:20px; }
+	.profile .career { border:none; margin:0; padding:0; }
+
+	.profile .career dt { float:none; width:100%; }
+	.profile .career dt ~ dt { margin-top:15px; }
+	.profile .career dd { float:none; width:100%; }
+	.profile .career.long dt { width:100%; }
+	.profile .career.long dd { width:100%; }
+
+	.partners { border-radius:15px; }
+	.partners li { width:50%; height:120px; }
+	.partners li img { max-width:80%; }
+	.partners li:nth-of-type(2n) { border-right:none; } 
+	.partners li:nth-of-type(7),.partners li:nth-of-type(8) { border-top:1px solid #ececec; }
+	.partners.noLine li:nth-of-type(1), .partners.noLine li:nth-of-type(2) { border-bottom:1px solid #ececec; }
+
+	.tech .wrap.no1 li { flex-direction:column; }
+	.tech .wrap.no1 .img { width:100%; margin:0 !important; }
+	.tech .wrap.no1 .img img { width:100%; }
+	.tech .wrap.no1 .text { margin-top:30px; width:100%; }
+	.tech .wrap.no1 li + li { flex-direction:column; margin-top:40px; }
+	
+	.tech .col { margin:40px 0; }
+	
+	.tech .patent .des { margin:0 20px 20px; }
+	.tech .patent li { border-radius:15px; }
+	.tech .patent li .textTitle { line-height:40px; }
+	.tech .patent img { max-width:70%; margin:30px auto; }
+	.tech .patent li:nth-of-type(1) img { max-width:60%; } 
+	.tech .patent li:nth-of-type(2) img { max-width:50%; } 
+	.tech .patent li:nth-of-type(3) img { max-width:70%; } 
+
+	.tech .imgWrap { overflow:auto; -webkit-overflow-scrolling:touch; scroll-snap-type:x mandatory; margin-right:-20px; }
+	.tech .imgWrap ul { flex-wrap:nowrap; scroll-snap-align:start; width:800px; margin-bottom:0; padding-right:20px; }
+	.tech .techBox li .titlebox { line-height:50px; }
+	.tech .techBox li .textWrap { padding:20px; }
+	.tech .techBox li .title { margin-bottom:20px; }
+	.tech .techBox li .line { margin:20px 0; }
+
+	.tech .tableWrap { overflow-x:auto; margin-right:-20px; }
+	.tech .tableWrap table { min-width:640px; }
+	.tech .table1 th { padding:10px; font-size:1em; }
+	.tech .table1 td { padding:5px; }
+	.tech .first td { padding-top:10px; }
+	.tech .line td { padding-bottom:10px; }
+
+	.tech .tableText { margin-top:20px; }
+	.tech .table2 th { padding:10px; font-size:1em; }
+	.tech .table2 td { padding:10px; }
+
+	.guide .box { display:block; padding:20px; border-radius:15px; }
+	.guide .box .img { width:127px; margin:0 auto 10px; } 
+	.guide .box img { width:100%; }
+	.guide .box p { margin:15px 0; font-size:1.375em; }
+	.guide .arrow { width:36px; height:24px; margin:30px auto; }
+
+	.activate .subTitle { margin-bottom:20px; font-size:1.375em }
+	.activate .col { min-height:200px; border-radius:15px; }
+	.activate .checkForm { margin-top:10px; }
+	.barcode { padding:40px; }
+	.barcode .title { margin-bottom:30px; }
+	.barcode .dot { font-size:12px; }
+	.activatePop .popContent i { margin-bottom:20px; }
+
+	.upload .subTitle { margin-bottom:20px; font-size:1.375em; }
+	.upload .logoList li { width:48%; padding-top:20px; border-radius:15px; }
+	.upload .logoList li img { max-width:75%; }
+	.upload .logoList p { margin:10px 0 20px; }
+	.upload .wrap { padding:20px; border-radius:15px; }
+	.upload .checkForm { margin-top:10px; }
+	.upload .checkForm .error { margin-left:20px; }
+	.upload .inputWrap label { height:200px; margin-top:0; border-radius:15px; }
+	.upload .tableStyle1 { width:100%; }
+	.upload .tableStyle1 input#nickName { margin-top:0; }
+	.upload .logoList li.on:before { background-size:40px auto; }
+
+	.fileuploadPop .popContent .title { margin-top:20px; }
+
+	.faqTab { justify-content:space-between; margin:0 -5px 30px -5px; }
+	.faqTab li + li { margin:0; }
+	.faqTab a { font-size:1.125em; }
+
+	.faqList dt { padding:20px 40px 20px 0; font-size:1.125em; }
+	.faqList dt span { margin-right:5px; }
+	.faqList dt i { width:14px; height:14px; }
+	.faqList dt.on + dd { padding:0 40px 20px 0; }
+
+	.profileWrap { padding:20px 40px; margin-bottom:40px; border-radius:15px; }
+	.profileWrap .arrow a { width:11px; height:18px; }
+	.profileWrap .prev { left:20px; }
+	.profileWrap .next { right:20px; }
+	.profileSlide { display:flex; align-items:center; }
+
+	.dashProfile { flex-wrap:wrap; }
+	.dashProfile p { flex-shrink:0; margin:0 10px; font-size:1.125em; }
+	.dashProfile p + p { padding-left:0; }
+	.dashProfile p + p:before { display:none; }
+	.dashProfile span { margin-left:10px; }
+
+	.dashList .left { float:none; width:auto; }
+	.dashList .right { float:none; width:auto; margin-top:40px; }
+	.dashList .box > p br { display:none; }
+	.dashList .box + .box { margin-top:40px; }
+	.dashList .subTitle { margin-bottom:10px; }
+	.dashList ul { margin-top:20px; }
+	.dashList li { padding:20px; border-radius:15px; }
+	.dashList li + li { margin-top:10px; }
+	.dashList li .title { font-size:1.125em; }
+	.dashList li .state { margin-bottom:5px; }
+	.dashList li .detail .date { font-size:12px; }
+
+	.dashList .add { padding:40px 30px; border-radius:15px; }
+	.dashList .add p { margin-top:20px; font-size:1em; }
+
+	.passwordPop .snsTitle { margin:20px 0 10px; font-size:1em; }
+	.passwordPop .snsJoin p { margin-top:5px; font-size:12px; }
+
+	.humanChart.dnaTableWrap { font-size:12px; }
+
+	.survayPop .popWrap { width:100% !important; border-radius:0; }
+	.survayPop .popClose { top:20px; right:20px; left:auto; width:26px; height:20px; transform:translate(0,0);
+		background-size:contain; background-image:url('../images/common/mGnbClose.png'); }
+	.survayPop .tableWrap { margin:20px 0; }
+	.survayPop th { padding:10px 5px; }
+	.survayPop .dot { font-size:12px; }
+	.survayPop .survayTab { margin-top:20px; }
+	.survayPop .survayTab a { padding:15px 0; }
+	.survayPop .survayList { height:calc(100vh - 360px); }
+	.survayPop .survayList > .box { padding:20px; }
+
+	.survayPop .label, .survayPop label { margin-bottom:10px; }
+	.survayPop label ~ .label, .survayPop .label ~ .label { margin-top:20px; }
+	.survayPop .col.col2 .box:nth-of-type(2n) { margin-top:10px; }
+	.survayPop .checkForm { padding:8px 20px; }
+	.survayPop .radioForm { padding:8px 20px; }
+	.survayPop .noti { font-size:12px; }
+	.survayPop .label + .noti { margin-bottom:10px; }
+
+	.checkForm label { padding-left:21px; background-size:15px auto; background-position:left top 4px; }
+	.radioForm label { padding-left:21px; background-size:15px auto; background-position:left top 4px; }
+
+	.secession { margin-top:40px; }
+	.secessionPop .checkForm { margin-top:10px; } 
+
+	.directInquiry { right:20px; bottom:20px; }
+	.directInquiry img { width:60px; }
+	
+	.chronicPop .box1 { padding:20px; padding-right:130px; background-position:right 20px center; background-size:100px; border-radius:15px; }
+	.chronicPop .box1 .title { margin:10px 0 20px; font-size:1.125em; }
+	.chronicPop .box1 span { font-size:12px; }
+	.chronicPop .box1 .line { font-size:1em; }
+	.chronicPop .box2 { padding:20px; border-radius:15px; }
+	.chronicPop .downBtn { height:50px; border-radius:15px; }
+	.chronicPop ul { margin-bottom:20px; }
+	.chronicPop li { padding:15px; }
+	.chronicPop .state p { padding-left:30px; font-size:1.125em; background-size:18px auto; }
+	.chronicPop .noti { font-size:12px; }
+	.chronicPop .noti + .noti { margin-top:10px; }
+
+	.inquiryPop .popWrap { width:100% !important; left:0; top:0; bottom:0; transform:translate(0,0); border-radius:0; }
+	.inquiryPop .popTitle { padding:20px; }
+	.inquiryPop .popContent { height:calc( 100vh - 70px ); max-height:none; min-height:auto; padding:20px 20px 0; }
+	.inquiryPop .popClose { right:20px; top:23px; left:auto; width:26px; height:20px; transform:translate(0,0);
+		background-size:contain; background-image:url('../images/common/mGnbClose.png'); }
+	.inquiryPop li { padding:20px; border-radius:15px; }
+	.inquiryPop li + li { margin-top:10px; }
+	.inquiryPop li .date { font-size:12px; }
+	.inquiryPop li .alarm { bottom:20px; }
+	.inquiryPop .chat { padding-bottom:100px; }
+	.inquiryPop .chat .message span { padding:5px 15px; }
+	.inquiryPop .chat .message p { font-size:12px; }
+	.inquiryPop .chat .sender span { padding:5px 15px; }
+	.inquiryPop .chat .sender p { font-size:12px; }
+	.inquiryPop .inputWrap { min-height:auto; padding:15px 20px; border-radius:0; }
+	.inquiryPop textarea { width:calc(100% - 100px); }
+
+	.use { flex-direction:column-reverse; }
+	.use .nav { width:100%; margin-bottom:40px; margin-left:0; border-radius:15px; }
+	.use .nav .title { padding:12px; text-align:center; }
+	.use .nav .title p { display:inline-block; font-size:1.125em; }
+	.use .nav ul { overflow:auto; max-height:200px; padding:0; }
+	.use .nav li { padding:15px 20px; border-bottom:1px solid #ececec; }
+	.use .nav li p { font-size:12px; }
+	.use .nav li + li { margin-top:0; }
+	.use .nav li:last-child { border-bottom:0; }
+
+	.use .box { width:100%; padding:0; border:none; }
+	.use .box .title { padding-bottom:20px; margin-bottom:20px; }
+	.use .box .title span { font-size:12px; } 
+	.use .box .text { max-height:none; }
+	.use .box .text h4 { margin-bottom:20px; font-size:1.25em; }
+	.use .box .text h4 ~ h4 { margin-top:20px; }
+
+	.siteMap { margin:-10px 0; }
+	.siteMap > li { width:48%; height:auto; margin:10px 0; border-radius:15px; }
+	.siteMap dt { padding:12px 10px; }
+	.siteMap dd { padding:20px; padding-left:10px; }
+	.siteMap .depth2 li { word-break:break-all; }
+	.siteMap .depth2 li + li { margin-top:10px; }
+}
+
+@media (max-width:480px) {
+	.dashList li { padding:15px; }
+	.survayPop .survayList { height:calc(100vh - 390px); }
+}
