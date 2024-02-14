@@ -1,9 +1,14 @@
 $(function () {
   const introSection = $("#load");
+  const textMove = $("#load .textWrap");
+
+  setTimeout(function () {
+    textMove.addClass("on");
+  }, 1000);
 
   setTimeout(function () {
     introSection.removeClass("on");
-  }, 2000);
+  }, 3000);
 });
 $(function () {
   const $header = $("#header");
