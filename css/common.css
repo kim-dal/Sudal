@@ -232,7 +232,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 #header h1 {
   display: block;
@@ -264,6 +263,7 @@ body {
 
 /* FOOTER area */
 #footer {
+  z-index: 10;
   position: relative;
   padding: 80px 0;
   background: #000;
@@ -322,4 +322,21 @@ body {
   background: #fff;
   box-shadow: inset -5px -5px 0 #ddd;
   font-weight: 800;
+}
+
+
+@media (max-width: 768px) {
+  #header {
+    padding:20px 5%;
+  }
+  #header h1 a { 
+    font-size:30px;
+  }
+  #header .gnbWrap { 
+    display:none;
+  }
+  .goTop {
+    right:5%;
+    bottom:20px;
+  }
 }
