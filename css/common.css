@@ -15,14 +15,10 @@ body {
 body {
   cursor: url("../images/ico-pointer.png"), auto;
 }
-div,
-p,
-span,
-a {
-  line-height: 1.8;
+div, p, span, a {
+  line-height: 1.5;
 }
-a,
-button {
+a, button {
   cursor: url("../images/ico-click.png"), auto !important;
 }
 
@@ -42,24 +38,18 @@ a:focus {
   text-decoration: none;
 }
 
-input,
-textarea,
-select {
+input, textarea, select {
   font-size: 1em;
   color: #000;
   font-family: "Noto Sans KR", dotum, sans-serif;
   font-weight: 400;
 }
-input,
-select,
-textarea {
+input, select, textarea {
   padding: 10px;
   border: 1px solid #d5d5d5;
 }
 
-ul,
-ol,
-ol li {
+ul, ol, ol li {
   list-style: none;
   padding: 0;
 }
@@ -110,12 +100,7 @@ form fieldset {
 img {
   vertical-align: middle;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: normal;
 }
@@ -125,7 +110,6 @@ select {
   -moz-appearance: none;
 }
 select:before {
-  /* ȭ��ǥ ��ü */
   content: "";
   position: absolute;
   top: 50%;
@@ -221,6 +205,7 @@ body {
   width: 100%;
   padding: 30px 40px;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 #header a {
   color: #fff;
@@ -228,6 +213,9 @@ body {
 #header.bk a {
   color: #000;
 }
+/* #header.bk h1 span {
+  -webkit-text-stroke: 2px #000;
+} */
 #header .headerInner {
   display: flex;
   justify-content: space-between;
@@ -291,14 +279,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  color: #9da0ab;
-  text-align: right;
-}
-#footer .util li:first-child {
-  margin-right: 50px;
-}
-#footer .util li:first-child a {
   color: #fff;
+  text-align: right;
 }
 #footer address {
   padding: 50px 0 20px;

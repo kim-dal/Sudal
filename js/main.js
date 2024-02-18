@@ -1,4 +1,4 @@
-$(function () {
+/* $(function () {
   const introSection = $("#load");
   const textMove = $("#load .textWrap");
 
@@ -9,7 +9,7 @@ $(function () {
   setTimeout(function () {
     introSection.removeClass("on");
   }, 3000);
-});
+}); */
 $(function () {
   const $header = $("#header");
   const $page = $(".section2");
@@ -30,4 +30,12 @@ $(function () {
       $header.removeClass("bk");
     }
   });
+});
+
+
+$(function(){
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+   });
 });
