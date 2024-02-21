@@ -1,4 +1,4 @@
-/* $(function () {
+$(function () {
   const introSection = $("#load");
   const textMove = $("#load .textWrap");
 
@@ -9,33 +9,27 @@
   setTimeout(function () {
     introSection.removeClass("on");
   }, 3000);
-}); */
+});
+
 $(function () {
+  let locoScroll;
   const $header = $("#header");
   const $page = $(".section2");
-  const $window = $(window);
   let pageOffsetTop = $page.offset().top;
 
-  console.log(pageOffsetTop);
-
-  $window.resize(function () {
-    pageOffsetTop = $page.offset().top;
+  locoScroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
   });
 
-  $window.on("scroll", function () {
-    pageOffsetTop = $page.offset().top;
-    if ($window.scrollTop() >= pageOffsetTop) {
+  locoScroll.on("scroll", (instance) => {
+    if (instance.scroll.y > pageOffsetTop) {
       $header.addClass("bk");
     } else {
       $header.removeClass("bk");
     }
   });
-});
-
-
-$(function(){
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true
-   });
+  locoScroll.on("resize", (instance) => {
+    pageOffsetTop = $page.offset().top;
+  });
 });
