@@ -11,6 +11,15 @@ $(function () {
   }, 3000);
 });
 
+$(".goTop").on("click", function () {
+  scroll.scrollTo(slider);
+});
+$(function () {
+  $(".goTop").on("click", function () {
+    $("html, body").animate({ scrollTop: 0 }, 400);
+  });
+});
+
 $(function () {
   let locoScroll;
   const $header = $("#header");
@@ -20,13 +29,12 @@ $(function () {
   locoScroll = new LocomotiveScroll({
     el: document.querySelector("[data-scroll-container]"),
     smooth: true,
-    smartphone: {
-      smooth: true,
-    },
-    tablet: {
-      smooth: true,
-    },
+    smoothMobile: true,
   });
+
+  new ResizeObserver(() => locoScroll.update()).observe(
+    document.querySelector("[data-scroll-container]")
+  );
 
   locoScroll.on("scroll", (instance) => {
     if (instance.scroll.y > pageOffsetTop) {

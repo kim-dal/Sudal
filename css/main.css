@@ -36,6 +36,7 @@
 #load .textWrap .text2 {
   position: absolute;
   left: 0;
+  right: 0;
   top: 0;
   transform: translateY(0);
   transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
