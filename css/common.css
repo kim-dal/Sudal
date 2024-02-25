@@ -257,6 +257,7 @@ body {
   font-size: 30px;
 }
 #header.bk h1 span {
+  color: #ffff00;
   -webkit-text-stroke: 2px #000;
 }
 /*
