@@ -456,8 +456,10 @@
   }
   .section.section2 .tag {
     margin: 10px 10px 10px 0;
-    font-size: 1.25em;
     width: auto !important;
+  }
+  .section.section2 .tag span {
+    font-size: 1.25em;
   }
 
   .section.section3 .content {
