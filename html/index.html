@@ -12,17 +12,17 @@
     <meta property="og:description" content="웹퍼블리셔 김수연의 포트폴리오 사이트입니다">
 
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/main.js"></script>
   </head>
 
-  <body data-scroll-container>
+  <body>
     <div id="load" class="on">
-      <div class="textWrap mon">
+      <div class="textroll mon">
         <p class="text1">&lt;/WEB PUBLISHER&gt;</p>
         <p class="text2">&lt;PORTFOLIO&gt;</p>
       </div>
@@ -37,47 +37,78 @@
     </header>
     <!-- //HEADER -->
     <div id="body">
-      <div class="section section1" id="section1" data-scroll-section>
-          <div class="directionWrap">
-            <div class="directionBlock one">
-              <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="4">I'm creative! I'm progressive!</h2>
-            </div>
-            <div class="directionBlock two">
-              <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="6">And i am developing!</h2>
-            </div>
-            <div class="directionBlock three">
-              <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="5" data-scroll-delay="0.05">friendly, positive, friendly, positive, </h2>
-            </div>
-            <div class="directionBlock four">
-              <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="12">I have possibilities in all directions.</h2>
-            </div>
-            <div class="directionBlock five">
-              <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-10" data-scroll-delay="0.05">HELLO!</h2>
-            </div>
+      <div class="section section1" id="section1">
+        <div class="bg">
+          <video autoplay muted loop>
+            <source src="../images/video.mp4" type="video/mp4" />
+            Your browser is not supported!
+          </video>
+        </div>
+        <div class="content">
+          <p>WANT TO BE A</p>
+          <div class="typing">
+            <span class="text"></span><span class="blink">|</span>
+          </div>
+          <p>PUBLISHER</p>
         </div>
       </div>
-      <div class="section section2" id="section2" data-scroll-section>
+      <div class="section section2" id="section2" >
         <div class="content">
           <div class="textWrap">
-            <h2 data-scroll data-scroll-speed="1">김수연은,</h2>
-            <p class="text" data-scroll data-scroll-speed="2">
-              '배움에는 끝이 없다'<br>
-              이 말을 기준 삼아 항상 노력하고 발전하고 탐구하고 있습니다.<br>
-              배울것이 더 많지만 쌓여가는 경험과 함께 성장하는 사람이고 싶습니다. <br>
+            <h2 class="gothic" data-aos="fade-up" data-aos-offset="200" data-aos-duration="500">김수연은,</h2>
+            <p class="des" class="gothic" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
+              저는 디자인을 전공하였지만 실제로 구현하는 퍼블리싱이라는 분야에 매력을 느끼고 <br class="pcView">
+              웹 퍼블리셔로 4년 차 근무 중입니다.<br>
+              배움에는 끝이 없다고 생각하며 현재에 안주하지 않는 성격으로<br class="pcView">
+              주어진 일에 대해서는 책임과 열정을 가지고 완료하는 사람입니다.<br>
+              또 저는 목표가 정해지면 이루기 위해 노력하는 성격입니다.<br>
+              다양한 사람과 의견을 나누고 표현하던 디자이너로 근무하였던 경험 덕분에 협업 관계도 원만하고 대인관계도 원활한 편입니다. <br>
+              끊임없는 자기 계발과 노력으로 오랫동안 회사와 함께 발전 해나가고 싶습니다. <br>
             </p>
-          </div>
-          <div class="tagWrap">
-            <p class="tag"><span data-scroll data-scroll-speed="1">긍정적인</span></p>
-            <p class="tag"><span data-scroll data-scroll-speed="1.5" data-scroll-delay="0.05">성실한</span></p>
-            <p class="tag"><span data-scroll data-scroll-speed="1" data-scroll-delay="0.1">열정적인</span></p>
-            <p class="tag"><span data-scroll data-scroll-speed="1.5" data-scroll-delay="0.15">적응력이 좋은</span></p>
+
           </div>
         </div>
       </div>
-      <div class="section section3" id="section3" data-scroll-section>
+      <div class="section section2-1">
+        <div class="marqueeWrap gothic">
+          <div class="list">
+            <p>
+              <span class="outline">긍정적인</span>
+              <span>성실한</span>
+              <span class="outline">열정적인</span>
+              <span>적응력이 좋은</span>
+              <span class="outline">밝은</span>
+            </p>
+            <p>
+              <span>긍정적인</span>
+              <span class="outline">성실한</span>
+              <span>열정적인</span>
+              <span class="outline">적응력이 좋은</span>
+              <span>밝은</span>
+            </p>
+          </div>
+          <div class="list reverse">
+            <p>
+              <span class="outline">긍정적인</span>
+              <span>성실한</span>
+              <span class="outline">열정적인</span>
+              <span>적응력이 좋은</span>
+              <span class="outline">밝은</span>
+            </p>
+            <p>
+              <span>긍정적인</span>
+              <span class="outline">성실한</span>
+              <span>열정적인</span>
+              <span class="outline">적응력이 좋은</span>
+              <span>밝은</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section section3" id="section3">
         <div class="content">
-          <h2 data-scroll data-scroll-speed="1">저는 일할 때,</h2>
-          <ul data-scroll data-scroll-speed="2">
+          <h2 data-aos="fade-right" data-aos-offset="200" data-aos-duration="500">저는 <br>일할 때</h2>
+          <ul data-aos="fade-up" data-aos-offset="100" data-aos-duration="500">
             <li>항상 <strong>웹 접근성</strong>을 우선시합니다.</li>
             <li>일처리는 <strong>신중하고 꼼꼼</strong>하게 합니다.</li>
             <li>일이 주어지면 빠르게 실행하며, 목표를 달성하기 위해 <strong>집요하게 파고듭니다</strong>.</li>
@@ -86,9 +117,9 @@
             <li>물 같은 성격으로 어떤 환경에서도 <strong>융통성 있게 적응</strong>을 잘 합니다.</li>
           </ul>
         </div>
-        <div class="content">
-          <h2 data-scroll data-scroll-speed="1">제 경력은,</h2>
-          <ul data-scroll data-scroll-speed="2">
+        <div class="content reverse">
+          <h2 data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000">제 <br>경력은</h2>
+          <ul data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000">
             <li><strong>2020. 07 ~ </strong> 닷츠랩 재직중 (퍼블리셔)</li>
             <li><strong>2019. 11 ~ 2020. 04</strong> 그린아카데미 웹퍼블리셔/프론트엔드 정규과정 수료</li>
             <li><strong>2016. 10 ~ 2019. 05</strong> 미술넷커뮤니케이션 근무(디자이너)</li>
@@ -97,18 +128,22 @@
             <li><strong>2019.08</strong> 컬러리스트기사 취득</li>
           </ul>
         </div>
+        <div class="rotate">
+          <span></span>
+          <span class="reverse"></span>
+        </div>
       </div>
-      <div class="section section4" id="section4" data-scroll-section>
+      <div class="section section4" id="section4" >
         <div class="content">
-          <h2 data-scroll data-scroll-speed="2">&nbsp;제&nbsp;<br>&nbsp;작업물을&nbsp;<br>&nbsp;소개합니다:-)&nbsp;</h2>
+          <h2>&nbsp;제&nbsp;<br>&nbsp;작업물을&nbsp;<br>&nbsp;소개합니다:-)&nbsp;</h2>
           <div class="careerList">
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/zinus.jpg" alt="">
+                <img src="../images/zinus.jpg" alt="이미지">
                 <!--<video src="../images/video/zinusH1.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -123,13 +158,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/sogang.jpg" alt="">
+                <img src="../images/sogang.jpg" alt="이미지">
                 <!--<video src="../images/video/sogang.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -144,13 +179,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/evx.jpg" alt="">
+                <img src="../images/evx.jpg" alt="이미지">
                 <!--<video src="../images/video/evx.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -165,13 +200,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                 <img src="../images/ssg.jpg" alt="">
+                 <img src="../images/ssg.jpg" alt="이미지">
                 <!-- <video src="../images/video/ssg.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -186,13 +221,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/ssg.jpg" alt="">
+                <img src="../images/ssg.jpg" alt="이미지">
                 <!-- <video src="../images/video/ssgCatalog.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -207,13 +242,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/loca.jpg" alt="">
+                <img src="../images/loca.jpg" alt="이미지">
                 <!--<video src="../images/video/loca.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -227,13 +262,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/ewha.jpg" alt="">
+                <img src="../images/ewha.jpg" alt="이미지">
                <!-- <video src="../images/video/ewha.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -248,13 +283,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/intercare.jpg" alt="">
+                <img src="../images/intercare.jpg" alt="이미지">
                 <!--<video src="../images/video/intercare.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -268,13 +303,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/impact.jpg" alt="">
+                <img src="../images/impact.jpg" alt="이미지">
                 <!--<video src="../images/video/impact.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -288,13 +323,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/ssk.jpg" alt="">
+                <img src="../images/ssk.jpg" alt="이미지">
                <!--<video src="../images/video/skku.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -309,13 +344,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/isearchme.jpg" alt="">
+                <img src="../images/isearchme.jpg" alt="이미지">
                 <!--<video src="../images/video/isearchme.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -329,13 +364,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/yonsei.jpg" alt="">
+                <img src="../images/yonsei.jpg" alt="이미지">
                 <!--<video src="../images/video/yonsei.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -350,13 +385,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/sookmyung.jpg" alt="">
+                <img src="../images/sookmyung.jpg" alt="이미지">
                 <!--<video src="../images/video/sookmyung.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -371,13 +406,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/zinus.jpg" alt="">
+                <img src="../images/zinus.jpg" alt="이미지">
                 <!--<video src="../images/video/zinusesg.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -392,13 +427,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/kfrm.jpg" alt="">
+                <img src="../images/kfrm.jpg" alt="이미지">
                 <!--<video src="../images/video/kfrm.mp4" muted autoplay playsinline ></video>-->
               </div>
               <div class="textWrap">
@@ -412,13 +447,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/erica.jpg" alt="">
+                <img src="../images/erica.jpg" alt="이미지">
                 <!--<video src="../images/video/hanyang.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -432,13 +467,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/gachon.jpg" alt="">
+                <img src="../images/gachon.jpg" alt="이미지">
                 <!--<video src="../images/video/gachon.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -453,13 +488,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/zinus.jpg" alt="">
+                <img src="../images/zinus.jpg" alt="이미지">
                 <!-- <video src="../images/video/zinus.mp4" muted autoplay playsinline></video> -->
               </div>
               <div class="textWrap">
@@ -473,13 +508,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/clium.jpg" alt="">
+                <img src="../images/clium.jpg" alt="이미지">
                 <!--<video src="../images/video/clium.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -493,13 +528,13 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-offset="150" data-aos-duration="500">
               <div class="top">
                 <i>아이콘</i>
                 <i>아이콘</i>
               </div>
               <div class="img">
-                <img src="../images/donga.jpg" alt="">
+                <img src="../images/donga.jpg" alt="이미지">
                 <!--<video src="../images/video/donga.mp4" muted autoplay playsinline></video>-->
               </div>
               <div class="textWrap">
@@ -517,9 +552,9 @@
           </div>
         </div>
       </div>
-      <div class="section section5" id="section5" data-scroll-section>
+      <div class="section section5" id="section5">
         <div class="content">
-          <h2>이럴 때 제가 딱<br>어울릴 것 같아요</h2>
+          <h2 data-aos="fade-up" data-aos-offset="150" data-aos-duration="1000">이럴 때 제가 딱<br>어울릴 것 같아요</h2>
           <div class="textWrap">
             <ul>
               <li>역량과 경험을 갖춘 웹 퍼블리셔가 필요할 때</li>
@@ -539,7 +574,7 @@
 
     <!-- <a href="javascript:void(0);" class="goTop">TOP</a> -->
     <!-- FOOTER -->
-    <footer id="footer" data-scroll-section>
+    <footer id="footer">
       <div class="content">
         <div>
           <div class="info">
