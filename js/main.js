@@ -48,4 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
     changeY = section.offsetHeight;
     headerState(positionY, changeY);
   });
+
+  AOS.init();
 });
