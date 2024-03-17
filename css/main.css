@@ -73,7 +73,7 @@
   position: relative;
   overflow: hidden;
   display: flex;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 300;
   text-align: center;
   letter-spacing: 4px;
@@ -135,7 +135,7 @@
 }
 .section.section1 .content {
   color: #fff;
-  font-size: 100px;
+  font-size: 6em;
   font-weight: 200;
 }
 .section.section1 .typing {
@@ -171,21 +171,37 @@
   text-align: center;
 }
 .section.section2 h2 {
+  margin-bottom: 40px;
   -webkit-text-fill-color: #fff;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
   color: #000;
 }
-.section.section2 .subTitle {
-  display: inline-block;
-  position:relative;
-  margin: 20px 0 80px;
-  font-size: 30px;
+.section.section2 .des {
+  font-size: 1.25em;
+}
+.section.section2 .des + .des {
+  margin-top: 20px;
+}
+.section.section2 .des span {
+  position: relative;
   font-weight: bold;
 }
-.section.section2 .des {
-  margin-top: 80px;
-  font-size: 1.25em;
+
+.section.section2 .des span::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background: rgba(255, 255, 0, .6);
+}
+
+.section.section2 p:hover span::after {
+  width: 100%;
+  transition: width .3s;
 }
 
 .section.section2-1 .marqueeWrap .list {
@@ -207,7 +223,7 @@
 }
 .section.section2-1 .marqueeWrap span {
   margin:0 10px;
-  font-size: 200px;
+  font-size: 12em;
   font-weight: 900;
   line-height: 1;
 }
@@ -496,7 +512,7 @@
     font-size: 3em;
   }
   .section.section1 .content {
-    font-size: 75px;
+    font-size: 4.5em;
   }
   .section.section3 h2 {
     margin-right: 40px;
@@ -529,19 +545,22 @@
     font-size: 2.75em;
   }
   .section.section1 .content {
-    font-size: 40px;
+    font-size: 3em;
   }
   .section.section2 .content {
     flex-direction: column;
     align-items: flex-start;
   }
+  .section.section2 h2 {
+    margin-bottom: 40px;
+  }
   .section.section2 .des {
-    margin: 40px 5%;
+    margin:0 5%;
     font-size: 1.125em;
   }
   
   .section.section2-1 .marqueeWrap span {
-    font-size:100px;
+    font-size:7em;
   }
 
   .section.section3 .content {
