@@ -1,5 +1,5 @@
 @charset "euc-kr";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&display=swap')
 
@@ -10,7 +10,7 @@
 }
 body {
   font-size: 16px;
-  color: #000;
+  color: #0a0a0a;
   font-family: "Noto Sans KR", dotum, sans-serif;
   font-weight: 400;
 }
@@ -22,7 +22,7 @@ a {
 }
 
 a {
-  color: #000;
+  color: #0a0a0a;
   cursor: pointer;
   text-decoration: none;
 }
@@ -41,7 +41,7 @@ input,
 textarea,
 select {
   font-size: 1em;
-  color: #000;
+  color: #0a0a0a;
   font-family: "Noto Sans KR", dotum, sans-serif;
   font-weight: 400;
 }
@@ -188,7 +188,7 @@ strong {
   left: 0;
   padding: 5px 10px;
   background-color: #fafafa;
-  color: #000;
+  color: #0a0a0a;
 }
 .skipNav li a:focus {
   top: 0;
@@ -200,6 +200,15 @@ strong {
 }
 .gothic { font-family: "Gothic A1", sans-serif; }
 
+.c_blue {
+  color: #009fff;
+}
+.c_pink {
+  color: #ec2f4b;
+}
+.c_violet {
+  color: #7e43f6;
+}
 /* HEADER area */
 body {
   overflow-x: hidden;
@@ -238,7 +247,7 @@ body {
   line-height: 1;
   letter-spacing: -1px;
   color: #fff;
-  text-shadow: 3px 3px 0px #000;
+  text-shadow: 3px 3px 0px #0a0a0a;
 }
 #header h1 span {
   margin-left: 2px;
@@ -248,11 +257,11 @@ body {
   padding: 15px;
   backdrop-filter: invert(0);
   -webkit-backdrop-filter: invert(0);
-  border-bottom:1px solid #000;
-  background: rgba(255, 255, 255, 0.95);
+  border-bottom:1px solid #0a0a0a;
+  background: rgba(0,0,0,0.9);
 }
 #header.bk a {
-  color: #000;
+  color: #fff;
   text-shadow: none;
 }
 #header.bk h1 a {
@@ -260,8 +269,7 @@ body {
   font-size: 30px;
 }
 #header.bk h1 span {
-  color: #ffff00;
-  -webkit-text-stroke: 2px #000;
+  color: #009fff;
 }
 /*
 #header .gnb {
@@ -282,7 +290,7 @@ body {
   z-index: 10;
   position: relative;
   padding: 80px 0;
-  background: #000;
+  background: #0a0a0a;
 }
 #footer .content {
   position: relative;
@@ -328,7 +336,7 @@ body {
   width: 60px;
   height: 40px;
   text-align: center;
-  border: 5px solid #000;
+  border: 5px solid #0a0a0a;
   background: #fff;
   box-shadow: inset -5px -5px 0 #ddd;
   font-weight: 800;
@@ -348,7 +356,7 @@ body {
     font-size: 20px;
   }
   #header.bk h1 span {
-    -webkit-text-stroke: 1px #000;
+    -webkit-text-stroke: 1px #0a0a0a;
   }
   #header .gnbWrap {
     display: none;
