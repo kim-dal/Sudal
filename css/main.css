@@ -532,7 +532,7 @@
     font-size: 4.5em;
   }
   .section.section3 h2 {
-    margin-right: 40px;
+    padding-right: 40px;
   }
   .section.section5 h2 {
     margin-right: 40px;
@@ -564,10 +564,6 @@
   .section.section1 .content {
     font-size: 3em;
   }
-  .section.section2 .content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
   .section.section2 .subTitle {
     margin: 40px 0;
   }
@@ -582,13 +578,25 @@
 
   .section.section3 .content {
     flex-direction: column;
+    align-items: flex-start;
   }
   .section.section3 .content + .content {
     margin-top: 50px;
   }
+  .section.section3 .content.reverse {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .section.section3 .content.reverse h2 {
+    text-align: right;
+  }
   .section.section3 h2 {
     width: auto;
     margin-bottom: 40px;
+    text-align: left;
+  }
+  .section.section3 ul {
+    width: auto;
   }
   .section.section3 li {
     font-size: 1.125em;
@@ -597,8 +605,9 @@
     margin-top: 5px;
   }
   .section.section3 .rotate {
-    left: 25%;
-    bottom: 50%;
+    left: auto;
+    right: 5%;
+    bottom: 5%;
     width: 300px;
     height: 150px;
   }
@@ -607,23 +616,34 @@
   }
 
   .section.section4 .box {
-    width: 100%;
-    margin-right: 2%;
-    margin-top: 50px;
+    flex-direction: column !important;
+    align-items: flex-start;
+    margin-top: 100px;
   }
-  .section.section4 .box:nth-of-type(2n) {
-    margin-right: 2%;
-    margin-top: 50px;
+  .section.section4 .box:nth-of-type(even) {
+    align-items: flex-end;
+  }
+  .section.section4 .box:nth-of-type(even) .right{
+    margin-left: 0; 
+    margin-right: 5%;
+  }
+  .section.section4 .img {
+    width: 80%;
+  }
+  .section.section4 .right { 
+    width: 90%;
+    margin-left:5%;
+    margin-top:-10%;
   }
   .section.section4 .textWrap {
-    margin: 30px 15px;
+    padding: 30px 20px;
   }
   .section.section4 .textWrap h3 {
-    margin-bottom: 10px;
-    font-size: 1.25em;
+    margin-bottom: 20px;
+    font-size: 2em;
   }
   .section.section4 .textWrap .des {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .section.section4 .datail {
     margin-top: 10px;
